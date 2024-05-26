@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM NodeList</title>
+</head>
+<body>
+    <h1>HTML DOM NodeList</h1>
+    <!-- <h3>Select all &lt;p&gt; nodes in a document: <br>
+        The elements in the NodeList can be accessed by an index number. <br>
+        To access the second &lt;p&gt; node you can write:</h3>
+        <p>Hello World!</p>
+        <p>Hello Norway!</p>
+        <p id="demo"></p>
+        <script>
+            const myNodelist=document.querySelectorAll("p");
+            document.getElementById("demo").innerHTML="THe innerHTML of the second paragraph is:"+myNodelist[1].innerHTML;
+        </script> -->
+        <h3>HTML DOM Node List Length</h3>
+        <!-- <p>The <b>Length</b> property define the number of nodes in a node list:</p>
+        <p>Hellow World!</p>
+        <p>HelloW Norway!</p>
+        <p id="demo"></p>
+        <script>
+            const myNodelist=document.querySelectorAll("p");
+             document.getElementById("demo").innerHTML="This document conatins "+myNodelist.length +" paragraphs.";
+        </script> -->
+        <h4>The <b>length</b> property is useful when you want to loop through the nodes in a node list:</h4>
+        <h3>Chnage the color of all &lt;p&gt; elements in a node list:</h3>
+        <p>Hello World!</p>
+        <p>Hello Noeway!</p>
+        <p>Click the button to chnage the color of all p elements.</p>
+        <button onclick="myFunction()">Try it</button>
+        <script>
+            function myFunction()
+            {
+                const myNodeList=document.querySelectorAll("p");
+                for(let i=0;i<myNodeList.length;i++)
+                {
+                    myNodeList[i].style.color="red";
+                }
+            }
+        </script>
+</body>
+</html>

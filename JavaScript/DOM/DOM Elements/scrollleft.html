@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element scrollLeft</title>
+    <style>
+        /* #myDIv
+        {
+            height: 250px;
+            width:250px;
+            overflow: scroll;
+        }
+        #content
+        {
+            height: 800px;
+            width: 2000px;
+            background-color: coral;
+        } */
+        body{
+            height: 2000px;
+            width: 2000px;
+        }
+        button{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element scrollleft</h1>
+    <!-- <h3>Get the number of pixels the content og "myDiv" is scrolled:</h3>
+    <h2>The scrollTop and scrollLeft properties</h2>
+    <p>Scroll the comtent below to display the number of pixels it is scrolled.</p>
+     <div id="myDiv" onscroll="myFunction()">
+        <div id="content">Scroll me!</div>
+     </div>
+     <p id="demo"></p>
+     <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myDiv");
+            let x=element.scrollLeft;
+            let y=element.scrollTop;
+            document.getElementById("demo").innerHTML="Horizontally: "+x.toFixed()+"<br>vertically: "+y.toFixed();
+        }
+     </script> -->
+    <!-- <h3> scroll the contents of "myDiv" To 50 pixels horizontally and 10 pixels vertically:</h3>
+     <p>Click "Scroll" to scroll the contents of "myDiv" to 50px horizontally and 10px vertically.</p>
+     <button onclick="myFunction()">Scroll </button><br><br>
+     <div id="myDiv">
+        <div id="content">
+            <p>Some text inside a div element.</p>
+            <p>Some text inside a div element.</p>
+            <p>Some text inside a div element.</p>
+            <p>Some text inside a div element.</p>
+        </div>
+     </div>
+     <script>
+        function myFunction(){
+            const element=document.getElementById("myDiv");
+            element.scrollLeft=50;
+            element.scrollTop=10;
+        }
+     </script> -->
+     <!-- <h3> scroll the contents of "myDiv" by 50 pixels horizontally and 10 pixels vertically:</h3>
+     <p>Click "Scroll" to scroll the contents of "myDiv" by 50px horizontally and 10px vertically.</p>
+     <button onclick="myFunction()">Scroll </button><br><br>
+     <div id="myDiv">
+        <div id="content">
+            <p>Some text inside a div element.</p>
+            <p>Some text inside a div element.</p>
+            <p>Some text inside a div element.</p>
+            <p>Some text inside a div element.</p>
+        </div>
+     </div>
+     <script>
+        function myFunction(){
+            var element=document.getElementById("myDiv");
+            element.scrollLeft+=50;
+            element.scrollTop+=10;
+        }
+     </script> -->
+    <h3> Scroll the contents of &lt;body&gt; by 30 pixels horizontally and 10 pixels vertically:</h3>
+     <p>Click "Scroll" to scroll the contents of body.</p>
+     <button onclick="myFunction()">Scroll</button><br><br>
+     <script>
+        function myFunction()
+        {
+            const html=document.documentElement;
+            html.scrollLeft+=30;
+            html.screenTop+=10;
+        }
+     </script>
+    </body>
+</html>

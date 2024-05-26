@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Attributes length</title>
+    <style>
+        .example{
+            color: red;
+            width:150px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Attributes length</h1>
+    <!-- <h3>Get the number of attributes of an HTML element:</h3>
+    <button id="myButton" onclick="myFunction()" class="example">Try it</button>
+    <p>How many attributes  has the button above?</p>
+    <p id="demo"></p>
+    <script>
+        let num=document.getElementById("myButton").attributes.length;
+        document.getElementById("demo").innerHTML=num;
+        function myFunction(){}
+    </script> -->
+    <!-- <h3>Get the name of all attributes:</h3>
+    <button id="myBtn" onclick="myFunction()" class="example">Try it</button>
+    <p>The attributes of the button above is:</p>
+    <p id="demo"></p>
+    <script>
+        let text="";
+        const nodeMap=document.getElementById("myBtn").attributes;
+        for(let i=0;i<nodeMap.length;i++)
+        {
+            text+=nodeMap[i].name+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+        function myFunction()
+        {}
+    </script> -->
+    <!-- <h3>How many attribute does "myImg" have:</h3>
+    <img src="klematis.jpg" id="myImg" alt="klematis.jpg" width="150" height="113">
+     <p>The number of attribute of the image are:</p>
+     <p id="demo"></p>
+     <script>
+        let num=document.getElementById("myImg").attributes.length;
+        document.getElementById("demo").innerHTML=num;
+     </script> -->
+     <h3>Get all attributes:</h3>
+     <img src="klematis.jpg" alt="klematis" id="myImg" width="150" height="113">
+     <p>The attribute of the image are:</p>
+     <P id="demo"></P>
+     <script>
+        const nodeMap=document.getElementById("myImg").attributes;
+        let text="";
+        for(let i=0;i<nodeMap.length;i++)
+        {
+            text+=nodeMap[i].name+"="+nodeMap[i].value+"<br>";
+            document.getElementById("demo").innerHTML=text;
+        }
+     </script>
+    </body>
+</html>

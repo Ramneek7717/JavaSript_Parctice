@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The entries() Method</title>
+</head>
+<body>
+    <h1>The entries() Method</h1>
+    <p>A set has no Keys</p>
+    <p><span style="color: red;">entries()</span> returns[value,value] pairs instead of [key,value] pairs.</p>
+    <p>This makes Sets compatible with Maps:</p>
+    <p id="demo"></p>
+    <script>
+        //Create a Set
+        const letters=new Set(["a","b","c"]);
+        //List all entries
+        const iterator=letters.entries();
+        let text="";
+        for(const entry of iterator)
+        {
+            text+=entry+"<br>";
+
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

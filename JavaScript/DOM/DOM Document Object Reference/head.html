@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document head</title>
+</head>
+<body>
+    <h1>HTML DOM Document head</h1>
+    <!-- <h3>Get the tag name of the head element:</h3>
+    <p>The tag name of the head property is:</p>
+    <p id="demo"></p>
+    <script>
+        let tag=document.head.tagName;
+         document.getElementById("demo").innerHTML=tag;
+    </script> -->
+    <!-- <h3>Try with document without a head element:</h3>
+    <p>The tag name of the head property is:</p>
+    <p id="demo"></p>
+    <script>
+        let tag=document.head.tagName;
+        document.getElementById("demo").innerHTML=tag;
+    </script> -->
+    <!-- <h3>Get the tag name of the first child element of the head element:</h3>
+    <p id="demo"></p>
+    <script>
+        let tag=document.head.firstElementChild.tagName;
+        document.getElementById("demo").innerHTML=tag;
+    </script> -->
+    <h3>You can also access the head element with getElementsBYTagName("head"):</h3>
+    <p id="demo"></p>
+    <script>
+        let tag=document.getElementsByTagName("head")[0].tagName;
+        document.getElementById("demo").innerHTML=tag;
+    </script>
+</body>
+</html>

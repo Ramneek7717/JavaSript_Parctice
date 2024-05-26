@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM NodeList forEach()</title>
+</head>
+<body>
+    <h1>HTML DOM NodeList foeEach()</h1>
+    <!-- <h3>Execute a function for each of the document's child nodes:</h3>
+    <h2>The forEaxch() Method</h2>
+    <p>Whitespace between elements are text nodes.comments are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        list.forEach(
+            function(node,index)
+            {
+                text+=index+" "+node +"<br>";
+            }
+        );
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <h3>List the names of the documents's child nodes:</h3>
+    <p>Whitespace between elements are text nodes.Comments are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        list.forEach(
+            function(node)
+            {
+                text+=node.nodeName+"<br>";
+            }
+        );
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

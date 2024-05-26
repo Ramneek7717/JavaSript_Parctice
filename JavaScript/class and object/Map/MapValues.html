@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map.values()</title>
+</head>
+<body>
+    <h1>Map.values()</h1>
+    <p>The<span style="color: red;">values()</span> method returns an iterator object with the values in a Map:
+    </p>
+    <p id="demo"></p>
+    <p>You can use the values() method to sum the values in a Map:</p>
+    <p id="dmo1"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["Apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        //List all values
+        let text="";
+        let total=0;
+        for(const x of fruits.values())
+        {
+            text+=x+"<br>";
+            total+=x;
+        }
+        document.getElementById("demo").innerHTML= text;
+        document.getElementById("dmo1").innerHTML=total;
+    </script>
+</body>
+</html>

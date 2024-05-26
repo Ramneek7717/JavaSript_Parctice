@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element getAttributeNode()</title>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML DOM Element getAttributeNode()</h2>
+    <!-- <h3>Get the value of the class attribute node of an h1 element:</h3>
+     <h1 class="democlass">The Element OBject</h1>
+     <h2>The getAttributeNOde() Method</h2>
+     <p>The value of the class attribute node of the first h1 element is:</p>
+     <p id="demo"></p>
+     <script>
+        const element=document.getElementsByTagName("H1")[0];
+        const attr=element.getAttributeNode("class");
+        document.getElementById("demo").innerHTML=attr.value;
+     </script> -->
+     <!-- <h3>Get the value of the target attribute node of an a element:</h3>
+     Read about the <a href="#" id="myAnchor" target="_blank">Atrr object</a>. 
+     <p>Click the button to display the value of the target attribute node of the link above.</p>
+     <button onclick="myFunction()">Try it</button>
+     <p id="demo"></p>
+     <script>
+        function myFunction(){
+            const element=document.getElementById("myAnchor");
+            let text=element.getAttributeNode("target").value;
+            document.getElementById("demo").innerHTML=text;
+        }
+     </script> -->
+     <h3>Get the value of the obclick attribute node of a button element:</h3>
+     <p>Click the button to dispaly the value of the onclick attribute node of the button element.</p>
+     <button id="myBtn" onclick="myFunction()">Try it</button>
+     <p id="demo"></p>
+     <script>
+        function myFunction()
+        {
+            var element=document.getElementById("myBtn");
+            var attr=element.getAttributeNode("onclick").value;
+            document.getElementById("demo").innerHTML=attr;
+        }
+     </script>
+</body>
+</html>

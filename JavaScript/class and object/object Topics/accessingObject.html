@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Object Properties</title>
+</head>
+<body>
+    
+<h1>Accessing Object Properties</h1>
+<p>You can access object properties in two ways: 
+    <br>
+    objectName.propertyName 
+    <br>
+    objectName["propertyName"]
+</p>
+<h3>objectName.propertyName</h3>
+<p id="demo"></p>
+<script>
+//Create an Object:
+const person={
+    fristName:"John",
+    lastName:"Doe",
+    id:5566
+};
+//Display some data from the object:
+document.getElementById("demo").innerHTML=person.fristName+ " "+person.lastName;
+</script>
+<h3>objectName["propertyName"]</h3>
+<p id="demo2"></p>
+<script>
+    //Display some data from the object:
+ document.getElementById("demo2").innerHTML=person["fristName"]+ " "+person["lastName"];
+</script>
+</body>
+</html>

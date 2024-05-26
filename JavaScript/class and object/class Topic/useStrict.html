@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use strict</title>
+</head>
+<body>
+    <h1>"strict mode"</h1>
+    <p>In "strict mode" you will get an error if you use a variable without declaring it:</p>
+    <p>In a JavaScript Class you cannot use variable without declaring it.</p>
+    <p id="demo"></p>
+    <script>
+        class Car{
+            constructor(name,year)
+            {
+                this.name=name;
+                this.year=year;
+            }
+        
+        age()
+        {
+         //   date=new Date(); This will not work
+         const date=new Date();//This will work
+         return date.getFullYear()-this.year;
+        }
+    }
+    const myCar =new Car("Ford",2014);
+    document.getElementById("demo").innerHTML="My car is "+myCar.age()+" years old."
+    </script>
+
+</body>
+</html>

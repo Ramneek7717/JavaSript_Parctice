@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document querySelector()</title>
+     <style>
+        a[target]{
+            background-color: yellow;
+        }
+     </style>
+</head>
+<body>
+    <h1>HTML DOM Document querySelector()</h1>
+    <!-- <h3>Get the first p element:</h3>
+    <h4>Add a background color to the first p element:</h4>
+    <p>This ia a p element.</p>
+    <p>This is a p element.</p>
+    <script>
+        document.querySelector("p").style.backgroundColor="red";
+    </script> -->
+    <!-- <h3>Get the first element with class="example":I am a paragraph.</h3>
+     <h4>Add a background color to the first element with class="example":I am a paragraph.</h4>
+     <p class="example">I am a paragraph.</p>
+     <p class="example">I am a paragraph.</p>
+     <script>
+        document.querySelector(".example").style.backgroundColor="red";
+     </script> -->
+     <!-- <h3>Get the first p element in with class="example":</h3>
+     <p>Add a background color to the first p element with class="example".</p>
+     <h2 class="example"> A heading</h2>
+     <p class="example">A paragraph.</p>
+     <script>
+        document.querySelector("p.example").style.backgroundColor="red";
+     </script> -->
+     <!-- <h3>Chnage the text of the element with id="demo":</h3>
+     <p id="demo">This is a p element with id="demo".</p>
+     <script>
+        document.querySelector("#demo").innerHTML="Hello World!";
+     </script> -->
+     <!-- <h3>Select the first p element with the parent is a div element.</h3>
+     <div>
+        <h3>H3 element</h3>
+        <p>I am a p element,my parent is a div element.</p>
+     </div>
+     <div>
+        <h3>
+            h3 element
+        </h3>
+        <p>I am a p element, my parent is also a div element.</p>
+     </div>
+     <p>
+        Click the button to change the background color of the first p element in the document where the parent is a div element.
+     </p>
+     <button onclick="myFunction()">
+      Try it
+     </button>
+    <script>
+        function myFunction()
+        {
+            var x=document.querySelector("div>p");
+            x.style.backgroundColor="red";
+        }
+    </script> -->
+    <!-- <h3>Select the first a element that has a "target" attribute:</h3>
+    <p>The CSS selector a[target] make sure that all links with a target attribute gets a yellow background:</p>
+    <p>Add a red border to the first link with a target attribute:</p>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="https://www.disney.com" target="_blank">disney.com</a>
+    <a href="https://www.wikipedia.org" target="_blank">wikipedia.org</a>
+    <script>
+        document.querySelector("a[target]").style.border="10px solid red";
+    </script> -->
+    <!-- <h3>Select the first h3 or the first h4 :</h3>
+    <h3>A h3 element</h3>
+    <h4>A h4 element</h4>
+    <script>
+        document.querySelector("h3,h4").style.backgroundColor="red";
+    </script> -->
+    <h2>Select the first h3 or the first h4</h2>
+    <h4>A h4 element</h4>
+    <h3>A h3 element</h3>
+    <script>
+        document.querySelector("h3,h4").style.backgroundColor="red";
+    </script>
+
+</body>
+</html>

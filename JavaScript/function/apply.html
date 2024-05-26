@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Apply() Method</title>
+</head>
+<body>
+    <script>
+        //The fullName method of person is applied on person1
+        const person={
+            fullName: function()
+            {
+                return this.firstName+" "+this.lastName;
+            }
+        }
+        const person1={
+            firstName:"Mary",
+            lastName:"Doe"
+        }
+        //This will return " Mary Deo"
+        console.log(person.fullName.apply(person1));
+        /* The Difference Between call() and apply()
+            The call() method takes arguments separately.
+            The apply() method takes arguments as an array.
+
+        */
+       // The apply() Method with Arguments 
+       const person11={
+          fullName: function(city,country){
+            return this.firstName+" "+this.lastName+","+city+","+country;
+          }
+       }
+       const person12={
+         firstName:"John",
+         lastName:"Doe"
+       }
+       console.log(person11.fullName.apply(person12,["Oslo","Norway"]));
+       console.log(person11.fullName.apply(person12, ["Oslo", "Norway"]));
+       //Math.max(1,2,3)
+       console.log("Math.max(1,2,3):\t"+Math.max(1,2,3));
+       console.log("Math.max.apply(null,[1,2,3]):\t"+Math.max.apply(null,[1,2,3]));//will also return
+       console.log("Math.max.apply(Math,[1,2,3])\t"+Math.max.apply(Math,[1,2,3]));//will also retun 3
+       console.log("Math.max.apply(\" \",[1,2,3]):\t"+Math.max.apply(" ",[1,2,3]));//will alos return 3
+       console.log("Math.max.apply(0,[1,2,3]):\t"+Math.max.apply(0,[1,2,3]));//will also return 3
+
+    </script>
+</body>
+</html>

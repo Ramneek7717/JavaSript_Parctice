@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Built- In Methods</title>
+</head>
+<body>
+    <h1>Using Built-In Methods</h1>
+    <p id="demo"></p>
+    <script>
+        const person={
+            fristName:"John",
+            LastName:"Doe",
+            id:5566
+        };
+        person.name=function(){
+            return (this.fristName+" "+this.LastName).toUpperCase();
+        };
+        document.getElementById("demo").innerHTML="My Father is "+person.name();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array reduce() method</title>
+</head>
+<body>
+    <h1>Array reduce() method</h1>
+    <p>The <span style="color: red;">reduce()</span> method runs a function on each array elemet to produce(reduce it to) a single value.</p>
+    <p id="demo1"></p>
+    <p>This example finds the sum of all numbers in an array:</p>
+    <p id="demo2"></p>
+    <script>
+        const numbers=[45,4,9,16,25];
+        let sum= numbers.reduce(myFunction);
+        document.getElementById("demo1").innerHTML=numbers;
+        document.getElementById("demo2").innerHTML="The sum is ="+sum;
+        function myFunction(total,value,index,array)
+        {
+            return total +value;
+        }
+    </script>
+    <p>The <span style="color: red;">reduce()</span> method can accept an initial value:</p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        const numbers1=[45,4,9,16,25];
+        let sum1= numbers1.reduce(myFunction,100);
+        document.getElementById("demo3").innerHTML=numbers1;
+        document.getElementById("demo4").innerHTML="The sum is ="+sum1;
+        function myFunction(total,value,index,array)
+        {
+            return total +value;
+        }
+    </script>
+</body>
+</html>

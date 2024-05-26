@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Property to an Object</title>
+</head>
+<body>
+    <h1>Adding a Property to an Object</h1>
+    <p>Adding a new property to an existing object is easy:</p>
+    <p>The property will be added to myFather.Not to myMother.(Not to any other person objects).</p>
+    <p id="demo"></p>
+     <script>
+        //Consturctor function for Person objects
+        function Person(first,last,age,eye)
+        {
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+        }
+        //create 2 Person objects
+        const myFather=new Person("John","Doe",50,"Blue");
+        const myMother=new Person("Sally","Rally",48,"green");
+        //Add nationality to frist object
+        myFather.nationality="English";
+        //Display nationality
+        document.getElementById("demo").innerHTML="My father is "+ myFather.nationality;
+     </script>
+</body>
+</html>

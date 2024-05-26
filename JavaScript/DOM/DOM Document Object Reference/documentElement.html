@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document documentElement</title>
+</head>
+<body>
+    <h1>HTML DOM Document documentElement</h1>
+    <p>Get the name of the document element node:</p>
+    <p>The element node is:</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=document.documentElement.nodeName;
+    </script>
+    <p><strong>Note:</strong>
+        document.body returns the body element <br>
+            document.documentElement returns the html element.</p>
+</body>
+</html>

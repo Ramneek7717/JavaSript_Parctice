@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue Statement</title>
+</head>
+<body>
+    <script>
+        // program using break Statement
+        console.log("break statement");
+        for(let i=0;i<10;i++)
+        {
+            if(i===3)
+            break;
+            console.log("This is Number is "+i);
+        }
+        // using continue statement
+        console.log("continue statement");
+        for(let i=0;i<10;i++)
+        {
+            if(i==3)
+            continue ;
+            console.log("The number is "+i);
+        }
+        // using labels 
+        // break labelname;
+        //continue labelname;
+        console.log("break labels");
+        const cars2=["BMW","Volvo","Saab","Ford"];
+        list:{
+            console.log("Cars2[0] "+cars2[0]);
+            console.log("Cars2[1] "+cars2[1]);
+            break list;
+            console.log("Cars[2] "+cars[2]);
+            console.log("Cars[3] "+cars[3]);
+        }
+        console.log("continue labels");
+       list1: for(let i=0;i<10;i++)
+        {
+            if(i==3)
+            continue list1;
+            console.log("The number is "+i);
+        }
+        
+    </script>
+</body>
+</html>

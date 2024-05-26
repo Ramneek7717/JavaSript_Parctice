@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Async and await</title>
+</head>
+<body>
+    <h1>JavaScript Async and await</h1>
+    <!-- <h3>Async and await make promises easier to write <br>
+        <b>async</b> makes a function return a Promise <br>
+        <b>await</b> makes a function wait for a Promise</h3>
+     <h2>Async Syntax</h2>
+     <p>The keyword async before a function makes the function return a promise:</p>
+     <p id="demo"></p>
+     <script>
+        function myDisplayer(some)
+        {
+            document.getElementById("demo").innerHTML=some;
+        }
+        async function myFunction()
+        {
+            return "Hello";
+        }
+        myFunction().then( function(value)
+                           {
+                            myDisplayer(value);
+                           },
+                           function(error)
+                           {
+                            myDisplayer(erroe);
+                           });
+     </script> -->
+     <!-- <h3>Or simpler,since you expect a normal value(a normal response, not an error):</h3>
+     <p id="demo"></p>
+     <script>
+        function myDisplayer(some)
+        {
+            document.getElementById("demo").innerHTML=some;
+        }
+        async function myFunction(){return "Hello";}
+        myFunction().then(
+                   function(value)
+                   {myDisplayer(value);}
+                 );
+     </script> -->
+     <h2>Await Syntax</h2>
+     <!-- <p>The await keyword can only be used insde an <b>async</b> function.</p>
+      <p>The <b>await</b> keyword makes the function pause the execution and wait for a resolved promise before it continues:</p>
+      <h2 id="demo"></h2>
+      <script>
+        async function myDisplay()
+        {
+            let myPromise=new Promise(function(resolve,reject)
+                                       {
+                                        resolve("I am h2");
+
+                                       });
+        document.getElementById("demo").innerHTML=await myPromise;
+        }
+        myDisplay(); -->
+        <!-- <h2>Example without reject</h2>
+        <h2 id="demo"></h2>
+        <script>
+            async function myDisplay()
+            {
+                let myPromise=new Promise(
+                                  function(resolve)
+                                  {
+                                    resolve("I am h2");
+                                  }
+                );
+                document.getElementById("demo").innerHTML=await myPromise;
+            }
+            myDisplay(); -->
+            <h2>Waiting for a Timeout</h2>
+            <h2 id="demo"></h2>
+            <p>Wait 3 seconds(3000 milliseconds) for this page to change.</p>
+            <script>
+                async function myDisplay()
+                {
+                    let myPromise=new Promise(function(resolve)
+                    {
+                        setTimeout(function(){
+                                    resolve("I am H1");},3000);
+                                });
+                                document.getElementById("demo").innerHTML=await myPromise;
+                }
+                myDisplay();
+            </script>
+
+        </script>
+      </script>
+</body>
+</html>

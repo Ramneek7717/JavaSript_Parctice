@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document querySelectorAll()</title>
+    <style>
+     a[target]
+     {
+        background-color: yellow;
+     }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Document querySelectorAll()</h1>
+    <!-- <h3>Select all elements with class="example":</h3>
+    <p>Add a background color all elements with class="example":</p>
+    <h2 class="exapmle">A heading</h2>
+    <p class="example">A paragraph.</p>
+    <script>
+        const nodeList=document.querySelectorAll(".example");
+        for(let i=0;i<nodeList.length;i++)
+        {
+            nodeList[i].style.backgroundColor="red";
+        }
+    </script> -->
+    <!-- <h3>Add a background color to the first p element:</h3>
+    <p>This is a p element.</p>
+    <p>This is a p element.</p>
+    <script>
+        const nodeList=document.querySelectorAll("p");
+        nodeList[0].style.backgroundColor="red";
+    </script> -->
+    <!-- <h3>Add a background color to the first p element with class="example":</h3>
+    <h2 class="example">A heading</h2>
+    <p class="example">A paragraph.</p>
+    <p class="example">A paragraph.</p>
+    <script>
+        const nodeList=document.querySelectorAll("p.example");
+        nodeList[0].style.backgroundColor="red";
+    </script> -->
+    <!-- <h3>Number of elements with class="example":</h3>
+    <div class="example">A div element with class="example"</div>
+    <div class="example">A div element with class="example"</div>
+    <p class="example">A p element with class="example"</p>
+    <p>How many elements with class "example" in this document:</p>
+    <p id="demo"></p>
+    <script>
+        const nodeList=document.querySelectorAll(".example");
+        document.getElementById("demo").innerHTML=nodeList.length;
+    </script> -->
+    <!-- <h3>Set the background color of all elements with class="example":</h3>
+    <p>Change the background color of all elements with class="example":</p>
+    <div class="example">A div with class="example"</div>
+    <div class="example">A div with class="example"</div>
+    <p class="example">This is a p element with class="example".</p>
+    <p>This is a <span class="example">span</span>element with class="example" inside another p element.</p>
+    <script>
+        const nodeList=document.querySelectorAll(".example");
+        for(i=0;i<nodeList.length;i++)
+        {
+            nodeList[i].style.backgroundColor="red";
+        }
+    </script> -->
+    <!-- <h3>Set the background color of all p elements:</h3>
+    <h1>A h1 element</h1>
+    <div>A div element</div>
+    <p>A p element.</p>
+    <p>A p element.</p>
+    <div class="example" style="border: 1px solid black;margin: 5px;">
+        <p>A p element inside a div element.</p>
+    </div>
+    <script>
+        const nodeList=document.querySelectorAll("p");
+        for(let i=0;i<nodeList.length;i++)
+        {
+            nodeList[i].style.backgroundColor="red";
+        }
+    </script> -->
+    <!-- <h3>set the border of all a elements with a "traget" attribute:</h3>
+    <p>The CSS selector a[target] gives links with a target a yellow background.</p>
+    <p>Add a red border to all links with a target attribute.</p>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="https://www.diseny.com" target="_blank">disney.com</a>
+    <a href="https://www.wikipedia.org" target="_blank">wikipedia.org</a>
+    <script>
+        const nodeList=document.querySelectorAll("a[target]");
+        for(let i=0;i<nodeList.length;i++)
+        {
+            nodeList[i].style.border="10px solid red";
+        }
+    </script> -->
+    <!-- <h3>Set the background color of every p element where the parent is a div element:</h3>
+    <p>Change the background color of every p element where the parent is a div element:</p>
+    <div>
+        <h3>H3 element</h3>
+        <p>I am a p element,my parent is a div element.</p>
+    </div>
+    <div>
+        <h3>H3 element</h3>
+        <p>I am a p element, my parent is a div element.</p>
+    </div>
+    <script>
+        const nodeList=document.querySelectorAll("div>p");
+        for(let i=0;i<nodeList.length;i++)
+        {
+            nodeList[i].style.backgroundColor="red";
+        }
+    </script> -->
+    <h3>Set the background color of all h3 and span elements:</h3>
+    <h1>A H1 element</h1>
+    <h2>A H2 element</h2>
+    <h3>A H3 element</h3>
+    <p>A p element.</p>
+    <p>A p element with a <span style="color: brown;">span</span> element.
+    </p>
+    <script>
+        const list=document.querySelectorAll("h3,span")
+        for(i=0;i<list.length;i++)
+        {
+            list[i].style.backgroundColor="green";
+        }
+    </script>
+</html>

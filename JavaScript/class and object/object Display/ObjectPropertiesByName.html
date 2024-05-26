@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying the Object Properties by name</title>
+</head>
+<body>
+    <h1>Displaying the Object Properties by name</h1>
+    <p>The properties of an object can be displayed as a string:</p>
+    <p id="demo"></p>
+    <script>
+        const person={
+            name:"John",
+            age:30,
+            city:"New York"
+        };
+        document.getElementById("demo").innerHTML=person.name+","+person.age+","+person.city;
+    </script>
+</body>
+</html>

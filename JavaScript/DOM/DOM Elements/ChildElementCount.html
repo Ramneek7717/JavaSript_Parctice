@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element childElementCount</title>
+    <style>
+        div{
+            background-color: coral;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element childElementCount</h1>
+    <!-- <h3>Number of child elements of a div element:</h3>
+    <div id="myDIV">
+        <p>First p element.</p>
+        <p>Second p element.</p>
+    </div>
+    <p>Number of children in the div element is:</p>
+    <p id="demo"></p>
+    <script>
+        let numb=document.getElementById("myDIV").childElementCount;
+        document.getElementById("demo").innerHTML=numb;
+    </script> -->
+    <h3>childElementCount returns the same as children.length:</h3>
+    <div id="myDiv1">
+        <p>First p element.</p>
+        <p>Second p element.</p>
+    </div>
+    <p>Number of children in the div element is:</p>
+    <p id="demo"></p>
+    <script>
+        let numb=document.getElementById("myDiv1").children.length;
+        document.getElementById("demo").innerHTML=numb;
+    </script>
+
+</body>
+</html>

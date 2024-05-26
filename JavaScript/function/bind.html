@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Borrowing Bind()</title>
+</head>
+<body>
+    <script>
+        const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen"
+}
+
+let fullName = person.fullName.bind(member);
+console.log(fullName());
+// preserving this
+//Sometime the bind() method has to be used to pervent losing this
+const person1={
+    firstName:"Jone",
+    lastName:"Doe",
+    display :function(){
+         let x=this.firstName+" "+this.lastName;
+         console.log(x);
+    }
+
+}
+let y=person1.display();
+console.log(y);
+// Try to display the person name after 3 seconds,but it will display undefined instead
+const person2={
+     firstName: "John",
+     lastName:"Doe",
+     display :function(){
+        let x=this.firstName+" "+this.lastName;
+        console.log(x);
+     }
+} 
+let y1=person2.display();
+console.log(y1);
+console.log((person2.display(),3000));
+//the bind() method is used to bind person.disply to person
+let display1=person2.display.bind(person2);
+console.log(setTimeout(display1,3000));
+    </script>
+</body>
+</html>

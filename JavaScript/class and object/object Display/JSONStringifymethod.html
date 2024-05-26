@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JSON.stringify()</title>
+</head>
+<body>
+    <h1>Using JSON.stringify()</h1>
+    <p>Any JavaScript object can be stringified(converted to a string) with the JavaScript function <span style="color: red;"> JSON.stringify()</span> :</p>
+    <p id="demo"></p>
+    <script>
+        const person={
+            name:"John",
+            age:30,
+            city:"New York"
+        };
+        document.getElementById("demo").innerHTML=JSON.stringify(person);
+    </script>
+</body>
+</html>

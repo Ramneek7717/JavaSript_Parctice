@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Concat() Method</title>
+</head>
+<body>
+    <h1>Array concat() Method</h1>
+    <p>The <span style="color: red;"> concat()</span> Method creates a new array by merging (concatenating ) Existing arrays:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const myGrils=[
+            "Cecilie",
+            "Lone"
+        ];
+        const myBoys=[
+            "Emil",
+            "Tobias",
+            "Linus"
+        ];
+        document.getElementById("demo1").innerHTML="The girls are : "+myGrils;
+        document.getElementById("demo2").innerHTML="The boys are : "+myBoys;
+        const myChildren=myGrils.concat(myBoys);
+        document.getElementById("demo3").innerHTML="The Childern are : "+myChildren;
+
+        
+    </script>
+    <p><strong>Note</strong>
+        <br>
+        The <span style="color: red;"> concat() </span>method does not change the existing arrays. It always returns a new array.
+
+The<span style="color: red;">  concat()</span> method can take any number of array arguments.
+    </p>
+    <h1>Example(Merging Three Arrays) </h1>
+    <p id="demo11"></p>
+    <p id="demo21"></p>
+    <p id="demo31"></p>
+    <P id="demo41"></P>
+    <script>
+        const arr3=[
+               "Robin",
+               "Morgan"
+    ];
+    document.getElementById("demo11").innerHTML="The array1 are : "+myGrils;
+        document.getElementById("demo21").innerHTML="The array2 are : "+myBoys;
+        document.getElementById("demo31").innerHTML="The array3 are : "+arr3;
+        const myChildren1=myGrils.concat(myBoys,arr3);
+        document.getElementById("demo41").innerHTML="The Merging Three Arrays : "+myChildren1;
+
+    </script>
+    <h1>Example (Merging an Array with Values)</h1>
+    <p>The <span style="color: red;"> Concat()</span> method can also take strings as arguments:</p>
+     <p id="demo12"></p>
+     <p id="demo22"></p>
+     <script>
+        const myArray=[
+            "Emil",
+            "Tobias",
+            "Linus"
+        ];
+        const myChildren2=myArray.concat("Peter");
+        document.getElementById("demo12").innerHTML=myArray;
+        document.getElementById("demo22").innerHTML=myChildren2;
+     </script>
+</body>
+</html>

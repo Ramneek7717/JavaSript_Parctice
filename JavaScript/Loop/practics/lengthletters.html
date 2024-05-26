@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length letter vowel</title>
+</head>
+<body>
+    <script>
+        i=0;
+        let count=0;
+        let string=String(prompt("Enter the Name"));
+        let string1=string.length;
+        console.log("Length="+string1);
+        console.log("Split="+string.split(''));
+        while(i<string1){
+        console.log(string[i]);
+        if(string[i]==="A"||string[i]==="a"||string[i]==="E"||string[i]==="e"||string[i]==="I"||string[i]==="i"||string[i]==="U"||string[i]==="u"||string[i]==="o"||string[i]=="O")
+        {
+        console.log(string[i]+"Vowel");
+         count++;
+        }
+        else
+        console.log(string[i]+" Not Vowel");
+        i++;
+    }
+     console.log("NO of Vowel="+count);
+    </script>
+    
+</body>
+</html>

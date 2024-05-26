@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document activeElement</title>
+</head>
+<body onclick="myFunction()">
+    <h1>The Document Object</h1>
+    <h3>The activeElement Property</h3>
+    <p>Get the currently focued element:</p>
+     <input type="text" value="An input field"><br>
+     <button>A Button</button>
+     <p id="demo"></p>
+     <script>
+        function myFunction()
+        {
+            const element=document.activeElement.tagName;
+            document.getElementById("demo").innerHTML=element;
+        }
+       
+     </script>
+     <p>The <span style="color: red;">activeElement</span>Property retirns the HTML element that have focus.</p>
+     <p>The <span style="color: red;">activeElement</span> property is read-only.</p>
+</body>
+</html>

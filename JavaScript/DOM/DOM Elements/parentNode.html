@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element parentNode</title>
+    <style>
+        div{
+            box-sizing: border-box;
+            padding: 16px;
+            width: 100%;
+            background-color: red;
+            color: #fff;
+            font-size: 30px;
+        }
+        .closeBtn{
+            float:right;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .closeBtn:hover{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element parentNode</h1>
+    <!-- <h3>Get the node name of the parent node of "myLi":</h3>
+    <ul>
+        <li id="myLi">Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>The node name of the parent node of "myLi" is :</p>
+    <p id="demo"></p>
+    <script>
+        let name=document.getElementById("myLi").parentNode.nodeName;
+        document.getElementById("demo").innerHTML=name;
+    </script> -->
+    <h3>Click on an element(<span>)to hide its parent:</h3>
+    <div>
+        <span onclick="this.parentNode.style.display='none';" class="closeBtn">X</span>
+        <p>Click X to close.</p>
+    </div>
+</body>
+</html>

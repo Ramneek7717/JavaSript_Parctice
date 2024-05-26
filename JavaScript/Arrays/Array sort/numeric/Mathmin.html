@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.min() on an Array</title>
+</head>
+<body>
+    <h1>Math.min() on an Array</h1>
+    <p>You canuse <span style="color: red;"> Math.min.apply</span> to find the lowest number in an array:</p>
+    <p>The list is : <span id="demo1"></span></p>
+    <p>
+        The lowest number is <span id="demo2">.</span>
+    </p>
+    <script>
+        const points=[40,100,1, 5,25,10];
+        document.getElementById("demo1").innerHTML=points;
+        myArrayMin(points);
+        function myArrayMin(arr)
+        {
+            return Math.min.apply(null,arr);
+        }
+        document.getElementById("demo2").innerHTML=myArrayMin(points);
+    </script>
+</body>
+</html>

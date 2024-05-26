@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Attriutes setNamedItem()</title>
+    <style>
+        .democlass{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Attributes setNamedItem()</h1>
+    <!-- <h3>Set a H1's class attribute:</h3>
+     <p>Set the first H1's class attribute to "democlass".</p>
+     <script>
+        const nodeMap=document.getElementsByTagName("H1")[0].attributes;
+        const node=document.createAttribute("class");
+        node.value="democlass";
+        nodeMap.setNamedItem(node);
+     </script> -->
+     <h3>It is easier to use element.setAttribute():</h3>
+     <p>Set the first H1's class attribute to "demoClass".</p>
+     <script>
+        const element=document.getElementsByTagName("H1")[0];
+        element.setAttribute("class","democlass");
+     </script>
+</body>
+</html>

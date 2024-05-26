@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element children</title>
+</head>
+<body>
+    <h1>HTML DOM Element Children</h1>
+    <!-- <h3>Get  a collection of the body element's children:</h3>
+    <p>The tag name of the body's children are:</p>
+    <p id="demo"></p>
+    <script>
+        const collection=document.body.children;
+        let text="";
+        for(let i=0;i<collection.length;i++)
+        {
+            text+=collection[i].tagName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>How many children does "myDiv" have:</h3>
+    <p id="demo"></p>
+    <div id="myDiv">
+        <p>I am a paragraph</p>
+        <p>I am a paragraph</p>
+        <p>I am a paragraph</p>
+    </div>
+    <script>
+        let count=document.getElementById("myDiv").children.length;
+        document.getElementById("demo").innerHTML=count;
+    </script> -->
+    <!-- <h3>Change the background of the second child element of "myDiv":</h3>
+     <p>Change background of the second child element (index 1) of "myDiv":</p>
+     <div id="myDiv">
+        <p>I am a paragraph</p>
+        <p>I am a paragraph</p>
+        <p>I am a paragraph</p>
+     </div>
+     <script>
+        const collection=document.getElementById("myDiv").children;
+        collection[1].style.backgroundColor="yellow";
+     </script> -->
+     <!-- <h3>Get the text of the third child element (index 2) of a select element:</h3>
+     <select id="mySelect" size="4">
+        <option>Audi</option>
+        <option>BMW</option>
+        <option>Saab</option>
+        <option>Volvo</option>
+     </select>
+     <p>The text of the third child element (index 2) of the selct element is:</p>
+     <p id="demo"></p>
+     <script>
+        const collection=document.getElementById("mySelect").children;
+        document.getElementById("demo").innerHTML=collection[2].text;
+     </script> -->
+     <h3>Loop all children of body and chnage their background:</h3>
+      <p>Click "Chnage" to change the background of all child elements of body.</p>
+      <button onclick="myFunction()">Change</button>
+      <h2>I am a h2 element</h2>
+      <div>I am a div element</div>
+      <span>I am a span element</span>
+      <script>
+        function myFunction()
+        {
+            const collection=document.body .children;
+            for(let i=0;i<collection.length;i++)
+            {
+                collection[i].style.backgroundColor="red";
+            }
+        }
+      </script>
+</body>
+</html>

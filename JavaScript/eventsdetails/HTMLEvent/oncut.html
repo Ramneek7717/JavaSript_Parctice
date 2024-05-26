@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML  Event oncut</title>
+</head>
+<body>
+    <h1>HTML Event oncut</h1>
+    <!-- <h3>Call a function when cutting some text in an &lt;input&gt; element:</h3>
+    <input type="text" oncut="myFunction()" value="Try to cut this text">
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="You cutted text!";
+        }
+    </script> -->
+    <!-- <h3>In JavaScript,using the addEventListener() method:</h3>
+    <p>Use the addEventListener() method to attach a cut event to an input element.</p>
+    <input type="text" id="myInput" value="Try to cut this text">
+    <p id="demo"></p>
+    <script>
+        document.getElementById("myInput").addEventListener("cut",myFunction);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="you cutted text!";
+        }
+    </script> -->
+    <h3>Call a function when cutting some text of a &lt;p&gt; element. <br>
+        (Note that contenteditable is set to "true"):</h3>
+    <p contenteditable="true" oncut="myFunction()"> Try to cut this text</p>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="You cutted text!";
+        }
+    </script>
+</body>
+</html>

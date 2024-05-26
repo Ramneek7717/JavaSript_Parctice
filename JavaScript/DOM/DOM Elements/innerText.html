@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element innerText</title>
+</head>
+<body>
+    <h1>HTML DOM Element innetText</h1>
+    <h3>Get the inner text of an element:</h3>
+    <button id="myBtn">Try it</button>
+    <p>The text content of the button element is:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.getElementById("myBtn").innerText;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

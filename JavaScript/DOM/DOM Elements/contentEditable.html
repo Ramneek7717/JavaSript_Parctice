@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element contentEditable</title>
+</head>
+<body>
+    <h1>HTML DOM Element contentEditable</h1>
+    <!-- <h3>This paragraph is editable: <br>
+         Return true if "myP" is editable:
+    </h3>
+    <p id="myP" contenteditable="true">Am I editable?</p>
+    <p id="demo"></p>
+    <script>
+        let answer=document.getElementById("myP").contentEditable;
+        document.getElementById("demo").innerHTML=answer;
+    </script> -->
+    <!-- <h3>Set the content of "myP" to be editable:</h3>
+     <p id="myP">I am a paragraph.Click "Editable" to make me editable.</p>
+     <button onclick="myFunction()">Editable</button>
+     <p id="demo"></p>
+     <script>
+        function myFunction()
+        {
+            document.getElementById("myP").contentEditable = true;
+            document.getElementById("demo").innerHTML="The paragraph is now editable. TRY to edit it.";
+        }
+     </script> -->
+     <h3>Toggle between content editable:</h3>
+     <p id="myP" contenteditable="true">
+       Try to change this text.
+     </p>
+     <button onclick="myFunction(this);">
+      Display "myP" to be editable!
+     </button>
+     <p id="demo"></p>
+     <script>
+        function myFunction(button)
+        {
+            const x=document.getElementById("myP");
+            if(x.contentEditable=="true")
+            {
+                x.contentEditable="false";
+                button.innerHTML='Enable "myP" p to be editable!';
+            }
+            else
+            {
+                x.contentEditable="true";
+                button.innerHTML='Disable "myP" to be editable!';
+            }
+        }
+     </script>
+</body>
+</html>

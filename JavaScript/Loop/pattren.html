@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattren</title>
+</head>
+
+<body>
+    <script>
+        string = "";
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                if (i == 1 && j === 1) {
+                    string += j;
+                    
+                }
+                else if ((i == 2 && j == 1) || (i == 2 && j == 2)||(i===2 && j===3)) {
+                    if ((i == 2 && j == 1)) {
+                        string += "2";
+                    }
+                    else if((i===2 && j===2)) {
+                        string += "6";
+                    }
+                    else
+                    string+="10";
+                    string+="\t";
+                }
+                else if (i === 3&&j===1 || i === 3&&j===2 || i ===3&&j===3 ||i===3 &&j===4) {
+                    if (i === 3&&j===1)
+                        string += "3";
+                    else if (i === 3&&j===2)
+                        string += "7";
+                    else if(i===3 && j===3)
+                        string += "11";
+                    else
+                        string+="14";
+                    string+="\t";
+                }
+                else if (i == 4&&j===1 || i === 4&&j===2 || i===4&& j===3  || i===4 &&j===4 ||i===4 && j===5) {
+                    if (i === 4&&j===1) {
+                        string += "4";
+                    } else if (i ===4&&j===2) {
+                        string += "8";
+                    }
+                    else if (i===4&&j===3) {
+                        string += "12";
+                    }
+                    else if(i===4 && j===4)
+                        string+="15";
+                    else {
+                        string += "17";
+                    }
+                   string+="\t"
+                }
+                else
+                {
+                    if(i===5&&j===1)
+                    string+="5";
+                    else if(i===5&&j===2)
+                    string+="9";
+                    else if (i===5&&j===3)
+                    string+="13";
+                    else if(i===5&&j===4)
+                    string+="16";
+                    else if(i===5&&j===5)
+                    string+="18";
+                    else if(i===5&&j===6)
+                    string+="19";
+                    else
+                    string+="";
+                    string+="\t";
+                }
+            }
+            string += "\n"
+        }
+        console.log(string);
+    </script>
+</body>
+
+</html>

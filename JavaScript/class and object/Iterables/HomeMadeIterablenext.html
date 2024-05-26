@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Made Iterable</title>
+</head>
+<body>
+    <h1>Home Made Iterable Next() method</h1>
+    <p>This iterable returns never ending:10,20,30,40,... Everytime <span style="color: red;">next()</span> is called:</p>
+    <p id="demo"></p>
+    <script>
+        //Home Made Iterable
+        function myNumbers()
+        {
+            let n=0;
+            return{
+                next:function(){
+                    n+=10;
+                    return{value:n,done:false};
+                }
+            };
+        }
+        //Create Iterable
+        const n=myNumbers();
+        n.next();//10
+        n.next();//20
+        n.next();//30
+        document.getElementById("demo").innerHTML=n.next().value;
+    </script>
+    <p>The problem with a home made iterable: <br>
+
+        It does not support the JavaScript for..of statement.</p>
+</body>
+</html>

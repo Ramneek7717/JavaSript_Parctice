@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array findIndex() Method</title>
+</head>
+<body>
+    <h1>Array findIndex() Method</h1>
+    <p>The <span style="color: red;">findIndex()</span> method returns the index of the 
+    frist array element that passes a test function</p>
+    <p><strong>Note </strong> that the function takes 3 arguments:
+        <br>
+    <ul><li>The item value</li>
+    <li>The item index</li>
+    The array itself</ul>
+    </p>
+        <p id="demo1"></p>
+        
+        <p>This example finds the index of the first element that is larger than 18:</p>
+        <p id="demo2"></p>
+        <script>
+            const numbers=[
+                4,9,16,25,29
+            ];
+            let frist =numbers.findIndex(myFunction);
+            
+            function myFunction(value,index, array)
+             {
+                return value>18;
+             }
+             document.getElementById("demo1").innerHTML=numbers;
+             document.getElementById("demo2").innerHTML=frist;
+           </script>  
+</body>
+</html>

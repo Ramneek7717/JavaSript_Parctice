@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using the prototype property</title>
+</head>
+<body>
+    <h1>Using the <b>prototype</b> Property</h1>
+    <p>The JavaScript <span style ="color: red";>property </span> allows you to add new properties to object constructors:</p>
+    <p id="demo"></p>
+    <script>
+        function Person(first,last,age,eye)
+        {
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+
+        }
+        Person.prototype.nationality="English";
+        const myFather=new Person("John","Doe",50,"blue");
+        document.getElementById("demo").innerHTML="The nationality of my father is "+myFather.nationality;
+    </script>
+
+</body>
+</html>

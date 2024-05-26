@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object access</title>
+</head>
+<body>
+    <h1>JSON Object Access</h1>
+    <p id="demo"></p>
+    <script>
+        const myObj={name:"John",age:30,city:"New York"};
+        // document.getElementById("demo").innerHTML=myObj.name;
+        //   It can also be accessed like this:
+        // document.getElementById("demo").innerHTML=myObj["name"];
+        // Data can be modified like this:
+        // myObj.name="Gilbert";
+        // document.getElementById("demo").innerHTML=myObj.name;
+        // It can also be modified like this:
+        myObj["name"]="Gilbert";
+        document.getElementById("demo").innerHTML=myObj.name;
+</script>
+</body>
+</html>

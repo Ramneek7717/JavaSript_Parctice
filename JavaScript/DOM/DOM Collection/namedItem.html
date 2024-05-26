@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Collection namedItem()</title>
+</head>
+<body>
+    <h1>HTML Collection namedItem()</h1>
+    <!-- <h3>Get the content of the p element with id="myElement":</h3>
+    <p id="myElement">The namedItem() method returns the element with the specified id or name.</p>
+    <p>Click "Get" to get the content of the p element with id="myElement":</p>
+    <button onclick="myFunction()">Get</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            const collection=document.getElementsByTagName("p");
+            const element=collection.namedItem("myElement");
+            document.getElementById("demo").innerHTML=element.innerHTML;
+        }
+    </script> -->
+    <h3>This shorthand produces the same result:</h3>
+    <p id="myElement">This example uses a shorthand method for the namedItem() method.</p>
+    <p>Click "Get" to get the content of the p element with id="myElement":</p>
+    <button onclick="myFunction()">Get</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            const collection=document.getElementsByTagName("p");
+            const element=collection["myElement"];
+            document.getElementById("demo").innerHTML=element.innerHTML;
+        }
+    </script>
+</body>
+</html>

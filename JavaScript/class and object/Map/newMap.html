@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Map()</title>
+</head>
+<body>
+    <h1>new Map()</h1>
+    <p>You can create a Map by passing an Array to the <span style="color: red;"> new Map()</span> constructor:</p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo").innerHTML=fruits.get("apples");
+        
+    </script>
+</body>
+</html>

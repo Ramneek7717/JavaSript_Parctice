@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array entries() method</title>
+</head>
+<body>
+    <h1>The Array entries() method</h1>
+    <p>The entries() method return an Array Iterator object with key/value pairs.</p>
+    <p id="demo"></p>
+   <script>
+    const fruits=[
+    "Banana",
+    "Orange",
+    "Apple",
+    "Mango"
+];
+const f=fruits.entries();
+for(let x of f){
+    document.getElementById("demo").innerHTML+=x+"<br>";
+}
+</script>
+
+</body>
+</html>

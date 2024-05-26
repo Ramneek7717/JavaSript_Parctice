@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document Links</title>
+</head>
+<body>
+    <h1>HTML DOM Document Links</h1>
+    <!-- <h3>NUmber of links in the document:</h3>
+    <p><a href="#">HTML Tutorial</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+    <p>The number of links in the document is:</p>
+    <p id="demo"></p>
+    <script>
+        let numb=document.links.length;
+        document.getElementById("demo").innerHTML=numb;
+    </script> -->
+    <!-- <h3>Get the URL of the first link in the document:</h3>
+    <p><a href="#">HTML Tutorial</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+    <p>The URL of the first link in the document is:</p>
+    <p id="demo"></p>
+    <script>
+        let url=document.links[0].href;
+        document.getElementById("demo").innerHTML=url;
+    </script> -->
+    <!-- <h3>Get the URL of the first link in the document:</h3>
+    <p><a href="#">HTML Tutorial</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+    <p>The URL of the first link in the document is:</p>
+    <p id="demo"></p>
+    <script>
+        let url=document.links.item(0).href;
+        document.getElementById("demo").innerHTML=url;
+    </script> -->
+    <!-- <h3>Get the URL of the element with id="myLink":</h3>
+    <p><a href="#">HTML Tutorial</a></p>
+    <p><a href="#" id="myLink">CSS Tutorial</a></p>
+    <p id="demo"></p>
+    <script>
+        let url=document.links.namedItem("myLink").href;
+        document.getElementById("demo").innerHTML=url;
+    </script> -->
+    <!-- <h3>
+        Add a red border to the first link in the document:
+    </h3>
+    <p><a href="#">HTML Tutorial</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+    <script>
+        document.links[0].style.border="5px solid red ";
+    </script> -->
+    <h3>Loop over all links and output the URL(href) of each:</h3>
+    <img src="planets.jpg" alt="planets" width="145" height="126" usemap="#planetmap">
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" href="sun.jpg" alt="sun">
+        <area shape="circle" coords="90,58,3" href="mercur.jpg" alt="mercur">
+        <area shape="circle" coords="124,58,8" href="venus.jpg" alt="venus">
+    </map>
+    <p><a href="#">HTML Tutorial</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+    <p>The URL of all links:</p>
+    <p id="demo"></p>
+    <script>
+        const links=document.links;
+        let text="";
+        for(let i=0;i<links.length;i++)
+        {
+            text+=links[i].href+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

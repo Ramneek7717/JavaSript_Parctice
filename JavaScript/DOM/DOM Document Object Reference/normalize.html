@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document normalize()</title>
+</head>
+<body>
+    <h1>HTML DOM Document normalize()</h1>
+    <h3>Normalize a document:</h3>
+    <button onclick="addTextNode()">Add a Text Node</button>
+    <button onclick="normPara()">Normalize the Document</button>
+    <p>The document has <span id="cc" style="font-size: 20px;">1</span>child node(s).</p>
+    <script>
+        function addTextNode()
+        {
+            const textNode=document.createTextNode("Click again.");
+            const body=document.body;
+            body.appendChild(textNode);
+            const cc=document.getElementById("cc");
+            cc.innerHTML=body.childNodes.length;
+        }
+        function normPara()
+        {
+            document.normalize();
+            const body=document.body;
+            const cc=document.getElementById("cc");
+            cc.innerHTML=body.childNodes.length;
+        }
+    </script>
+</body>
+</html>

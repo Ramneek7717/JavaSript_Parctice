@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element title</title>
+</head>
+<body>
+    <h1>HTML DOM Element title</h1>
+    <!-- <h3>Get the title of an element:</h3>
+    <p><abbr title="World Health Organization" id="myAbbr">WHO</abbr>was founded in 1948.</p>
+    <p>The Title of the abbr element is:</p>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("myAbbr");
+        document.getElementById("demo").innerHTML=element.title;
+    </script> -->
+    <h3>Chnage the title of an element:</h3>
+    <p>Hover over the 'w3schools.com' header (to see the title), before and after you click "Change".</p>
+    <h2 id="myH2" title="Free web tutorials">w3schools.com</h2>
+    <button onclick="myFunction()">Change</button>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myH2");
+            element.title="The World's largest Web Development Site";
+        }
+    </script>
+</body>
+</html>

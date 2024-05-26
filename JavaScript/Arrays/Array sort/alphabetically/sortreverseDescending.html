@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in descending order</title>
+</head>
+<body>
+    <h1>Array in descending order</h1>
+    <h3>Sort in Reverse</h3>
+    <p>The reverse() menthod reverses the elements in an array.</p>
+    <p>By combining sort() and reverse() you can sort an array in descending order:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        //create and display an array:
+        const fruits=[
+            "Banana",
+            "Orange",
+            "Apple",
+            "Mango"
+        ];
+        document.getElementById("demo1").innerHTML="Unsorted list = "+fruits;
+        //Frist sort the array
+        fruits.sort();
+        //Then reverse it:
+        fruits.reverse();
+        document.getElementById("demo2").innerHTML="Descendin order list ="+fruits;
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean data type</title>
+</head>
+
+<body>
+    <script>
+        console.log("Boolean(10>9)=" + Boolean(10 > 9));
+        console.log("Boolean(100)=" + Boolean(100));
+        console.log("Boolean(3.14)=" + Boolean(3.14));
+        console.log("Boolean(-15)=" + Boolean(-15));
+        console.log("Boolean(\"Hello\")=" + Boolean("Hello"));
+        console.log("Boolean(\"false\")=" + Boolean("false"));
+        console.log("Boolean(7+1+3.14)=" + Boolean(7 + 1 + 3.14));
+        let x = 0;
+        console.log("Everything without a \"value\" is False\n let x=0;\nBoolean(x); \nAns:" + Boolean(x))
+        let x1 = -0;
+        console.log("let x1=-0\nBoolean(x1);\n Ans:" + Boolean(x1));
+        let x2 = "";
+        console.log("let x2=\"\";\nBoolean(x2);\nAns:" + Boolean(x2));
+        let x3;
+        console.log("let x3;\nBoolean(x3);\n Ans:" + Boolean(x3));
+        let x4 = null;
+        console.log("let x=null;\nBoolean(x4);\n Ans:" + Boolean(x4));
+        let x5 = false;
+        console.log("let x5=false;\nBoolean(x5);\n Ans:" + Boolean(x5));
+        let x6 = 10 / "Hello";
+        console.log("let x6=10/\"Hello\";\nBoolean(x6);\n Ans:" + Boolean(x6));
+        console.log("Boolean as Objects");
+        let x7 = false;
+        console.log("let x7=false;\ntypeof(x7);\nx7:" + typeof (x7) + "\ntypeof x7 return  Boolean");
+        let y = new Boolean(false);
+        console.log(" let y= new Boolean(false);\ntypeof(y);\ny:" + typeof (y) + "\ntypeof x7 return  Object");
+        console.log("x7==y are " + (x7 == y));
+        console.log("x7===y are " + (x7 === y));
+        let y1 = new Boolean(false);
+        console.log(" let y= new Boolean(false);\n let y1=new Boolean(false);\ny==y1 are " + (y == y1));
+        console.log(" let y= new Boolean(false);\n let y1=new Boolean(false);\ny===y1 are " + (y === y1));
+        let z = new Boolean(true);
+        let z1 = new Boolean(true);
+        console.log(" let z= new Boolean(true);\n let z1=new Boolean(true);\nz==z1 are " + (z == z1));
+        console.log(" let z= new Boolean(true);\n let z1=new Boolean(true);\nz===z1 are " + (z === z1));
+        console.log("Methods and properties");
+        let bool = true;
+        let text = Boolean.constructor;
+        console.log(" let text=bool.constructor;\n ans:" + text);
+        Boolean.prototype.myColor = function () {
+            if (this.valueOf() == true) {
+                return "green";
+            }
+            else {
+                return "red";
+            }
+        };
+        let a = true;
+        let color = a.myColor();
+        console.log("prototype=" + color);
+        let bool1 = true;
+        let text1 = bool.toString();
+        console.log("let bool1=true;\nlet text1=bool.toString();\nans:" + text1 + "\ntypeof(text1)=" + typeof (text1));
+        let bool2 = false;
+        let value1 = bool2.valueOf();
+        console.log(" let bool2=false;\nlet value1=bool2.valueOf();\n ans:" + value1);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenlist add()</title>
+    <style>
+         .myStyle{
+            background-color: coral;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOMTokenList</h1> 
+    <h3>Add a "myStyle" class to an element:</h3>
+    <h2>The add() Method</h2>
+    <button onclick="myFunction()">Add</button>
+    <p>Click "Add" to add the "myStyle" class to myDiv.</p>
+    <div id="myDiv">
+        <p>I am a myDiv.</p>
+    </div>
+    <script>
+        function myFunction(){
+            const list=document.getElementById("myDiv").classList;
+            list.add("myStyle");
+        }
+    </script>
+</body>
+</html>

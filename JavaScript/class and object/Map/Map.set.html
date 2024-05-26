@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map.set()</title>
+</head>
+<body>
+    <h1>Map.set()</h1>
+    <p>You can add elements to a Map with the <span style="color: red;">set()</span> method:</p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map();
+        //Set Map Values
+        fruits.set("apples",500);
+        fruits.set("bananas",300);
+        fruits.set("oranges",200);
+        document.getElementById("demo").innerHTML=fruits.get("apples");
+        
+    </script>
+    <p>The <span style="color: red;">set()</span> method can also be used to chnage existing Map Values:</p>
+    <p id="demo1"></p>
+    <script>
+        //Create a Map
+        const fruits1=new Map([
+            ["Apples",500],
+            ["Bananas",300],
+            ["Oranges",200]
+        ]);
+        fruits1.set("Apples",200);
+        document.getElementById("demo1").innerHTML=fruits1.get("Apples");
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element lastChild</title>
+    <style>
+        div{
+            border: 1px solid black;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element lastChild</h1>
+    <!-- <h3>Return the HTML content of the last child node of an ul element:</h3>
+    <ul id="myList">
+        <li>Coffee</li><li>Tea</li></ul>
+
+    <p>The HTML content of the list's last child node is:</p>
+    <p id="demo"></p>
+    
+    <p>Whitespaces between elements are considered text nodes.</p>
+    <p>If you add whitespace before the closing /ul tag, the result will be "undefined".</p>
+    
+    <script>
+    let text = document.getElementById("myList").lastChild.innerHTML;
+    document.getElementById("demo").innerHTML = text;
+    </script> -->
+    <!-- <h3>Get the text of the last child node of a select element:</h3>
+    <p>Click the button to get the text of the last child node of the select element.</p>
+    <select id="mySelect" size="5"><option>Audi</option><option>BMW</option><option>Saab</option><option>Volvo</option></select><br><br>
+
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+      let text = document.getElementById("mySelect").lastChild.text;
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script> -->
+    <!-- <h3>This example demonstrates how whitespace may interfare: <br>
+        Try to get the node name of the last child node of "myDiv":</h3>
+        <div id="myDiv">
+            <p>second child in div</p>
+            <p>Fourth child in div</p>
+        </div>
+        <p>The node name of "myDiv"s last child node is.</p>
+        <p id="demo"></p>
+        <p>Whitespaces inside elements are considered text nodes. <br>
+            In this example, the first,third and fifth child of "myDiv" is a #rexr node.</p>
+            <script>
+                let text=document.getElementById("myDiv").lastChild.nodeName;
+                document.getElementById("demo").innerHTML=text;
+            </script> -->
+    <h3>However, if you remove the whitespace from the source,there are no #text nodes in "myDiv":</h3>
+    <p>Click the button to get the node name of the DIV's last child node.</p>
+    <div id="myDiv"><p>A P element-First child in div</p><span>A Span element- Last child in div</span></div>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("myDiv").lastChild.nodeName;
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element clientHeight</title>
+    <style>
+        /* #myDiv{
+            height: 250px;
+            width: 400px;
+            padding: 10px;
+            margin: 15px;
+            border:5px solid red;
+            background-color: lightblue;
+            overflow: auto;
+        }
+        #myDiv2{
+            height:250px;
+            width:400px;
+            padding: 10px;
+            margin:15px;
+            border:5px solid red;
+            background-color: lightblue;
+        }
+        #content{
+            height: 800px;
+            width:2000px;
+            background-color:lightyellow;
+        } */
+    /* The ClientTop and ClientLeft Properties */
+        /* #myDiv{
+            height:250px;
+            width:400px;
+            padding:10px;
+            margin:15px;
+            border-top:15px solid black;
+            border-left: 10px solid red;
+            background-color: lightblue;
+        } */
+        /* In this example,the text direction of "myDiv" is right-to-left, and it has a scrollbar: */
+       #myDiv
+        {
+            height: 250px;
+            width:400px;
+            padding: 10px;
+            margin: 15px;
+            border-left:10px solid red;
+            background-color: lightblue;
+            direction: rtl;
+            overflow: scroll;
+        }
+</style>
+</head>
+<body>
+    <h1>HTML DOM Element clientHeight</h1>
+    <!-- <h3>Get the height and width of "myDiv",including padding:</h3>
+     <h2>The clientHeight and clientWidth properties</h2>
+     <div id="myDiv">
+        <b>Information about myDiv:</b>
+        <br>
+        Height:250px; <br>
+        Width:400px; <br>
+        Padding:10px <br>
+        Margin:15px <br>
+        border:5px <br>
+        <p id="demo"></p>
+     </div>
+     <script>
+        const element=document.getElementById("myDiv");
+        let text="ClientHeight :"+element.clientHeight+"px<br>";
+        text+="ClientWidth :"+element.clientWidth+"px"
+        document.getElementById("demo").innerHTML=text;
+     </script> -->
+     <!-- <h3>The difference between clientHeight/clientWidth and offsetHeight/offsetWidth</h3> -->
+     <!-- <h2>Without a scrollbar:</h2>
+     <div id="myDiv">
+        <b>Information about this div:</b>
+        <br>
+        Height:250px <br>
+        Width:400px <br>
+        Padding:10px <br>
+        Margin:15px <br>
+        Border:5px <br>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const element=document.getElementById("myDiv");
+        let text="";
+        text+="ClientHeight:"+element.clientHeight+"px<br>";
+        text+="OffsetHeight:"+element.offsetHeight+"px<br>";
+        text+="ClientWidth:"+element.clientWidth+"px<br>";
+        text+="OffsetWidth:"+element.offsetWidth+"px";
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+     <!-- <h2>With a scrollbar</h2>
+       <h4>The Element Object <br>
+           The clientHeight and clientWidth Properties <br>
+           The offsetHeight and offsetWidth Properties
+       </h4> 
+       <div id="myDiv">
+           <div id="content"></div>
+       </div>
+       <div id="myDiv2">
+            <div id="content2"></div>
+       </div>
+       <script>
+        const element=document.getElementById("myDiv");
+        let text="";
+        text+="ClientHeight :"+element.clientHeight+"px<br>";
+        text+="OffsetHeight :"+element.offsetHeight+"px<br>";
+        text+="ClientWidth :"+element.clientWidth+"px<br>";
+        text+="OffsetWidth :"+element.offsetWidth+"px";
+        document.getElementById("content").innerHTML=text;
+        const element2=document.getElementById("myDiv");
+        let text2="";
+        text2+="ClientHeight :"+element.clientHeight+"px<br>";
+        text2+="OffsetHeight :"+element.offsetHeight+"px<br>";
+        text2+="ClientWidth :"+element.clientWidth+"px<br>";
+        text2+="OffsetWidth :"+element.offsetWidth+"px";
+        document.getElementById("content2").innerHTML=text2;
+        </script> -->
+        <h3>In this example,the text direction of "myDiv" is right-to-left, and it has a scrollbar:</h3>
+        <h2>The Element object <br>The ClientLeft Property</h2>
+        <div id="myDiv">
+            The text direction of this div is right-to-left. <br>
+            and it has a scrollbar!
+            <p id="demo"></p>
+        </div>
+        <script>
+            let left=document.getElementById("myDiv").clientLeft;
+            document.getElementById("demo").innerHTML="Border left width :"+left+"px";
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Use the addEventListener() method to attach a "hashchange" event to the window object.</p>
+
+<p>Click the button to change the anchor part of the current URL to #part5</p>
+
+<button onclick="changePart()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+// Using the location.hash property to change the anchor part
+function changePart() {
+  location.hash = "part5";
+  var x = location.hash;
+  document.getElementById("demo").innerHTML = "The anchor part is now: " + x;
+}
+
+window.addEventListener("hashchange", myFunction);
+
+function myFunction() {
+  alert("The anchor part has changed!");
+}
+</script>
+
+</body>
+</html>

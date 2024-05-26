@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Collection length</title>
+</head>
+<body>
+    <h1>HTML Collection length</h1>
+    <!-- <h3>How many paragraphs in the document:</h3>
+    <p>The number of p elements in this document are:</p>
+    <p id="demo"></p>
+    <script>
+        let number=document.getElementsByTagName("p").length;
+        document.getElementById("demo").innerHTML=number;
+    </script> -->
+    <h3>Loop over elements with class="myclass" and chnage their font size:</h3>
+    <p>Click "Change" to change all elements with class="myclass":</p>
+    <button onclick="myFunction()">Change</button>
+    <p>I am a paragraph.</p>
+    <p class="myclass">I am a paragraph.</p>
+     <p class="myclass">I am a paragraph.</p>
+     <script>
+        function myFunction()
+        {
+            const collection=document.getElementsByClassName("myclass");
+            for(let i=0;i<collection.length;i++)
+            {
+                collection[i].style.fontSize="24px";
+            }
+        }
+     </script>
+</body>
+</html>

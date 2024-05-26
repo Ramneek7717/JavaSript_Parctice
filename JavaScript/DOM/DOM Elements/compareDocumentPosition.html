@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element compareDocumentPosition()</title>
+</head>
+<body>
+    <h1>HTML DOM Element compareDocumentPosition()</h1>
+    <h3>Where is "p1" compared to "p2" :</h3>
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    <p>The position of the two paragraphs is:</p>
+    <p id="demo"></p>
+    <p><strong>Possible value:</strong><br>
+       1:The two nodes do not belong to the same document. <br>
+       2:p1 is positioned after p1. <br>
+       4:p1 is positioned before p2. <br>
+       8:p1 is positioned inside p2. <br>
+       16:p2 is positioned inside p1. <br>
+       32: the two nodes are attributes on the same element.
+    </p>
+    <p>The return value can also be a combination of values.
+        <br>
+        Return value 20 means that p2 is inside p1(16) ANd p1 is positioned before p2 (4).
+    </p>
+    <script>
+        const p1=document.getElementById("p1").lastChild;
+        const p2=document.getElementById("p2").lastChild;
+        let position=p1.compareDocumentPosition(p2);
+        document.getElementById("demo").innerHTML=position;
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document importNode()</title>
+</head>
+<body>
+    <h1>HTML DOM Document importNode()</h1>
+    <h3>Import the first h1 element from an iframe (another document):</h3>
+    <iframe src="https://www.wikipedia.org/" id="myFrame"  style="height: 300px; width:100%;"></iframe>
+    <p>Click "Import" to import the first H1 element in the iframe(another document).</p>
+    <button onclick="myFunction()">Import</button>
+    <script>
+        function myFunction()
+        {
+            const frame=document.getElementById("myFrame");
+            const h1=frame.contentWindow.document.getElementByTagName("h1")[0];
+            const node=document.importNode(h1,true);
+            document.body.appendChild(node);
+        }
+    </script>
+</body>
+</html>

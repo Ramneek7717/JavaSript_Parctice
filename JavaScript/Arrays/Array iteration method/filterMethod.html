@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array filter() method</title>
+</head>
+<body>
+    <h1>Array filter() method</h1>
+    <p>The <span style="color: red;">filter() </span> method creates a new array with array elements that pass  a test.</p>
+    <p>This example create a new array from elements with a value larger than 18:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const numbers= [45,4,9,16,25];
+        const over18=numbers.filter(myfunction);
+        document.getElementById("demo1").innerHTML=numbers;
+        document.getElementById("demo2").innerHTML=over18;
+        document.getElementById("demo3").innerHTML=numbers;
+        function myfunction( value, index, array)
+        {
+            return value>18;
+        }
+    </script>
+</body>
+</html>

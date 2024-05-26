@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM NodeList length</title>
+</head>
+<body>
+  <h1>HTML DOM NodeList length</h1>
+  <!-- <p>Get the number of child nodes in the document:</p> -->
+    <!-- This is a comment node! -->
+    <!-- <p>The number of child nodes in the body element are:</p>
+    <p id="demo"></p>
+    <p>WhiteSpace between elements are text nodes.Comments are also nodes.</p>
+    <script>
+       const nodeList=document.body.childNodes;
+       let number=nodeList.length;
+       document.getElementById("demo").innerHTML=number; 
+    </script> -->
+    <!-- <h3>Get the &lt;body&gt; element's child nodes:</h3> -->
+    <!-- This is a comment node! -->
+    <!-- <h1>The childNodes Property</h1>
+    <p>Whitespace between elements are text nodes.Comments are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const nodeList=document.body.childNodes;
+        let text="";
+        for(let i=0;i<nodeList.length;i++)
+        {
+            text+=nodeList[i].nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Get the number of child nodes in "myDiv":</h3>
+    <div id="myDiv" style="background-color: coral;padding: 16px;">
+    <p>First p element (index 1)</p>
+    <p>Second p element (index 3)</p>
+     </div>
+     <p>The number of child nodes in "myDiv" are:</p>
+     <p id="demo"></p>
+     <p>Whitespace between elements are text nodes.In This example, index 0,2,and 4 in "myDiv" are text nodes.</p>
+     <script>
+        const element=document.getElementById("myDiv");
+        let numb=element.childNodes.length;
+        document.getElementById("demo").innerHTML=numb;
+     </script> -->
+     <!-- <h3>How many &lt;p&gt; elements inside "myDiv":</h3>
+     <div id="myDiv" style="border: 1px solid black;">
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+        <p>I am a Paragraph.</p>
+     </div>
+     <p>The number of p elements inside "myDiv" are:</p>
+     <p id="demo"></p>
+     <script>
+        const div=document.getElementById("myDiv");
+        const list=div.querySelectorAll("p");
+        document.getElementById("demo").innerHTML=list.length;
+     </script> -->
+     <!-- <h3>Loop over all &lt;p&gt; elements in "myDiv" and change their font size:</h3>
+     <button onclick="myFunction()">Change</button>
+     <p>Click "Change" to change the font size of all p elements inside "myDiv".</p>
+     <div id="myDiv" style="border:1px solid black;padding: 16px;">
+       <p>I am a paragraph.</p>
+       <p>I am a paragraph.</p>
+       <p>I am a paragraph.</p>
+     </div>    
+     <script>
+        function myFunction()
+        {
+            const div=document.getElementById("myDiv");
+            const list=div.querySelectorAll("p");
+            for(let i=0;i<list.length;i++)
+            {
+                list[i].style.fontSize="24px"
+            }
+        }
+     </script> -->
+     <h3>Loop over all child nodes nodes and collect the name of each node:</h3>
+     <h2>The item() or[] method</h2>
+     <!-- This is a comment node! -->
+     <p>The node names of the body element's child nodes are:</p>
+     <p id="demo"></p>
+     <p><strong>Note:</strong>WhiteSpace between elements are text nodes.</p>
+     <script>
+        const list= document.body.childNodes;
+        let text="";
+        for(let i=0;i<list.length;i++)
+        {
+            text+=list[i].nodeName+"<br>"
+        }
+        document.getElementById("demo").innerHTML=text;
+     </script>
+</body>
+</html>

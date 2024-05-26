@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HTML Collection</title>
+</head>
+<body>
+    <h1>DOM HTML Collection</h1>
+    <!-- <h3>Ge all paragraphs:</h3>
+    <p>The getElementsByTagName() returns:</p>
+    <p id="demo"></p>
+    <script>
+        const elements=document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML=elements;
+    </script> -->
+    <!-- <h3>The number pf &lt;p&&gt; element in the document are:</h3>
+    <p>The number of paragraphs (p elements) are:</p>
+    <p id="demo"></p>
+    <script>
+        const elements=document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML=elements.length;
+    </script> -->
+    <h3>Loop over the elements in an HTMLCollection:</h3>
+    <p>The tags in this document are:</p>
+    <p id="demo"></p>
+    <script>
+        const elements=document.getElementsByTagName("*");
+        let text="";
+        for(let i=0;i<elements.length;i++)
+        {
+            text+=elements[i].tagName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

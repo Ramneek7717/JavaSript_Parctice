@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenList values</title>
+</head>
+<body>
+    <h3>List the values from the list:</h3>
+    <h2>The values() Method</h2>
+    <p>The values in the list are:</p>
+    <p id="demo" class="c1 c2 c3"></p>
+    <script>
+       let list=document.getElementById("demo").classList;
+       let text="";
+       for(let x of list.values())
+       {
+           text+=x+"<br>";
+       }
+       document.getElementById("demo").innerHTML=text;
+    </script> 
+</body>
+</html>

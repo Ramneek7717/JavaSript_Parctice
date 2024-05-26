@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterating Over a String</title>
+</head>
+<body>
+   <h1>Iterating Over a String</h1>
+   <p>You can use a <span style="color: red;"> for..of</span> loop to iterate over the elements of a string:</p>
+   <p id="demo"></p> 
+   <script>
+    //Create a String
+    const name="W3Schools";
+    //List all elements
+    let text="";
+    for(const x of name)
+    {
+        text+=x+"<br>";
+    }
+    document.getElementById("demo").innerHTML=text;
+   </script>
+</body>
+</html>

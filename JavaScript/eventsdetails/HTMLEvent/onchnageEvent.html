@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event onchange Event</title>
+</head>
+<body>
+    <h1>HTML Event onChange Event</h1>
+    <!-- <h3>Call a function when a user chnages the selected option of a &lt;select&gt; element:</h3>
+    <p>Select a new car from the list.</p>
+    <select name="" id="mySelect" onchange="myFunction()">
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Volvo">Volvo</option>
+    </select>
+    <p>When you select a new car, a function is triggered which outputs the value of the selectes car.</p>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML="You selected:"+x;
+        }
+    </script> -->
+    <!-- <h3>In HTML </h3>
+    <p>Assign an "onchange" event to an input element.</p>
+    Enter your name: <input type="text" name="" id="fname" onchange="myFunction()">
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+    </script> -->
+    <!-- <h3>IN JavaScript :</h3>
+    <p>Use the HTML DOM to assign an "onchange" event to an input element.</p>
+    Enter your name: <input type="text" name="" id="fname">
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    <script>
+        document.getElementById("fname").onchange=function(){myFunction()};
+        function myFunction()
+        {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+
+    </script> -->
+    <!-- <h3>IN JavaScript, using the addEventListener() method:</h3>
+    <p>Use the HTML DOM to assign an "onchange" event to an input element.</p>
+    Enter your name: <input type="text" name="" id="fname">
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    <script>
+        document.getElementById("fname").addEventListener("change",myFunction);
+        function myFunction()
+        {
+            var x= document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+    </script> -->
+    <h3>Call a function when a user changes the content of an input field:</h3>
+    <p>Modify the text in the input field, then click outside the field to fire the onchnage event.</p>
+    Enter some text: <input type="text" name="Txt" value="Hello" onchange="myFunction(this.value)">
+    <script>
+        function myFunction(val)
+        {
+            alert("The input value has changed. The new Value is:"+val);
+        }
+    </script>
+</body>
+</html>

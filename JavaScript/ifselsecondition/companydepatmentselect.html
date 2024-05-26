@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Department Select</title>
+</head>
+<body>
+    <script>
+         const dept=String(prompt("Select the Department You Want to visit:\nEnter HR For Hr Department\nEnter BA for Business Analysis Department \nEnter WEB for Web Department\nEnter MOBILE for Mobile Department "));
+         console.log(dept);
+         if(dept=='HR')
+         {
+            console.log(" HR Department on First Floor");
+            alert(" HR Department on First Floor");
+         }
+         else if(dept=='BA')
+         {
+            console.log(" Business Anaylsis Department on Second Floor");
+            alert(" Business Anaylsis Department on Second Floor");
+         }
+         else if(dept=='WEB')
+         {
+            console.log("WEB Department on Third Floor");
+            alert("WEB Department on Third Floor");
+            const selectSide=String(prompt("Select where you want to visit:\nEnter INTERN for Intern \nEnter DEV for Developer \n"));
+            if(selectSide=='INTERN')
+            {
+                console.log("Intern sit in left side");
+                alert("Intern sit in left side");
+
+            }
+            else if (selectSide=='DEV')
+            {
+                console.log("Developer sit in left side");
+                alert("Developer sit in left side");
+            }
+            else
+            {
+              console.log("You enter the Wrong Input, please enter right Input ");
+              alert("You enter the Wrong Input, please enter right Input ");
+            }
+         }
+         else if(dept=='MOBILE')
+         {
+            console.log("Moblie Department on Fourth Floor");
+            alert("Moblie Department on Fourth Floor");
+         }
+         else 
+         {
+            console.log("You enter the Wrong Input,please enter right Input");
+            alert("You enter the Wrong Input,please enter right Input");
+            
+         }
+
+
+    </script>
+   
+</body>
+</html>

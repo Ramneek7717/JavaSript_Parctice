@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding HTML Element by Id</title>
+</head>
+<body>
+    <h1 id="intro">Finding HTML Element by Id</h1>
+    <p>The easiest way to find an HTML element in the DOM, is by using the element id.</p>
+    <p>This example finds the element with <span style="color: red;">id="intro"</span>:</p>
+     <p>This example demonstrates the <b>getElementsByID</b> method.</p>
+     <p id="demo"></p>
+     <script>
+        const element=document.getElementById("intro");
+        document.getElementById("demo").innerHTML="The text from the intro paragraph is:"+element.innerHTML;
+     </script>
+     <p>If the element is found, the method will return the element as an object(in element).</p>
+     <p>If the element is not found, element will conatin <span style="color: red;">null</span>.</p>
+</body>
+</html>

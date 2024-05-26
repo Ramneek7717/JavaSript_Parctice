@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript callbacks</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript callbacks</h1>
+    <h2>Function Sequence</h2>
+    <!-- <p>JavaScript functions are executed in the sequence they are called.</p>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(some)
+        {
+            document.getElementById("demo").innerHTML=some;
+        }
+        function myFirst()
+        {
+            myDisplayer("Hello");
+        }
+        function mySecond()
+        {
+            myDisplayer("GoodBye");
+        }
+        myFirst();
+        mySecond();
+    </script> -->
+    <!-- <h3>This example will end up displaying "Hello":</h3>
+       <p>JavaScript functions are executed in the sequence they are called.</p>
+         <p id="demo"></p>
+         <script>
+          function myDisplayer(some)
+           {
+            document.getElementById("demo").innerHTML=some;
+           }
+          function myFirst()
+          {
+            myDisplayer("Hello");
+          }
+          function mySecond()
+          {
+            myDisplayer("GoodBye");
+          }
+          mySecond();
+          myFirst();
+        </script> -->
+        <!-- <h3>You could call a calculator function (myCalculator),save the result, and then call another function(myDisplayer) to display the result:</h3>
+         <h4>JavaScript Functions are executed in the sequence they are called.</h4>
+         <p>The result of the calculation is :</p>
+         <p id="demo"></p>
+         <script>
+            function myDisplayer(some)
+            {
+                document.getElementById("demo").innerHTML=some;
+            }
+            function myCalculator(num1,num2)
+            {
+              let sum=num1+num2;
+              return sum;
+            }
+            let result=myCalculator(5,5);
+            myDisplayer(result);
+         </script> -->
+         <!-- <h3>OR, you could call a calculator function(myCalculator),and let calculator function call the display function (myDisplayer):</h3>
+         <p>JavaScript functions are executed in the sequence they are called.</p>
+         <p>The result of the calculation is :</p>
+         <p id="demo"></p>
+         <script>
+            function myDisplayer(some)
+            {
+                document.getElementById("demo").innerHTML=some;
+            }
+            function myCalculator(num1,num2)
+            {
+                let sum=num1+num2;
+                myDisplayer(sum);
+            }
+            myCalculator(5,5);
+         </script> -->
+         <!-- <h1>JavaScript Callbacks</h1>
+         <h3>A callbacks is a function passed as an argument to another function.</h3>
+         <p>Using a callbacks, you could call the calculator function (myCalculator) with a callback (myCallBack),and let the calculator function run the callback after the calculation is finished:</p>
+         <p>The ressult of the calculation is:</p>
+         <p id="demo"></p>
+         <script>
+            function myDisplayer(something)
+            {
+                document.getElementById("demo").innerHTML=something;
+            }
+            function myCalculator(num1,num2,myCallBack)
+            {
+                let sum=num1 +num2;
+                myCallBack(sum);
+            }
+            myCalculator(5,5,myDisplayer);
+         </script> -->
+         <h2>Callback functions</h2>
+         <p id="demo"></p>
+         <script>
+            //Create an Array
+            const myNumbers=[4,1,-20,-7,5,9,-6];
+            //Call removeNeg with a Callback
+            const posNumbers=removeNeg(myNumbers,(x)=>x>=0);
+            //Display Result
+            document.getElementById("demo").innerHTML=posNumbers;
+            //REmove negative numbers
+            function removeNeg(numbers,callback)
+            {
+                const myArray=[];
+                for(const x of numbers)
+                {
+                    if(callback(x))
+                    {
+                        myArray.push(x);
+                    }
+                }
+                return myArray;
+            }
+         </script>
+    </body>
+</html>

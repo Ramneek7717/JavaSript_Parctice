@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Getter(The get Keyword)</title>
+</head>
+<body>
+    <h1>JavaScript Getter(The get Keyword) </h1>
+    <p>Getter and setters allow you to get and set object properties via methods.</p>
+    <p>This example uses a <span style="color: red ;">lang</span> property to<span style="color: red ;">get</span> the value of the <span style="color: red ;">language</span> property</p>
+     <p id="demo"></p>
+     <script>
+        //Create an object
+        const person={
+             firstName:"John",
+             lastName:"Doe",
+             language:"en",
+             get lang(){
+                return this.language;
+             }
+        };
+        //Display data from the object using a getter:
+        document.getElementById("demo").innerHTML=person.lang;
+     </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array toSorted() Method </title>
+</head>
+<body>
+    <p>The <span style="color: red;">tosorted()</span> method as a safe way to sort an array without altering the original array.</p>
+    <p>The difference between <span style="color: red;">toSorted()</span> and <span style="color: red;"> sort() </span> is that the frist method creates a new array , keeping the original array unchanged, while the last method alters the original array.</p>
+    <P id="demo1"></P>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const months=[
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr"
+        ];
+        document.getElementById("demo1").innerHTML="unsorted list ="+months;
+        const sorted=months.toSorted();
+        document.getElementById("demo2").innerHTML="Sorted list ="+sorted;
+        document.getElementById("demo3").innerHTML="After sorted list ="+months;
+    </script>
+</body>
+</html>

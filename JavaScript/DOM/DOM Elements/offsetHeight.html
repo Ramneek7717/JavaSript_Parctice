@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element offsetHeight</title>
+    <style>
+        #myDIV 
+        {
+          height: 250px;
+          width: 400px;
+          padding: 10px;
+          margin: 15px;
+          border: 5px solid red;
+          background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element offsetHeight</h1>
+    <h3>Dispaly the height and width of "myDiv",including padding and border:</h3>
+    <h1>The Element Object</h1>
+    <h2>The offsetHeight and offsetWidth Properties</h2>
+    
+    <div id="myDIV">
+      <b>Information about this div:</b><br>
+      Height: 250px<br>
+      Width: 400px<br>
+      Padding: 10px<br>
+      Margin: 15px<br>
+      Border: 5px<br>
+      <p id="demo"></p>
+    </div>
+    
+    <script>
+    const element = document.getElementById("myDIV");
+    let text = "Height including padding and border: " + element.offsetHeight + "px<br>";
+    text += "Width including padding and border: " + element.offsetWidth + "px";
+    document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

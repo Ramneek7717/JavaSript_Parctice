@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element childNodes</title>
+    <style>
+        div{
+            border:1px solid black;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element ChildNodes</h1>
+    <!-- This is a coment node -->
+    <!--
+     <h3>Get the body element's child nodes:</h3>
+    <p>WhiteSpace between elements are text nodes.Commnets are also node.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const nodeList=document.body.childNodes;
+        let text="";
+        for(let i=0;i<nodeList.length;i++)
+        {
+            text+=nodeList[i].nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Get the number of child nodes in "myDIV":</h3>
+    <div id="myDIV" style="background-color: coral; padding: 16px;">
+       <p>First p element(index 1)</p>
+       <p>Second p element(index 3)</p>
+    </div>
+    <p>The number of child modes in "myDIV" are:</p>
+    <p id="demo"></p>
+    <p>WhiteSpace between elements are text nodes.In this example,index 0,2 and 4 in "myDIV" are text nodes.</p>
+    <script>
+        const element=document.getElementById("myDIV");
+        let numb=element.childNodes.length;
+        document.getElementById("demo").innerHTML=numb;
+    </script> -->
+    <!-- <h3>Change the background color of the second child node:</h3>
+    <div id="myDiv2">
+        <p>First p element</p>
+        <p>Second p element</p>
+    </div>
+    <p>Add a background color to the second child node of the div.</p>
+    <p>WhiteSpace inside elements is considered text nodes.In this example,index 0,2 and 4 in myDiv2 are text nodes.</p>
+    <script>
+        document.getElementById("myDiv2").childNodes[1].style.backgroundColor="yellow";
+    </script> -->
+    <h3>Get the text of the third child node of a select element:</h3>
+    <select id="mySelect" style="width:100px" size="5"><option>Audi</option><option>BMW</option><option>Saab</option><option>Volvo</option></select>
+
+    <p>The text of the third child node of the select element is:</p>
+    <p id="demo"></p>
+    
+    <script>
+      let text=document.getElementById("mySelect").childNodes[2].text;
+      document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

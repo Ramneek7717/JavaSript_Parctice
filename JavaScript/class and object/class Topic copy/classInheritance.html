@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance</title>
+</head>
+<body>
+    <h1>Class Inheritance</h1>
+    <p>To create a class inheritance, use the <span style="color: red;"> extends </span>  keyword.</p>
+    <p>A class created with a class inheritance inherits all the methods from another class:</p>
+     <p>uSE the "extends" Keyword to inherit all methods from another class.</p>
+     <p>Use the "super" method to acll the parent's constructor function.</p>
+    <p>Create a class named "Model"  which will inherit the methods from the "Car" class:</p>
+     <p id="demo"></p>
+     <script>
+        class Car {
+            constructor(brand)
+            {
+                this.carname=brand;
+            }
+            present()
+            {
+                return 'I have a '+this.carname;
+            }
+        }
+        class Model extends Car{
+            constructor(brand,mod)
+            {
+                super(brand);
+                this.model=mod;
+
+            }
+            show()
+            {
+                return this.present()+', it is a ' +this.model;
+
+            }
+        }
+        const myCar=new Model("Ford","Mustang");
+        document.getElementById("demo").innerHTML=myCar.show();
+     </script>
+
+</body>
+</html>

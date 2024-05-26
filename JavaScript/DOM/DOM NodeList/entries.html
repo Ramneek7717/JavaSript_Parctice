@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM NodeList entries()</title>
+</head>
+<body>
+    <h1>HTML DOM NodeList entries()</h1>
+    <!-- <h3>List the enetries of a document's child nodes:</h3>
+    This is a comment node! -->
+    <!-- <h1>The Element Object</h1>
+    <h2>The entries() Method</h2>
+    <p>WhiteSpace between elements are text nodes.comments are also nodes.</p>
+    <p>The body element's child nodes entries are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.entries())
+        {
+            text+=x[0]+" "+x[1]+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>List the names of a document's child nodes:</h3>
+    <p>WhiteSpace between elements are text nodes.comments are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.entries())
+        {
+            text+=x[0]+" "+x[1].nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>List the values of a document's child nodes:</h3>
+    <p>Whitespace between elements are text nodes.Comments are also nodes.</p>
+    <p>The body element's child nodes values are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text=" ";
+        for(let x of list.entries())
+        {
+            text+=x[0]+" "+x[1].nodeValue+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Get the keys of the &lt;body&gt;element's child nodes:</h3>
+    <h2>The Key() Method</h2>
+    <p>Whitespace between elements are text nodes.comments are also nodes.</p>
+    <p>The keys of the body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.keys())
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <h3>Get the values of the &lt;body&gt; elements's child nodes:</h3>
+    <p>WhiteSpace between elements are text nodes.Comment are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.values())
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

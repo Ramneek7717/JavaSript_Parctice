@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element innerHTML</title>
+</head>
+<body>
+    <h1>HTML DOM Element innerHTML</h1>
+    <!-- <h3>Get the HTML content of an element with id="myP":</h3>
+    <p id="myP">I am a paragraph.</p>
+    <p>The content of "myP" is:</p>
+    <p id="demo"></p>
+    <script>
+        let html=document.getElementById("myP").innerHTML;
+        document.getElementById("demo").innerHTML=html;
+    </script> -->
+    <!-- <h3>Change the HTML content of an element with id="demo":</h3>
+    <p id="demo" onclick="myFunction()">Click me to change my HTML content(innerHTML).</p>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="I have Changed!";
+        }
+    </script> -->
+    <!-- <h3>Get the HTML Content of a ul element with id="myList":</h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>The HTML content of the ul element "myList" is:</p>
+    <p id="demo"></p>
+    <script>
+        let html=document.getElementById("myList").innerHTML;
+        document.getElementById("demo").innerHTML=html;
+    </script> -->
+    <!-- <h3>Delete the HTML content of a p element with id="demo"</h3>
+     <p id="demo">Click the button to delete my HTML content(innerHTML).</p>
+     <button onclick="myFunction()">Try it</button>
+     <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="";
+        }
+     </script> -->
+     <!-- <h3>Change the HTML content of two elements:</h3>
+     <p id="myP">This is a p element.</p>
+     <div id="myDiv">This is a div element.</div>
+     <script>
+        let text="Hello Dolly";
+        document.getElementById("myP").innerHTML=text;
+        document.getElementById("myDiv").innerHTML=text;
+     </script> -->
+     <!-- <h3>Repeat the HTML content of an element:</h3>
+     <button onclick="myFunction()">Try it</button>
+     <p id="demo">Click the button double this text.</p>
+     <script>
+        function myFunction()
+        {
+            const element=document.getElementById("demo");
+            element.innerHTML+="<br>"+element.innerHTML;
+        }
+     </script> -->
+     <!-- <h3>Change the HTML content and URL of a link:</h3>
+     <p>
+        <a href="https://www.microsoft.com" id="myAnchor">Microsoft</a>
+     </p>
+     <button onclick="myFunction()">Change the link</button>
+     <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myAnchor");
+            element.innerHTML="W3Schools";
+            element.href="https://www.w3schools.com";
+        }
+     </script> -->
+     <h3>The Differences Between innerHTML,innerText and textContent</h3>
+     <p id="myP">This element has extra spacing      and contains <span>a span element</span>.</p>
+     <button onclick="getinnerHTML()">Get innerHTML</button>
+     <button onclick="getinnerText()">Get innerText</button>
+     <button onclick="gettextContent()">Get textContent</button>
+     <pre id="demo"></pre>
+     <script>
+        function getinnerText()
+        {
+            let text=document.getElementById("myP").innerText;
+            document.getElementById("demo").innerText=text;
+        }
+        function getinnerHTML()
+        {
+            let text=document.getElementById("myP").innerHTML;
+            document.getElementById("demo").innerText=text;
+        }
+        function gettextContent()
+        {
+            let text=document.getElementById("myP").textContent;
+            document.getElementById("demo").innerText=text;
+        }
+     </script>
+
+</body>
+</html>

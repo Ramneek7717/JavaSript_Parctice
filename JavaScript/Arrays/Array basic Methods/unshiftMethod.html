@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array unshift() method</title>
+</head>
+<body>
+    <h1>Array unshift() method</h1>
+    <p>The <span style="color: red;"> Unshift()</span> method adds a new element to an array (at the beginning), and "unshifts" older elememts:</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+         const fruits=[
+            "Banana",
+            "Orange",
+            "Apple",
+            "Mango"
+         ];
+        document.getElementById("demo").innerHTML=fruits;
+        fruits.unshift("Lemon");
+        document.getElementById("demo1").innerHTML=fruits;
+    </script>
+ <p>The <span style="color: red;"> Unshift()</span> method returns the new array length:</p>
+ <p id="demo3"></p>
+ <p id="demo4"></p>
+ <script>
+    document.getElementById("demo3").innerHTML=fruits.unshift("Lemon1");
+    document.getElementById("demo4").innerHTML=fruits;
+ </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event attributes calling functions:</title>
+</head>
+<body>
+    <h1>Event attributes calling functions:</h1>
+    <p>JavaScript code is often several lines lomg. It is more common to see event attributes calling functions:</p>
+    <button onclick="displayDate()">the time is</button>
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+
+        }
+    </script>
+    <p id="demo"></p>
+</body>
+</html>

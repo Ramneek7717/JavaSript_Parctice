@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using the prototype methods</title>
+</head>
+<body>
+    <h1>Using the prototype methods</h1>
+    <p>The JavaScript <span style="color: red;">prototype</span> property also allows you to add new method to object constructors:</p>
+    <p id="demo"></p>
+    <script>
+       function Person(first,last,age,eye)
+       {
+        this.firstName=first;
+        this.lastName=last;
+        this.age=age;
+        this.eyeColor=eye;
+       } 
+       Person.prototype.name=function(){
+        return this.firstName+" "+this.lastName
+       };
+       const myFather=new Person("John","Doe",50,"Blue");
+       document.getElementById("demo").innerHTML="My father is "+myFather.name();
+    </script>
+</body>
+</html>

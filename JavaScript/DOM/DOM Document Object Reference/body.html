@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document body</title>
+</head>
+<body>
+    <h1>HTML DOM Document body</h1>
+    <!-- <h4>Get the HTML content of a document:</h4>
+    <p>display the HTML content of this document:</p>
+    <p id="demo"></p>
+    <script>
+        const myBody=document.body.innerHTML;
+        document.getElementById("demo").innerHTML=myBody;
+    </script> -->
+    <!-- <h4>Change the background color of a document:</h4>
+    <script>
+        document.body.style.backgroundColor="yellow";
+    </script> -->
+     <!-- <h4>Change the BODY of a document(OverWrite all existing content):</h4>
+     <script>
+        document.body.innerHTML="Some new HTML content";
+     </script> -->
+     <h4>Create a p element and append it to the document's body:</h4>
+      <p>Click "Append" to create a p element and append it to the document's  body</p>
+       <button onclick="myFunction()">Append</button>
+       <script>
+        function myFunction()
+        {
+            const para=document.createElement("p");
+            const node=document.createTextNode("This is a paragraph.");
+            para.appendChild(node);
+            document.body.appendChild(para);
+        }
+       </script>
+</body>
+</html>

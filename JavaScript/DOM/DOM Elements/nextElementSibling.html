@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element nextElementSibling</title>
+</head>
+<body>
+    <h1>HTML DOM Element nextElementSibling</h1>
+    <h3>Return the HTML content of the next sibling:</h3>
+    <ul>
+        <li id="item1">Coffee(first item)</li>
+        <li id="item2">Tea(second item)</li>
+    </ul>
+    <p>The HTML content of the next sibling of the first list item has the text:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.getElementById("item1").nextElementSibling.innerHTML;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

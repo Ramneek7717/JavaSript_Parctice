@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenlist remove()</title>
+    <style>
+        .myStyle{
+           background-color: coral;
+           padding: 16px;
+       }
+   </style>
+</head>
+<body>
+    <h1>HTML DOMTokenlist remove()</h1>
+     <h3>Remove the "myStyle" class from an element:</h3>
+    <h2>The Remove() Method</h2>
+    <button onclick="myFunction()">Remove</button>
+    <p>Click "Remove" to remove the "myStyle" class from myDiv.</p>
+    <div id="myDiv" class="myStyle">
+        <p>I am myDiv</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").classList.remove("myStyle");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preventDefault() Event Method</title>
+</head>
+<body>
+    <h1>preventDefault() Event Method</h1>
+    <!-- <h3>Prevent a link from opening the URL:</h3>
+    <a href="https://w3schools.com" id="myAnchor">Go to W3Schools.com</a>
+    <p>The preventDefault() method will prevent the link above from following the URL.</p>
+    <script>
+        document.getElementById("myAnchor").addEventListener("click",function(event){
+            event.preventDefault();
+        });
+    </script> -->
+    <h3>Prevent the default action of a checkbox:</h3>
+    Try to check this box:<input type="checkbox" id="myCheckbox">
+    <p>Toggling a checkbox is the default action of clicking on a checkBox. The preventDefault()method prevents this from happening.</p>
+    <script>
+        document.getElementById("myCheckbox").addEventListener("click",function(event)
+        {event.preventDefault()});
+    </script>
+</body>
+</html>

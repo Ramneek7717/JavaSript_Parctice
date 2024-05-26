@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event Onclick Event</title>
+    <style>
+    .dropbtn{
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px ;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropbtn:hover, .dropbtn:focus
+    {
+      background-color: #3e8e41;
+    }
+    .dropdown{
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
+    }
+    .dropdown-content a{
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover{
+      background-color: #f1f1f1;
+    }
+    .show{
+      display: block;
+    }
+    </style>
+</head>
+<body>
+  <!-- <h1>Call a function When a button is clicked:</h1>
+  <p>The onclick event triggers a function when an element is clicked on.</p>
+  <p>Click to trigger a function that will output "Hello World":</p>
+  <button onclick="myFunction()">Click me</button>
+  <p id="demo"></p>
+  <script>
+    function myFunction()
+    { 
+        document.getElementById("demo").innerHTML="Hello World";
+    }
+  </script> -->
+  <!-- <h1>In JavaScript</h1>
+  <p>Use the html Dom to assign an "onclick" event to a p element:</p>
+  <p id="demo">Click me.</p>
+  <script>
+    document.getElementById("demo").onclick=function()
+    {myFunction()};
+    function myFunction(){
+        document.getElementById("demo").innerHTML="YOU CLICKED ME !"
+    }
+  </script> -->
+  <!-- <h1>In JavaScript,using the addEventListener() method:</h1>
+  <p>Use the addEventListener() method to attach a "click" event to a p element:</p>
+  <p id="demo">Click me.</p>
+  <script>
+    document.getElementById("demo").addEventListener("click",myFunction);
+    function myFunction()
+    {
+        document.getElementById("demo").innerHTML="YOU CLICKED ME!";
+    }
+ </script> -->
+ <!-- <p>Click a &lt;button&gt; to display the date:</p>
+ <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+ <p id="demo"></p> -->
+ <!-- <h3 id="demo" onclick="myFunction()">Click this text to change the color.</h3>
+ <script>
+  function myFunction()
+  {
+    document.getElementById("demo").style.color="red";
+  }
+ </script> -->
+ <!-- <h3>Another example on how to chnage the color of an element:</h3>
+ <h3 onclick="myFunction(this,'red')"> Click me to chnage my text color.</h3>
+ <script>
+  function myFunction(element,color)
+  {
+    element.style.color=color;
+  }
+ </script> -->
+ <!-- <h3>Click to copy text from one input field to another:</h3>
+ <p>
+  Field1: <input type="text" name="" id="field1" value="Hello World!">
+ </p>
+ <p>
+  Field2: <input type="text" name="" id="field2">
+ </p>
+ <p>Clicking "Copy" triggers a function that copies the text value from Field1 to Field2.</p>
+ <button onclick="myFunction()">Copy</button>
+ <script>
+  function myFunction()
+  {
+    document.getElementById("field2").value=document.getElementById("field1").value;
+  }
+ </script> -->
+ <!-- <h3>How to assign an "onclick" event to the window object:</h3>
+ <h2>The onclick Event</h2>
+ <p>How to assign an "onclick" event to the window object.</p>
+ <p>Click anywhere in this window to chnage the background color of body.</p>
+ <script>
+  window.onclick=myFunction;
+  function myFunction()
+  {
+    document.getElementsByTagName("BODY")[0].style.backgroundColor="yellow";
+  }
+ </script> -->
+ <h3>Use onclick to create a dropdown:</h3>
+ <h2>The onclick Event</h2>
+ <p>Click on the button to open the dropdown menu.</p>
+ <div class="dropdown">
+  <button id="myBtn" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+ </div>
+ <script>
+  //Get the button, and When the user clicks on it, execute myFunction
+  document.getElementById("myBtn").onclick=function() {myFunction()};
+  /*myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content*/
+   function myFunction()
+   {
+    document.getElementById("myDropdown").classList.toggle("show");
+   }
+</script>
+</body>
+</html>

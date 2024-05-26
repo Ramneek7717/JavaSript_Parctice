@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function are Objects</title>
+</head>
+<body>
+    <script>
+        console.log("Function are Objects");
+        console.log("JavaScript Functio have bothh Properties and Methods");
+        console.log("1). arguments.length -> The number of arguments received when function was invoked")
+        function myfunction(a,b){
+            return arguments.length;
+        }
+        console.log(myfunction(4,3));
+        console.log("2). toString() -> method returns the function as a string ");
+        function myFunction11(a,b)
+        {
+            return a*b;
+        }
+        let text=myFunction11.toString();
+        console.log(text);
+    </script>
+    
+</body>
+</html>

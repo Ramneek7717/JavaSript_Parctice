@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Array Elements</title>
+</head>
+<body>
+<h1>Adding Array Elements</h1>
+<p>The easiest way to add a new element to an array is using the <span style="color: red;">push()</span>
+method:</p>
+   <h1>The Push() Method</h1>
+   <p>The push method appends a new element to an array.</p>
+   <button onclick="myFunction()">Try it</button>
+   <p id="demo">
+
+   </p>
+   <script>
+    const fruits=[
+        "Banana",
+        "Orange",
+        "Apple",
+    ];
+    document.getElementById("demo").innerHTML=fruits;
+    function myFunction()
+    {
+        fruits.push("Lemon");
+
+    
+    document.getElementById("demo").innerHTML=fruits;
+       }   </script>
+ 
+</body>
+</html>

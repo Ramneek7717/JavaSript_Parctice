@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document Forms</title>
+</head>
+<body>
+    <h1>HTML DOM Document Forms</h1>
+    <!-- <p>Number of forms elements in the document:</p>
+    <form action="">
+        <p>Frist Name: <input type="text" name="fname" id="" Value="Donald"></p>
+        <p>Last Name: <input type="text" name="lname" id="" value="Duck"></p>
+    </form>
+    <p>The number of from elements in the document is:</p>
+    <p id="demo"></p>
+    <script>
+        let num=document.forms.length;
+        document.getElementById("demo").innerHTML=num;
+    </script> -->
+    <!-- <h4>Get the id of the first form element</h4>
+    <p>
+        <form action="" id="myCarForm">
+         Favorite Car : <input type="text" name="fname" id="" value="Volvo">
+        </form>
+    </p>
+    <p>
+        <form action="" id="myColorForm">
+         Favorite Color: <input type="text" name="favcolor" id="" value="Blue">
+        </form>
+    </p>
+    <p>The id of the first form element is:</p>
+    <p id="demo"></p>
+    <script>
+        let id=document.forms[0].id;
+        document.getElementById("demo").innerHTML=id;
+    </script> -->
+    <!-- <h4>Get the id of the first form element</h4>
+    <p>
+        <form action="" id="myCarForm">
+         Favorite Car : <input type="text" name="fname" id="" value="Volvo">
+        </form>
+    </p>
+    <p>
+        <form action="" id="myColorForm">
+         Favorite Color: <input type="text" name="favcolor" id="" value="Blue">
+        </form>
+    </p>
+    <p>The id of the first form element is:</p>
+    <p id="demo"></p>
+    <script>
+        let id=document.forms.item(0).id;
+        document.getElementById("demo").innerHTML=id;
+    </script> -->
+    <!-- <h4>Get  the HTML content of the form element with id="myCarForm"</h4>
+    <p>
+        <form action="" id="myCarForm">
+         Favorite Car : <input type="text" name="fname" id="" value="Volvo">
+        </form>
+    </p>
+    <p>
+        <form action="" id="myColorForm">
+         Favorite Color: <input type="text" name="favcolor" id="" value="Blue">
+        </form>
+    </p>
+    <p>The HTML content of the form element with id="myForm" is:</p>
+    <p id="demo"></p>
+    <script>
+        let html=document.forms.namedItem("myCarForm").innerHTML;
+        document.getElementById("demo").innerHTML=html;
+    </script> -->
+    <!-- <h4>Loop through all form elements and output the id of each form :</h4>
+    <p>
+        <form action="" id="myCarForm">
+         Favorite Car : <input type="text" name="fname" id="" value="Volvo">
+        </form>
+    </p>
+    <p>
+        <form action="" id="myColorForm">
+         Favorite Color: <input type="text" name="favcolor" id="" value="Blue">
+        </form>
+    </p>
+    <p>The name of the form elements in the document are:</p>
+    <p id="demo"></p>
+    <script>
+        const forms=document.forms;
+         let text="";
+         for(let i=0; i<forms.length;i++)
+         {
+            text+=forms[i].id+"<br>";
+         }
+         document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <h4>Using the <b>form.elements collection </b> to get the value of each element in the form :</h4>
+    <form action="">
+       <p>
+          First name : <input type="text" name="fname" id="" value="Donald">
+        </p>
+        <p>
+           Last name: <input type="text" name="lname" id="" value="Duck">
+        </p>
+        <p>
+           City : <input type="text" name="city" id="" value="Duckburg">
+        </p>
+        <input type="submit" name="submit" id="" value="Submit">
+        <p>The value of each element in the form is:</p>
+        <p id="demo"></p>
+    </form>
+    <script>
+        const forms=document.forms[0];
+        console.log(forms);
+        let text="";
+        for(let i=0;i<forms.length;i++)
+        {
+            text+=forms.elements[i].value+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

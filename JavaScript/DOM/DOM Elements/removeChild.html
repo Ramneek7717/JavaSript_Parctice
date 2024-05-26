@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element removeChild()</title>
+</head>
+<body>
+    <h1>HTML DOM Element removeChild()</h1>
+    <!-- <h3>Remove the first element from a list:</h3>
+    <p>Click "Remove" to remove the first item from the list:</p>
+    <button onclick="myFunction()">Remove</button>
+    <ul id="myList">
+       <li>Coffee</li>
+       <li>Tea</li>
+       <li>Milk</li>
+    </ul>
+    <script>
+        function myFunction()
+        {
+            const list=document.getElementById("myList");
+            list.removeChild(list.firstElementChild);
+        }
+    </script> -->
+    <!-- <h3>If a list has child nodes,remove the first (index 0):</h3>
+    <p>Click "Remove" to remove the first child (index 0)</p>
+    <button onclick="myFunction()">Remove</button>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <script>
+        function myFunction()
+        {
+            const list=document.getElementById("myList");
+            if(list.hasChildNodes())
+            {
+                list.removeChild(list.children[0]);
+            }
+        }
+    </script> -->
+    <!-- <h3>Remove an element from its parent node:</h3>
+    <p>Click "Remove" to remove the element with id="myLI" from the list.</p>
+    <button onclick="myFunction()">Remove</button>
+    <ul>
+        <li>Coffee</li>
+        <li id="myLI">Tea</li>
+        <li>Milk</li>
+    </ul>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myLI");
+            element.parentNode.removeChild(element);
+        }
+    </script> -->
+    <!-- <h3>Remove an element from its parent,and insert it again:</h3>
+    <p>Click the button to remove and insert the li element from the ul element:</p>
+    <button onclick="removeLi()">Remove</button>
+    <button onclick="appendLi()">Insert</button>
+    <ul id="myList">
+        <li id="myLI">Coffee</li>
+    </ul>
+    <script>
+        const element=document.getElementById("myLI");
+        function removeLi()
+        {
+            element.parentNode.removeChild(element);
+        }
+        function appendLi()
+        {
+            const list=document.getElementById("myList");
+            list.appendChild(element);
+        }
+    </script> -->
+    <h3>Remove an element from its parent and insert it into another document:</h3>
+    <h1 id="myH1">The Element Object</h1>
+    <h2>The removeChild() Method</h2>
+    <iframe src="remove.html" frameborder="2" style="height: 400px;width: 650px;"></iframe>
+    <p>Click the button to remove the h1 from its parent and insert it into the other document.</p>
+    <button onclick="remove()">Remove</button>
+    <button onclick="insert()">Insert</button>
+    <script>
+        const child=document.getElementById("myH1");
+        function remove()
+        {
+         child.parentNode.removeChild(child);
+        }
+        function insert() {
+         const frame = document.getElementsByTagName("iframe")[0]
+         const h = frame.contentWindow.document.getElementsByTagName("h1")[0];
+         const x = document.adoptNode(child);
+         h.appendChild(x); 
+        }
+    </script>
+</body>
+</html>

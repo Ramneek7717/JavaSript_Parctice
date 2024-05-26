@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element addEventListener</title>
+    <style>
+        div{
+            background-color: coral;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element addEventListener()</h1>
+    <!-- <h3>Add a click event to a button element:</h3>
+    <p>Execute a function when a user clicks on a button:</p>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("myBtn");
+        element.addEventListener("click",myFunction);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="Hello World!";
+
+        }
+    </script>  -->
+    <!-- <h3>Add a click event to a button element:</h3>
+    <h3>More Compact code:</h3>
+    <p>Attach a click event to a button:</p>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("myBtn");
+        element.addEventListener("click",function(){
+            document.getElementById("demo").innerHTML="Hello World";
+        });
+    </script> -->
+    <!-- <h3>You can add many events to the same element:</h3>
+    <p>Add two click events to the same button.</p>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("myBtn");
+        element.addEventListener("click",myFunction1);
+        element.addEventListener("click",myFunction2);
+        function myFunction1()
+        {
+            document.getElementById("demo").innerHTML+="First Function was execute!"
+        }
+        function myFunction2()
+        {
+            document.getElementById("demo").innerHTML+="Second function was executed!"
+        }
+    </script> -->
+    <!-- <h3>You can add different events to the same element:</h3>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("myBtn");
+        element.addEventListener("mouseover",myFunction1);
+        element.addEventListener("click",myFunction2);
+        element.addEventListener("mouseout",myFunction3);
+        function myFunction1()
+        {
+            document.getElementById("demo").innerHTML="Moused Over ! <br>";
+        }
+        function myFunction2()
+        {
+            document.getElementById("demo").innerHTML="Clicked !<br>";
+        }
+        function myFunction3()
+        {
+            document.getElementById("demo").innerHTML="Moused out !<br>";
+        }
+    </script> -->
+    <!-- <h3>To pass parameter values,use an "anonymous function":</h3>
+    <p>How to pass parameter values with addEventListener().</p>
+    <p>Click the button to perform a calculation.</p>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+        let p1=5;
+        let p2=7;
+        document.getElementById("myBtn").addEventListener("click",function()
+        {
+            myFunction(p1,p2);
+        });
+        function myFunction(a,b)
+         {
+            document.getElementById("demo").innerHTML=a*b;
+         }
+    </script> -->
+    <!-- <h3>Change the background color of a button element:</h3>
+    <button id="myBtn">Try it</button>
+    <script>
+    document.getElementById("myBtn").addEventListener("click",function(){this.style.backgroundColor="red"});
+    </script> -->
+    <!-- <h3>The Difference between bubbling and capturing:</h3>
+     <div id="myDiv">
+        <p id="myP">Click this paragraph, I am Bubbling.</p>
+     </div><br>
+     <div id="myDiv2">
+        <p id="myP2">Click this paragraph,I am Capturing.</p>
+     </div>
+     <p id="demo"></p>
+     <script>
+        document.getElementById("myP").addEventListener("click",function(){myDisplay("You clicked the P element!");},false);
+        document.getElementById("myDiv").addEventListener("click",function(){myDisplay("You Clicked the DIV element!");},false);
+        document.getElementById("myP2").addEventListener("click",function(){ myDisplay("You clicked the P element !");},true);
+        document.getElementById("myDiv2").addEventListener("click",function(){ myDisplay("You Clicked DIV elemeny !");},true);
+        function myDisplay(text)
+        {
+            document.getElementById("demo").innerHTML+=text+"<br>";
+        }
+     </script> -->
+     <h3>Remove an event handler:</h3>
+     <h2>The removeEvnetListener() Method</h2>
+     <div id="myDIV">This orange element has an onmousemove event handler that displays a random number when you move the mouse inside.</div>
+     <p>Click "Remove" to remove the event handler.</p>
+     <button onclick="removeHandler()">Remove</button>
+     <p id="demo"></p>
+     <script>
+        const myDiv=document.getElementById("myDIV");
+        myDiv.addEventListener("mousemove",myFunction);
+        function removeHandler()
+        {
+            myDiv.removeEventListener("mousemove", myFunction);
+        }  
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML=Math.random();
+        }
+     </script>
+
+</body>
+</html>

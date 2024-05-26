@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Or Getter ?</title>
+</head>
+<body>
+    <h1>JavaScript Function or Getter?</h1>
+    <p>What is the differences between these two examples?</p>
+    <p>Object data can be accessing using property stored as a function.</p>
+    <p id="demo1"></p>
+    <script>
+        //Create an Object
+        const person={
+            firstName:"John",
+            lastName:"Doe",
+            fullName:function(){
+                return this.firstName+" "+this.lastName;
+            }
+        };
+        //Display data from the object using a method:
+        document.getElementById("demo1").innerHTML=person.fullName();
+
+    </script>
+    <p>Object data can be accessed using a getter.</p>
+    <p id="demo2"></p>
+    <script>
+        //create an Object:
+        const person1={
+            firstName1:"John1",
+            lastName1:"Doe1",
+            get fullName1(){
+                return this.firstName1+" "+this.lastName1;
+            }
+        };
+        //Display data from the object using a getter:
+        document.getElementById("demo2").innerHTML=person1.fullName1
+    </script>
+
+    <p>Example 1 access fullName as a function: person.fullName().
+        <br>
+        Example 2 access fullName as a property: person.fullName.
+<br>
+       The second example provides a simpler syntax.
+    </p>
+</body>
+</html>

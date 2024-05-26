@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event oncontextmenu Event</title>
+</head>
+<body>
+    <!-- <h1>HTML Event oncontextmenu Event</h1>
+    <h3>Prevent th econtext menu to show:</h3>
+    <h2>The contextmenu Event</h2>
+    <div style="border:1px solid black;text-align: center;">
+        <p>Right-click in this box!</p>
+        <p>Context menu will show.</p>
+    </div>
+    <div id="myDiv" style="border:1px solid black;text-align: center;">
+        <p>Right-click in this box!</p>
+        <p>Context menu is disabled.</p>
+    </div>
+    <script>
+        const div=document.getElementById("myDiv");
+        div.addEventListener("contextmenu",(e)=>{e.preventDefault()});
+    </script> -->
+    <!-- <h3>In HTML ,IN JavaScript</h3> -->
+    <h3>In JavaScript, using the addEventListener() method:</h3>
+    <p>Use the addEventListener() method to attach a "contectmenu" event to a div element.</p>
+    <div id="div01" style="border:1px solid black; padding: 10px;">
+       <p>Right-click in this box to see the hidden content!</p>
+    </div>
+    <div id="myDiv" style="visibility: hidden;">
+        <p>This info is hidden</p>
+        <p>This info is hidden</p>
+        <p>This info is hidden</p>
+    </div>
+    <script>
+        //Assign an "contextmenu" event to div01
+        document.getElementById("div01").addEventListener("contextmenu",myFunction);
+        //Prevent default context menu:
+        const div=document.getElementById("div01");
+        dic.addEventListener("Contextmenu",(e)=>{
+            e.preventDefault()
+        });
+        //show hidden content:
+        function myFunction()
+        {
+            const div=document.getElementById("myDiv");
+            div.style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

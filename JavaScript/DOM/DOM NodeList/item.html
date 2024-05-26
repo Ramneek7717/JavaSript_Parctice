@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM NodeList item()</title>
+</head>
+<body>
+    <h1>HTML DOM NodeList item()</h1>
+    <!-- <h3>Get the &lt;body&gt; element's child nodes:</h3>
+    <h2>The childNodes Property</h2>
+    <p>WhiteSpace between elements are text nodes. Comments are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const nodeList=document.body.childNodes;
+        let text="";
+        for(let i=0;i<nodeList.length;i++)
+        {
+            text+=nodeList[i].nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Get the node name of the first child node:</h3>
+    <p>The node name of the first child node is:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let name=list.item(0).nodeName;
+        document.getElementById("demo").innerHTML=name;
+    </script> -->
+    <!-- <h3>This produces the same result:</h3>
+    <p>Using list.itme(0) is the same as using list[0].</p>
+    <p>The node name of the first child node is:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let name=list[0].nodeName;
+        document.getElementById("demo").innerHTML=name;
+    </script> -->
+    <!-- <h3>Get the HTML content of the first &lt;p&gt; element inside "myDiv":</h3>
+     <h2>The item() Method</h2>
+     <div id="myDiv" style="border: 1px solid black;padding: 16px;">
+        <p>I am one.</p>
+        <p>I am two.</p>
+        <p>I am three.</p>
+     </div>
+     <p>The HTML content of the first p element inside "myDiv" is:</p>
+     <p id="demo"></p>
+     <script>
+        const div=document.getElementById("myDiv");
+        const list=div.getElementsByTagName("p");
+        let text=list[0].innerHTML;
+        document.getElementById("demo").innerHTML=text;
+     </script> -->
+     <!-- <h3>Chnage the HTML content of the first &lt;p&gt; element inside "myDiv":</h3>
+     <Div id="myDiv" style="border:1px solid black;padding: 16px;">
+        <p>I am one.</p>
+        <p>I am two.</p>
+        <p>I am three.</p>
+     </Div>
+     <p>Click "Change" to chnage the content of the first p element inside "myDiv".</p>
+     <button onclick="myFunction()">Change</button>
+     <p id="demo"></p>
+     <script>
+        function myFunction()
+        {
+            const div=document.getElementById("myDiv");
+            const list=div.querySelectorAll("p");
+            list[0].innerHTML="Paragraph changed."
+        }
+     </script> -->
+     <h3>Change the color of all elements with class="child":</h3>
+     <p>Click "Change" to change the color of all elements with class="Child".</p>
+     <button onclick="myFunction()">Change</button>
+     <p class="child">A p element with class="child".</p>
+     <p class="child">A p element with class="child".</p>
+     <p>A p element with a <span class="child">span with class="child"</span> .</p>
+      <script>
+        function myFunction()
+        {
+            const list =document.querySelectorAll(".child");
+            for(let i=0;i<list.length;i++)
+            {
+                list[i].style.color="red";
+            }
+        }
+      </script>
+</body>
+</html>

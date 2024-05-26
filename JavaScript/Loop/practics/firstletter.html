@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frist Letter Pattren R </title>
+</head>
+<body>
+    <script>
+let string="";/*
+for(let i=0;i<7;i++)
+      {
+        for(let j=0;j<12;j++)
+        { 
+             if(i+j<8)          
+             string+="*";
+             else
+             string+="-";
+        }
+        string+="\n";
+      }
+      console.log(string);*/
+      let height=6;
+      let width=8;
+    let  half = (height / 2); 
+    for (let i = 0; i < height; i++) { 
+        string+="*"; 
+        for ( let j = 0; j < width; j++) { 
+            if ((i === 0 || i === half) 
+                && j < (width - 5)) 
+                string+="*"; 
+            else if (j === (width - 5) 
+                    && !(i === 0 || i ===half)) 
+                string+="*"; 
+            else
+                string+=" "; 
+        } 
+        string+="\n"; 
+    } 
+    console.log(string);
+      
+    </script>
+</body>
+</html>

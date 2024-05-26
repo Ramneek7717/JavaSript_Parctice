@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The keys Methods</title>
+</head>
+<body>
+    <h1>The Keys() Method</h1>
+    <p>A set has no keys.<br>
+    <span style="color: red;">keys()</span> returns the same as <span style="color: red;">values()</span> .<br>
+     This makes Sets compatible with Maps.</p>
+      <p id="demo"></p>
+      <script>
+        //Create a Set
+        const letters=new Set(["a","b","c"]);
+        //Display set.size
+        document.getElementById("demo").innerHTML=letters.keys();
+      </script>
+    </body>
+</html>

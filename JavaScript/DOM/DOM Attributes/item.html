@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Attributes item()</title>
+    <style>
+        .class1{
+            background-color: red;
+            width:50px;
+            height:50px
+        }
+        .class2{
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Attributes item()</h1>
+    <h3>Get the name of the first attribute of an element:</h3>
+    <!-- <div id="myDiv" style="background-color: red; width:50px;height: 50px;"></div>
+    <p id="demo"></p>
+    <script>
+        const nodeMap=document.getElementById("myDiv").attributes;
+        let name1=nodeMap.item(0).name;
+        let name2=nodeMap.item(1).name;
+        document.getElementById("demo").innerHTML="First attribute is:"+name1+"<br>Second is:"+name2;
+    </script> -->
+    <!-- <div id="myDiv" style="background-color: red; width:50px;height: 50px;"></div>
+    <p id="demo"></p>
+    <script>
+        const nodeMap=document.getElementById("myDiv").attributes;
+        let name1=nodeMap[0].name;
+        let name2=nodeMap[1].name;
+        document.getElementById("demo").innerHTML="First attribute is:"+name1+"<br>Second is:"+name2;
+    </script> -->
+    <h3>Chnage the class(the color) of an element:</h3>
+    <!-- <div id="myDiv" class="class1"></div>
+    <p>Click to change the value of the second attribute: </p>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").attributes.item(1).value="class2"
+        }
+    </script> -->
+    <div id="myDiv" class="class1"></div>
+    <p>Click to change the value of the second attribute: </p>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").attributes[1].value="class2"
+        }
+    </script>
+</body>
+</html>

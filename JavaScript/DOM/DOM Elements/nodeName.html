@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element nodeName</title>
+</head>
+<body>
+    <h1>HTML DOM Element nodeName</h1>
+    <!-- <h3>Return the node name of a p element:</h3>
+    <p>The node name of the "demo" element is:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.getElementById("demo").nodeName;
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Return the node name of the body element:</h3>
+    <p>The node name of the body element is:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.body.nodeName;
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Get the node names of the body element's child nodes:</h3>
+    <p>The node names of the body element's child nodes.</p>
+    <p>Whitespace betweeen elements are considered nodes(#text).</p> -->
+    <!-- This is a comment. -->
+    <!-- <div>Comments are considered nodes(#comments).</div>
+    <p id="demo"></p>
+    <script>
+        const nodes=document.body.childNodes;
+        let text="";
+        for(let i=0;i<nodes.length;i++)
+        {
+            text+=nodes[i].nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <h3>Get the node name,value and type of "myDiv"s first child node:</h3>
+    <div id="myDiv">This is "myDiv".</div>
+    <p>Node name,type and value of "myDiv"s first child is:</p>
+    <p id="demo"></p>
+    <script>
+        const x=document.getElementById("myDiv").firstChild;
+        let text="";
+        text+="Name :"+x.nodeName+"<br>";
+        text+="Value:"+x.nodeValue+"<br>";
+        text+="Type :"+x.nodeType;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

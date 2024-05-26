@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element accessKey</title>
+</head>
+<body>
+    <h1>HTML DOM Element accessKey</h1>
+    <p>The accessKey attribute specifies a shortcut key to actiavte/focus an element:</p>
+    <!-- <h3>Set the access key of a link:</h3>
+    <a href="https://www.w3schools.com" id="w3s">W3Schools</a><br>
+    <p>The implementation is different in different Browsers.</p>
+    <p>In this example,in Chrome,"Alt+w" is for w3schools.com</p>
+    <script>
+        document.getElementById("w3s").accessKey="w";
+    </script> -->
+    <h3>Retrun  the accessKey of a link:</h3>
+    <h1>The accessKey Property</h1>
+    <a href="https://www.w3schools.com" id="w3s" accesskey="w">W3Schools</a>
+    <p>The accessKey of the link is:</p>
+    <p id="demo"></p>
+    <script>
+        let key=document.getElementById("w3s").accessKey;
+        document.getElementById("demo").innerHTML=key;
+    </script>
+</body>
+</html>

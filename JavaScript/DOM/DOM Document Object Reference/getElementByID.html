@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML DOM Document getElementById()</title>
+</head>
+<body>
+    <h1>HTML DOM Document getElementById()</h1>
+    <h3>Get the element with the specified id:</h3>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="Hello World";
+    </script>
+    <h3>Get the element and change its color:</h3>
+    <h1 id="demo1">The Document Object</h1>
+    <script>
+        const myElement=document.getElementById("demo1");
+        myElement.style.color="red";
+    </script>
+    <h3>Or just change its color:</h3>
+    <h1 id="demo3">The Document Object</h1>
+    <script>
+        document.getElementById("demo3").style.color="red";
+    </script>
+</body>
+</html>

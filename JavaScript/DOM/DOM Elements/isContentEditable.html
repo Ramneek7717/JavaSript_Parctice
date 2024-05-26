@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element isCOntentEditable</title>
+</head>
+<body>
+    <h1>HTML DOM Element isContentEditable</h1>
+    <h3>Is "myP" element editable:</h3>
+    <p id="myP" contenteditable="true">I am myP. AM I editable?</p><br>
+    <p id="demo"></p>
+    <script>
+        let answer=document.getElementById("myP").isContentEditable;
+        let text="myP is not editable."
+        if(answer==true)
+        {
+            text="myP is editable. Try to change the text."
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

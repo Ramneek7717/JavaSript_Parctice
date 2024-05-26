@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event oncopy Event</title>
+</head>
+<body>
+    <h1>HTML Event oncopy Event</h1>
+    <!-- <h3>Call a function when copying some text of an &lt;input&gt; element:</h3>
+    <input type="text" name="" oncopy="myFunction()" value="Try to copy me">
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="You copied text!";
+        }
+    </script> -->
+    <!-- <h3>In JavaScript,using the addEventListener() method:</h3>
+    <p>Use the addEventListener() method to attach a copy event to an input element.</p>
+     <input type="text" name="" id="myInput" value="Try to copy me">
+     <p id="demo"></p>
+     <script>
+        document.getElementById("myInput").addEventListener("copy",myFunction);
+     function myFunction()
+     {
+       document.getElementById("demo").innerHTML="you copied text!"
+     }
+     </script> -->
+     <h3>Call a function when copying an image:</h3>
+     <p>Try to copy the image below.</p>
+     <img src="w3javascript.gif" alt="w3javascript" oncopy="myFunction()" width="100" height="132">
+     <p><strong>Note :</strong> This example may not work as expected in some  browsers.</p>
+     <script>
+        function myFunction()
+        {
+            alert("You copied image!");
+        }
+     </script>
+</body>
+</html>

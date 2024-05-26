@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element insertAdjacentElement()</title>
+</head>
+<body>
+    <h1>HTML DOM Element insertAdjacentElement()</h1>
+    <!-- <h3>Insert a span element after the header:</h3>
+    <button onclick="myFunction()">Move</button>
+    <p>Click "Move" to insert the red span after the header.</p>
+    <span id="mySpan" style="color: red;">My span</span>
+    <h2 id="myH2">My Header</h2>
+    <script>
+    function myFunction()
+    {
+     const span=document.getElementById("mySpan");
+     const h2=document.getElementById("myH2");
+     h2.insertAdjacentElement("afterEnd",span);
+    }
+    </script> -->
+    <!-- <h3>Using "afterBegin"</h3>
+    <button onclick="myFunction()">Move</button>
+    <p>Click "Move" to insert the red span inside the header.</p>
+     <span id="mySpan" style="color: red;">My Span</span>
+     <h2 id="myH2">My Header</h2>
+     <script>
+        function myFunction()
+        {
+            const span=document.getElementById("mySpan");
+            const h2=document.getElementById("myH2");
+            h2.insertAdjacentElement("afterbegin",span);
+        }
+     </script>     -->
+     <!-- <h3>Using "beforebegin":</h3>
+     <button onclick="myFunction()">Move</button>
+     <p>Click "Move" to insert the red span before the header:</p>
+     <h2 id="myH2">My Header</h2>
+     <p><span style="color: red;">My span</span></p>
+     <script>
+        function myFunction()
+        {
+            const span=document.getElementsByTagName("span")[0];
+            const h2=document.getElementById("myH2");
+            h2.insertAdjacentElement("beforebegin",span);
+        }
+     </script> -->
+     <h3>Using "beforeend":</h3>
+     <button onclick="myFunction()">Move</button>
+     <p>Click "Move" to insert the red span inside the header.</p>
+     <span id="mySpan" style="color: red;">My span</span>
+     <h2 id="myH2">My Header</h2>
+     <script>
+        function myFunction()
+        {
+            const span=document.getElementById("mySpan");
+            const h2=document.getElementById("myH2");
+            h2.insertAdjacentElement("beforeend",span);
+        }
+     </script>
+
+
+
+</body>
+</html>

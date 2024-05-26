@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document getElementsBYTagName()</title>
+</head>
+<body>
+    <h1>HTML DOM Document getElementsByTagName()</h1>
+    <!-- <h3>Get all elements with the tag name "li"</h3>
+    <p>An unordered list:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>The innerHTML of the second li element is:</p>
+    <p id="demo"></p>
+    <script>
+        const collection=document.getElementsByTagName("li");
+        document.getElementById("demo").innerHTML=collection[1].innerHTML;
+    </script>
+    <h3>Get all elements in the document:</h3>
+    <p>An unordered list:</p>
+    <ul>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>The tag name of all elements:</p>
+    <p id="demo1"></p>
+    <script>
+        const collection1=document.getElementsByTagName("*");
+        let text="";
+        for(let i=0;i<collection1.length;i++)
+        {
+            text+=collection1[i].tagName+"<br>";
+        }
+        document.getElementById("demo1").innerHTML=text;
+
+    </script> -->
+    <!-- <h3>Change the inner HTML of the first p element in the document:</h3>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    <script>
+        document.getElementsByTagName("p")[0].innerHTML="Hello World!";
+    </script> -->
+    <!-- <h3>The number of li elements in the document:</h3>
+    <p>An unordered List:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>The number of li elements in this document is:</p>
+    <p id="demo"></p>
+    <script>
+        const collection2=document.getElementsByTagName("li");
+        document.getElementById("demo").innerHTML=collection2.length;
+    </script> -->
+    <p>This is a p element.</p>
+    <p>This is also a p element.</p>
+    <p>This is alos a p element. Chnage the background color of all p elements in this document:</p>
+    <script>
+        const collection3=document.getElementsByTagName("p");
+        for(let i=0;i<collection3.length;i++)
+        {
+            collection3[i].style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

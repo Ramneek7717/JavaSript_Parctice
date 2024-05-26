@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element getElementsByTagName()</title>
+    <style>
+        div{
+            border:1px solid black;
+            padding:16px;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element getElementsByTagName()</h1>
+    <!-- <h3>Change the HTML content of the first li element in a list:</h3>
+     <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+     </ul>
+     <p>Click "Change" to change the  text of the first list item. </p>
+     <button onclick="myFunction()">Change</button>
+     <script>
+        function myFunction()
+        {
+            const list=document.getElementsByTagName("UL")[0];
+            list.getElementsByTagName("li")[0].innerHTML="Milk";
+        }
+     </script> -->
+     <!-- <h3>Number of p elements in "myDiv":</h3>
+     <div id="myDiv">
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+     </div>
+     <p>The number of p elements in "myDiv" is:</p>
+     <p id="demo"></p>
+     <script>
+        const element=document.getElementById("myDiv");
+        const nodes=element.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML=nodes.length;
+     </script> -->
+     <!-- <h3>Chnage the font size of the second p element in "myDiv":</h3>
+     <p>Click "Change" to change the second p element in "myDiv".</p>
+     <p><button onclick="myFunction()">Change</button></p>
+     <div id="myDiv">
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+     </div>
+     <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myDiv");
+            element.getElementsByTagName("p")[1].style.fontSize="24px";
+        }
+     </script> -->
+     <!-- <h3>Change the background color of all p elements inside "myDiv":</h3>
+     <div id="myDiv">
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+        <p>I am a paragraph.</p>
+     </div>
+     <p>Click "change" to chnage the color of all a elements in "myDiv".</p>
+     <button onclick="myFunction()">Change</button>
+     <script>
+        function myFunction()
+        {
+            const div=document.getElementById("myDiv");
+            const nodes=div.getElementsByTagName("p");
+            for(let i=0;i<nodes.length;i++)
+            {
+                nodes[i].style.color="red";
+            }
+        }
+     </script> -->
+     <!-- <h3>Change the background color of the fourth element(index 3) inside "myDiv":</h3>
+     <div id="myDiv">
+        <h3>A h3 element in div.</h3>
+        <p>P element in div.</p>
+        <span>A span element in div.</span>
+        <h2>A h2 element in div.</h2>
+        <div>A div element in div.</div>
+        <p>Another p element in div.</p>
+     </div>
+     <p>Click the button to add a background color to the fourth element inside the div element.</p>
+     <button onclick="myFunction()">Try it</button>
+     <script>
+        function myFunction()
+        {
+            const elements=document.getElementById("myDiv");
+            const nodes=elements.getElementsByTagName("*")[3].style.backgroundColor="red";
+        }
+     </script> -->
+     <h3>Using the "*" parameter. <br>
+         Change the background color of all elements inside "myDiv":</h3>
+     <div id="myDiv">
+        <h3>A h2 element in div.</h3>
+        <p>P element in div.</p>
+        <span>A span element in div.</span>
+        <h2>A h2 element in div.</h2>
+        <div>A div element in div.</div>
+        <p>Another p element in div.</p>
+     </div>
+     <p>Click the button to add a background color to all elements inside the div element.</p>
+     <button onclick="myFunction()">Try it</button>
+     <script>
+        function myFunction()
+        {
+            const div=document.getElementById("myDiv");
+            const nodes=div.getElementsByTagName("*");
+            for(let i=0;i<nodes.length;i++)
+            {
+                nodes[i].style.backgroundColor="red";
+            }
+        }
+     </script>
+</body>
+</html>

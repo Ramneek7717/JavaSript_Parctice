@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event ondblclick Event</title>
+</head>
+<body>
+    <h1>HTML Event=ondblclick Event</h1>
+    <!-- <h3>Call a function when a &lt;p&gt; element is double-clicked:</h3>
+    <p ondblclick="myFunction()">double-clicked this paragrapgh to trigger a function.</p>
+    <p id="demo"></p>
+    <script>
+    function myFunction()
+    {
+      document.getElementById("demo").innerHTML+="Hello World";
+    }
+    </script> -->
+    <h3>In JavaScript, using the addEventListener() method:</h3>
+    <p>Use the addEventListener() method to attach a "dblClick" event to a p element.</p>
+    <p id="demo">double-click me.</p>
+    <script>
+        document.getElementById("demo").addEventListener("dblclick",myFunction);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="I was double-clicked!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Object.values()</title>
+</head>
+<body>
+    <h1>Using Object.values()</h1>
+    <p>Any JavaScript object can be converted to an array using <span style="color: red;">Object.values()</span></p>
+      <p id="demo"></p>
+      <script>
+        const person={
+            name:"John",
+            age:30,
+            city:"New York"
+        };
+        document.getElementById("demo").innerHTML=Object.values(person);
+      </script>
+</body>
+</html>

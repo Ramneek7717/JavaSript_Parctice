@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element className</title>
+    <style>
+        .myStyle
+        {
+            background-color: coral;
+            padding: 16px;
+        }
+        .test{
+            text-align: center;
+        }
+        .example{
+            font-size: 25px;
+        }
+        .newStyle{
+            background-color: lightblue;
+            text-align: center;
+            font-size: 25px;
+            padding: 16px;
+        }
+    </style>
+</head>
+<!-- <body>
+    <h1>HTML Dom Element className</h1> -->
+    <!-- <h3>Set the class attribute for an element:</h3>
+    <div id="myDiv">
+        <p>I am myDiv.</p>
+    </div>
+    <p>Click the button to set a class for myDiv:</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").className="myStyle";
+        }
+    </script> -->
+    <!-- <h3>Get the class attribute of "myDiv"</h3>
+    <div id="myDiv" class="myStyle">
+        <p>I am myDiv.</p>
+    </div>
+    <p>The value of the class attribute of "myDiv is:"</p>
+    <p id="demo"></p>
+    <script>
+        let value=document.getElementById("myDiv").className;
+        document.getElementById("demo").innerHTML=value;
+    </script> -->
+    <!-- Toggle between two class names:
+    <button onclick="myFunction()">Toggle</button>
+    <p>Click "Toggle" (many times) to toggle between two classes.</p>
+    <div id="myDiv" class="myStyle">
+        <p>I am myDiv.</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myDiv");
+            if(element.className=="myStyle")
+            {
+                element.className="newStyle";
+            }
+            else
+            {
+                element.className="myStyle";
+            }
+        }
+    </script> -->
+    <!-- <h3>Get the class attribute of the first <div> element(if any):</h3>
+        <div id="myDIV" class="myStyle">
+            <p>I am myDIV.</p> 
+            </div>
+            
+            <p>The value of the class attribute of the first "div" element is:</p>
+            <p id="demo"></p>
+            
+            <script>
+            let value = document.getElementsByTagName("div")[0].className;
+            document.getElementById("demo").innerHTML = value;
+            </script> -->
+         <!-- <h3>Get a class attribute with multiple classes:</h3>
+          <div id="myDiv" class="myStyle test example">
+            I am a DIV element with multiple classes
+          </div>  
+          <p>The class attribute of "myDiv" is:</p>
+          <p id="demo"></p>
+          <script>
+            let value=document.getElementById("myDiv").className;
+            document.getElementById("demo").innerHTML=value;
+          </script> -->
+          <!-- <h3>OverWrite an existing class attribute with a new one:</h3>
+          <button onclick="myFunction()">Change</button>
+          <p>Click "Change" the change the class attribute of "myDiv" to "newStyle."</p>
+          <div id="myDiv" class="myStyle">
+            <p>
+                I am myDiv.
+            </p>
+          </div>
+          <script>
+            function myFunction()
+            {
+                document.getElementById("myDiv").className="newStyle";
+            }
+          </script> -->
+          <!-- <h3>To add new classes,without overwriting existing values,add a space and the new classes:</h3>
+          <button onclick="myFunction()">Add</button>
+          <p>Click "Add" to add additional classes to "myDiv".</p>
+          <div id="myDiv" class="myStyle">
+            <p>I am myDiv</p>
+          </div>
+          <script>
+            function myFunction()
+            {
+                document.getElementById("myDiv").className+=" class1 class2";
+            }
+          </script> -->
+          <!-- <h3>if "myDiv" has a "myStyle" class,chnage the font font-size:</h3>
+          <button onclick="myFunction()">Change</button>
+          <p>Click "Change" to change the font size,if "myDiv" has a "myStyle" class.</p>
+          <div id="myDiv" class="myStyle">
+            <p>I am myDiv.</p>
+          </div>
+          <script>
+            function myFunction()
+            {
+                const element=document.getElementById("myDiv");
+                if(element.className=="myStyle")
+                {
+                    element.style.fontSize="30px";
+                }
+            }
+          </script> -->
+        <body style="font-size:20px;height:1500px">
+            <h1>The DOM element className</h1>
+          <h3>If you scroll 50 pixels from the top of this page,the class "test" is added:</h3>
+           <h1>The onscrool event</h1>
+           <p id="myP" style="position: fixed;">
+            If you scroll 50 pixels down from the top of this page, the class "test" is added to this paragraph. <br>
+            scroll up again to remove the class.
+           </p>
+           <script>
+            window.onscroll=function()
+            {
+                myFunction();
+            }
+            function myFunction()
+            {
+                if(document.documentElement.scrollTop>50)
+                document.getElementById("myP").className="test";
+                else
+                document.getElementById("myP").className="";
+            }
+           </script>
+</body>
+</html>

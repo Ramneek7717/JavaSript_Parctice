@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Types(Blueprints)(Classes)</title>
+</head>
+<body>
+    <h1>Object Types(BluePrints)(Classes)</h1>
+    <h3>Object constructor function</h3>
+    <p>Sometime we need a "blueprint" for creating many objects of the same "type".</p>
+    <p>In the example above, <span style="color:red">function person()</span> is an object constructor function.</p>
+    <p id="demo"></p>
+    <script>
+        //Constructor function for Person objects
+    function Person(first,last,age,eye)
+    {
+        this.firstName=first;
+        this.lastName=last;
+        this.age=age;
+        this.eyeColor=eye;
+    }
+    //Create two Person objects
+    const myFather=new Person("John","Doe",50, "blue");
+    const myMother=new Person("Sally","Rally",48,"green");
+    //Dispaly age
+    document.getElementById("demo").innerHTML="My father is "+ myFather.age +".<br>MyMother is "+myMother.age+".";
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+
+<body>
+    <script>
+        console.log("Converting String to Numbers");//using Number()
+        console.log("Number(\"3.14\")=" + Number("3.14"));
+        console.log("Number(\"\")=" + Number(""));
+        console.log("Number(\"John\")=" + Number("John"));
+        console.log("Number(Math.PI)=" + Number(Math.PI));
+        console.log("Number(\" \")=" + Number(" "));
+        //  console.log("Number(99 88)="+Number(99 88)); //error occur
+        let y = "5";
+        console.log("let y=\"5\";\ntypeof(y):" + typeof (y) + "\n+y:" + typeof (+y));
+        let y1 = "John";//y1 is a string
+        console.log("let y1=\"John\";\ntypeof(y1):" + typeof (y1) + "\n+y:" + typeof (+y1) + "(\"NaN\")");
+        console.log("Converting Numbers to Strings");//using String()
+        console.log("String(y)=" + String(y) + "\tType=" + typeof (String(y)));
+        console.log("String(123)=" + String(123) + "\tType=" + typeof (String(123)));
+        console.log("String(100+23)=" + String(100 + 23) + "\tType=" + typeof (String(100 + 23)));
+        console.log("Converting Dates to Numbers");
+        let d = new Date();
+        console.log("let d=new Date();\nNumber(d)\n" + Number(d));//using Number()
+        console.log("let d=new Date();\nd.getTime()\n" + d.getTime());//using getTime()
+        console.log("Converting Dates To Strings");
+        console.log("String(Date())\n" + String(Date()));
+        console.log("Date().toString()\n" + Date().toString());//using toString()
+        console.log("Get Date Methods");
+        const date = new Date();
+        console.log("new Date()\n" + date);
+        console.log("Date Get Methods");
+        const date1 = new Date("2012-03-25");
+        const date2 = new Date("1970-01-01");
+        console.log("const date=new Date();\ngetFullYear()=" + date.getFullYear());
+        console.log("const date1=new Date(\"2012-03-25\");\ngetFullYear()=" + date1.getFullYear());
+        console.log("getMonth()=" + date.getMonth());
+        console.log("const date1=new Date(\"2012-03-25\");\ngetMonth()=" + date1.getMonth());
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let month = months[date1.getMonth()];
+        console.log("let month=months[date1.getMonth]\t" + month);
+        let month1 = months[date.getMonth()];
+        console.log("let month1=months[date.getMonth]\t" + month1);
+        console.log("getDate()=" + date.getDate());
+        console.log("Date.now()=" + Date.now());
+        console.log("const date1=new Date(\"2012-03-25\");\ngetDate()=" + date1.getDate());
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        let day = days[date1.getDay()];
+        console.log("const date1=new Date(\"2012-03-25\");\ngetDay()=" + day);
+        console.log("getDay()=" + date.getDay());
+        console.log("const date1=new Date(\"2012-03-25\");\ngetHours()=" + date1.getHours());
+        console.log("getHours()=" + date.getHours());
+        console.log("getMinutes()=" + date.getMinutes());
+        console.log("getSeconds()=" + date.getSeconds());
+        console.log("getMilliseconds()=" + date.getMilliseconds());
+        console.log("getTime()=" + date.getTime());
+        console.log("const date1=new Date(\"2012-03-25\");\ngetTime()=" + date1.getTime());
+        console.log("const date2=new Date(\"1970-01-01\");\ngetTime()=" + date2.getTime());
+        console.log("Calculate the number of years since 1970/01/01:");
+        const minute = 1000 * 60;
+        const hour = minute * 60;
+        const day1 = hour * 24;
+        const year = day1 * 365;
+        let years = Math.round(Date.now() / year);
+        console.log("No of Years=" + years);
+        console.log("getUTCDate()=" + date.getUTCDate());
+        console.log("getUTCFullYear()" + date.getUTCFullYear());
+        console.log("getUTCMonth()=" + date.getMonth());
+        console.log("getUTCDay()=" + date.getDay());
+        console.log("getUTCHours()=" + date.getUTCHours());
+        console.log("getUTCMinutes()=" + date.getUTCMinutes());
+        console.log("getUTCSeconds()=" + date.getUTCSeconds());
+        console.log("getUTCMilliseconds()=" + date.getUTCMilliseconds());
+        console.log("Difference (in minutes) between local time an UTC time:\t" + date.getTimezoneOffset());
+        let date4 = new Date(100000000000);
+        console.log("date(milliseconds):\t" + date4);
+        console.log("Date(\"2012-03-25\")" + date1);
+        let date5 = new Date(1990, 1, 17, 4, 5, 45, 33);
+        console.log("Date(year,month,day,hours,minutes,seconds,milliseconds):\t" + date5);
+        let text = date.constructor;
+        console.log("Constructor:\t" + text);
+        console.log("Date.parse(\"March 21, 2023\")" + Date.parse("March 21, 2023"));
+        console.log("Calculate the number of years between January 1,1970 to March 21,2012:\t" + Math.round(Date.parse("March 21, 2023") / year));
+        console.log("Prototype");
+        Date.prototype.myMonth = function () {
+            if (this.getMonth() == 0)
+                return "January";
+            if (this.getMonth() == 1)
+                return "Februray";
+            if (this.getMonth() == 2)
+                return "March";
+            if (this.getMonth() == 3)
+                return "April";
+            if (this.getMonth() == 4)
+                return "May";
+            if (this.getMonth() == 5)
+                return "June";
+            if (this.getMonth() == 6)
+                return "July";
+            if (this.getMonth() == 7)
+                return "August";
+            if (this.getMonth() == 8)
+                return "September";
+            if (this.getMonth() == 9)
+                return "October";
+            if (this.getMonth() == 10)
+                return "November";
+            if (this.getMonth() == 11)
+                return "December";
+        }
+        let month2 = date.myMonth();
+        console.log("date.myMonth():\t" + month2);
+        console.log("Date setDate()");
+        const d1 = new Date();
+        console.log("Date:\t" + d1);
+        d1.setDate(5);
+        console.log("d1.setDate(5):\t" + d1);
+        d1.setFullYear(2020);
+        console.log("d1.setFullYear(2020):\t" + d1);
+        d1.setHours(15);
+        console.log("d1.setHours(15):\t" + d1);
+        d1.setHours(15, 35, 1);
+        console.log("d1.setHours(15,35,1):\t" + d1);
+        d1.setHours(d.getHours() - 48);
+        console.log("d1.setHours(d.getHours()-48):\t" + d1);
+        d1.setMilliseconds(192);
+        console.log(" d1.setMilliseconds(192):\t" + d1);
+        d1.setMinutes(17);
+        console.log("d1.setMinutes(17):\t" + d1);
+        d1.setMinutes(d1.getMinutes() - 90);
+        console.log("d1.setMinutes(d1.getMinutes()-90):\t" + d1);
+        d1.setMonth(4);
+        console.log(" d1.setMonth(4):\t" + d1);
+        d1.setMonth(4, 20);
+        console.log(" d1.setMonth(4,20):\t" + d1);
+        d1.setMonth(d1.getMonth(), 0);
+        console.log("d1.setMonth(),0:\t" + d1);
+        d1.setSeconds(35);
+        console.log("d1.setSeconds(35):\t" + d1);
+        d1.setSeconds(35, 825);
+        console.log("d1.setSeconds(35,825):\t" + d1);
+        d1.setTime(1333248947345);
+        console.log("d1.setTime(1333248947345):\t" + d1);
+        d1.setTime(-12324724786234);
+        console.log("d1.setTime(-12324724786234):\t" + d1);
+        date.setUTCDate(15);
+        console.log("date.setUTCDate(15):\t", date);
+        date.setUTCDate(0);
+        console.log("date.setUTCDate(0):\t", date);
+        const d2 = new Date("July 21,1983 01:15:00 ");
+        console.log(d2);
+        d2.setUTCDate(15);
+        console.log("d2.setUTCDate(15):\t" + d2);
+        d2.setUTCFullYear(2015);
+        console.log("d2.setUTCFullYear(2015):\t" + d2);
+        d2.setUTCFullYear(2020, 10, 3);
+        console.log("d2.setUTCFullYear(2020,10,3):\t" + d2);
+        d2.setUTCFullYear(d2.getFullYear(), d2.getUTCMonth() - 6);
+        console.log("d2.setUTCFullYear(d1.getFullYear(),d.getUTCMonth()-6):\t" + d2);
+        d2.setUTCHours(15);
+        console.log("d2.setUTCHours(15):\t" + d2);
+        d2.setUTCHours(15, 35, 1);
+        console.log("  d2.setUTCHours(15,35,1):\t" + d2);
+        d2.setUTCHours(d2.getUTCHours() - 48);
+        console.log("d2.setUTCHours(d2.getUTCHours()-48)", d2);
+        d2.setUTCMilliseconds(192);
+        console.log("d2.setUTCMilliseconds(192):\t" + d2);
+        d2.setUTCMinutes(34);
+        console.log("d2.setUTCMinutes(34):\t", d2);
+        d2.setUTCMinutes(d2.getUTCMinutes() - 90);
+        console.log("d2.setUTCMinutes(d2.getUTCMinutes()-90):\t" + d2);
+        d2.setUTCMonth(4);
+        console.log(" d2.setUTCMonth(4):\t" + d2);
+        d2.setUTCMonth(4, 20);
+        console.log("Set the month to 4(May)and the day to 20");
+        console.log(" d2.setUTCMonth(4,20):\t" + d2);
+        console.log("Set the date to the last day of last month ");
+        d2.setUTCMonth(d2.getUTCMonth(), 0);
+        console.log(" d2.setUTCMonth(d2.getUTCMonth(),0):\t" + d2);
+        d2.setUTCSeconds(35);
+        console.log("d2.setUTCSeconds(35):\t" + d2);
+        d2.setUTCSeconds(35, 852);
+        console.log("d2.setUTCSeconds(35,852):\t" + d2);
+        d2.toDateString();
+        console.log(" d2.toDateString():\t" + d2);
+        let text1 = d2.toISOString();
+        console.log("d2.toISOString():\t" + text1);
+        let text2 = d2.toJSON();
+        console.log("d2.toJSON():\t" + text2);
+        let text3 = d2.toLocaleDateString();
+        console.log("d2.toLocaleDateString():\t" + text3);
+        let text4 = d2.toLocaleTimeString();
+        console.log("d2.toLocaleTimeString():\t" + text4);
+        let text5 = d2.toLocaleString();
+        console.log("d2.toLocaleString():\t" + text5);
+        let text6 = d2.toString();
+        console.log("d2.toString():\t" + text6);
+        let text7 = d2.toTimeString();
+        console.log("d2.toTimeString():\t" + text7);
+        let text8 = d2.toUTCString();
+        console.log("d2.toUTCString():\t" + text8);
+        let ms = Date.UTC(2020, 2, 30);
+        console.log("Date.UTC(2020,2,30):\t" + ms);
+        let ms1 = new Date(Date.UTC(2020, 2, 30));
+        console.log(ms1);
+        let ms2 = d2.valueOf();
+        console.log("d2.valueOf:\t" + ms2);
+        console.log("Converting Booleans to Numbers");
+        console.log("Number(false):\t" + Number(false));
+        console.log("Number(true):\t" + Number(true));
+        console.log("Converting Booleans to String");
+        console.log("String(false):\t" + String(false));
+        console.log("String(true):\t" + String(true));
+        console.log("false.toString():\t" + false.toString());
+        console.log("true.toString():\t" + true.toString());
+        console.log("Automatic Type Conversion");
+        console.log(" 5+null:\t" + (5 + null));//returns 5 because null is  cinverted to 0
+        console.log("\"5\"+null:\t" + ("5" + null));
+        console.log("\"5\"+2:\t" + ("5" + 2));
+        console.log("\"5\"-2:\t" + ("5" - 2));
+        console.log("\"5\"*\"2\":\t" + ("5" * "2"));
+        console.log("\t\t\tType Conversion\t\t\t");
+        console.log("Original Vlaue\t\tConverted to Number\t\tConverted to String\t\tConvertd to Booleans")
+        console.log(`\tfalse\t\t\t\t${Number(false)}\t\t\t\t\t\t${String(false)}\t\t\t\t\t${Boolean(false)}`);
+        console.log(`\ttrue\t\t\t\t${Number(true)}\t\t\t\t\t\t${String(true)}\t\t\t\t\t${Boolean(true)}`);
+        console.log(`\t0\t\t\t\t\t${Number(0)}\t\t\t\t\t\t${String(0)}\t\t\t\t\t\t${Boolean(0)}`);
+        console.log(`\t\"0\"\t\t\t\t\t${Number("0")}\t\t\t\t\t\t${String("0")}\t\t\t\t\t\t${Boolean("0")}`);
+        console.log(`\t\"000\"\t\t\t\t${Number("000")}\t\t\t\t\t\t${String("000")}\t\t\t\t\t\t${Boolean("000")}`);
+        console.log(`\t1\t\t\t\t\t${Number(1)}\t\t\t\t\t\t${String(1)}\t\t\t\t\t\t${Boolean(1)}`);
+        console.log(`\t\"1\"\t\t\t\t\t${Number("1")}\t\t\t\t\t\t${String("1")}\t\t\t\t\t\t${Boolean("1")}`);
+        console.log(`\tNaN\t\t\t\t\t${Number(NaN)}\t\t\t\t\t\t${String(NaN)}\t\t\t\t\t\t${Boolean(NaN)}`);
+        console.log(`\tInfinity\t\t\t${Number(Infinity)}\t\t\t\t${String(Infinity)}\t\t\t\t${Boolean(Infinity)}`);
+        console.log(`\t-Infinity\t\t\t${Number(-Infinity)}\t\t\t\t${String(-Infinity)}\t\t\t\t${Boolean(-Infinity)}`);
+        console.log(`\t\"\"\t\t\t\t\t${Number("")}\t\t\t\t\t\t${String("")}\t\t\t\t\t\t${Boolean("")}`);
+        console.log(`\t\"20\"\t\t\t\t${Number("20")}\t\t\t\t\t\t${String("20")}\t\t\t\t\t\t${Boolean("20")}`);
+        console.log(`\t\"twenty\"\t\t\t${Number("twenty")}\t\t\t\t\t\t${String("twenty")}\t\t\t\t\t${Boolean("twenty")}`);
+        console.log(`\t[]\t\t\t\t\t${Number([])}\t\t\t\t\t\t${String([])}\t\t\t\t\t\t${Boolean([])}`);
+        console.log(`\t[20]\t\t\t\t${Number([20])}\t\t\t\t\t\t${String([20])}\t\t\t\t\t\t${Boolean([20])}`);
+        console.log(`\t[10,20]\t\t\t\t${Number([10, 20])}\t\t\t\t\t\t${String([10, 20])}\t\t\t\t\t${Boolean([10, 20])}`);
+        console.log(`\t["twenty"]\t\t\t${Number(["twenty"])}\t\t\t\t\t\t${String(["twenty"])}\t\t\t\t\t${Boolean(["twenty"])}`);
+        console.log(`\t["ten","twenty"]\t${Number(["ten", "twenty"])}\t\t\t\t\t\t${String(["ten", "twenty"])}\t\t\t\t${Boolean(["twenty"])}`);
+        console.log(`\tfunction(){}\t\t${Number(function () { })}\t\t\t\t\t\t${String(function () { })}\t\t\t${Boolean(function () { })}`);
+        console.log(`\t{}\t\t\t\t\t${Number({})}\t\t\t\t\t\t${String({})}\t\t\t${Boolean({})}`);
+        console.log(`\tnull\t\t\t\t${Number(null)}\t\t\t\t\t\t${String(null)}\t\t\t\t\t${Boolean(null)}`);
+        console.log(`\tundefined\t\t\t${Number(undefined)}\t\t\t\t\t\t${String(undefined)}\t\t\t\t${Boolean(undefined)}`);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Elements</title>
+</head>
+<body>
+    <h1>Changing Elements</h1>
+    <p>Array elements are accessed using their <b>index number:</b></p>
+     <h3>Bracket Indexing</h3>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+     <script>
+        const fruits=[
+            "Banana",
+            "Orange",
+            "Apple",
+            "Mango"
+        ];
+        document.getElementById("demo").innerHTML=fruits;
+        fruits[0]="kiwi";
+        document.getElementById("demo1").innerHTML=fruits;
+     </script>
+     <h3>Array length</h3>
+     <h3>The length Property </h3>
+     <p> The length property provides an easy way to append new elements to an array without using the push() method:</p>
+     <p>The <span style="color: red;">length</span> property provides an easy way to append a new element to an array:</p>
+     <p id="demo3"></p>
+     <p id="demo4"></p>
+     <script>
+       document.getElementById("demo3").innerHTML=fruits;
+       fruits[fruits.length]="kiwi1";
+       document.getElementById("demo4").innerHTML=fruits;
+     </script>
+    </body>
+</html>

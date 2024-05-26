@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normalize()</title>
+</head>
+<body>
+    <h1>HTML DOM Element normalize()</h1>
+    <h3>Normalize an element: </h3>
+    <button onclick="addTextNode()">Add Text</button>
+    <button onclick="normPara()">Normalize</button>
+    <p id="demo">Click on buttons to add text to this paragraph, click th eother button to normalize the paragraph.</p>
+    <p>The paragraph above has <b><span id="cc">1</span></b>child node(s).</p>
+    <script>
+        function addTextNode()
+        {
+            const node=document.createTextNode("Click again.");
+            const element=document.getElementById("demo");
+            element.appendChild(node);
+            countNodes(element);
+        }
+        function normPara()
+        {
+            const element=document.getElementById("demo");
+            element.normalize();
+            countNodes(element);
+        }
+        function countNodes(element)
+        {
+            const span=document.getElementById("cc");
+            span.innerHTML=element.childNodes.length;
+        }
+    </script>
+</body>
+</html>

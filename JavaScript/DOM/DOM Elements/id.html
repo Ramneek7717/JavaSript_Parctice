@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element id</title>
+</head>
+<body>
+    <h1>HTML DOM Element id</h1>
+    <!-- <h3>Get the id of the first myAnchor</h3>
+    <a href="#" id="myAnchor1">HTML</a>
+    <a href="#" id="myAnchor2">CSS</a>
+    <a href="#" id="myAnchor3">JavaScript</a>
+    <p>The value of the id attribute of the first link is:</p>
+    <p id="demo"></p>
+    <script>
+        let id=document.getElementsByTagName("a")[0].id;
+        document.getElementById("demo").innerHTML=id;
+    </script> -->
+    <!-- <h3>Change the id of an element:</h3>
+    <p> 
+       <a href="#" id="myAnchor">W3schools</a>
+    </p>
+    <button onclick="changeId()">Change</button>
+    <p>The id of the link is:</p>
+    <p id="demo"></p>
+    <script>
+        function getID()
+        {
+            document.getElementById("demo").innerHTML=element.id;
+        }
+        function changeId()
+        {
+            element.id="newId";
+            getID();
+        }
+        let element=document.getElementById("myAnchor");
+        getID();
+    </script> -->
+    <h3>Chnage the font of "myP":</h3>
+    <button onclick="myFunction()">Change</button>
+    <p id="myP">Click "chnage" to chnage my font size.</p>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myP");
+            element.style.fontSize="24px";
+        }
+    </script>
+
+</body>
+</html>

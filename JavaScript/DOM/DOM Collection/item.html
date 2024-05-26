@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Collection item</title>
+</head>
+<body>
+   <h1>HTML Collection item</h1>
+   <!-- <h3>Get the HTML content of the first &lt;p&gt; element:</h3>
+   <p>The content of the first p element in this document is:</p>
+   <p id="demo"></p>
+   <script>
+    const collection=document.getElementsByTagName("p");
+    let text=collection.item(0).innerHTML;
+    document.getElementById("demo").innerHTML=text;
+   </script> -->
+   <!-- <h3>This shorthand produces the same result:</h3>
+   <h2>The item() Method</h2>
+   <p>[0] is a shorthand for the item(0).</p>
+   <p>Click "Change" to chnage the content of the first paragraph.</p>
+   <button onclick="myFunction()">Change</button>
+   <script>
+    function myFunction()
+    {
+      const collection=document.getElementsByTagName("p")[0];
+      collection.innerHTML="Changed!";
+    }
+   </script> -->
+   <!-- <h3>Change the HTML content of the first &lt;p&gt; element:</h3>
+   <h2>The item() Method</h2>
+   <p>I am a paragraph.</p>
+   <p>I am a paragraph.</p>
+   <p>I am a Paragraph.</p>
+   <p>Click "change" to change the HTML content of the first p element:</p>
+   <button onclick="myFunction()">Change</button>
+   <script>
+    function myFunction()
+    {
+        document.getElementsByTagName("p")[0].innerHTML="Paragraph changed.";
+    }
+   </script> -->
+   <!-- <h3>Loop over all elements with class="myclass",and change their font size:</h3>
+   <h2>The item() Method</h2>
+   <p>Click "Change" to change the font size of to all elements with class="myclass".</p>
+   <button onclick="myFunction()">Change</button>
+   <p>I am a paragraph.</p>
+   <p class="myClass">I am a paragraph.</p>
+   <p class="myClass">I am a paragraph.</p>
+   <script>
+    function myFunction()
+    {
+        const collection=document.getElementsByClassName("myClass");
+        for(let i=0;i<collection.length;i++)
+        {
+            collection.item(i).style.fontSize="24px";
+        }
+    }
+   </script> -->
+   <h3>Get the content of the second &lt;p&gt; element inside "myDiv":</h3>
+   <h2>The item() method</h2>
+   <div id="myDiv" style="border:1px solid black;padding: 16px;">
+     <p>I am one.</p>
+     <p>I am two.</p>
+     <p>I am three.</p>
+   </div>
+   <p>Click "Get" to get the content of the second p element inside "myDiv":</p>
+   <button onclick="myFunction()">Get</button>
+   <p id="demo"></p>
+   <script>
+    function myFunction()
+   {
+    const div=document.getElementById("myDiv");
+    const collection=div.getElementsByTagName("p");
+    let text=collection[1].innerHTML;
+    document.getElementById("demo").innerHTML=text;
+   }
+   </script>
+</body>
+</html>

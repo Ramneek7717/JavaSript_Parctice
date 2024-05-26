@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element hasAttribute()</title>
+</head>
+<body>
+ <h1>HTML DOM Element hasAttribute()</h1>
+ <!-- <h3>Does "myButton" have an onclick attribute:</h3> 
+ <button id="myBtn" onclick="myFunction()">Button</button>
+ <p>Does the button have an onclick attribute:</p>
+ <p id="demo"></p>
+ <script>
+    const myButton=document.getElementById("myBtn");
+    let answer=myButton.hasAttribute("onclick");
+    document.getElementById("demo").innerHTML=answer;
+ </script>   -->
+ <h3>If an a element has a target attribute, chnage the value to "-self":</h3>
+ <a href="https://www.w3schools.com" target="_blank" id="myA">W3schoold</a>.
+ <p>Click "Change" to chnage the link target to "_self_".</p>
+ <button onclick="myFunction()">Change</button>
+ <p>Try clicking the link before and after "Change".</p>
+ <script>
+    function myFunction()
+    {
+        const element=document.getElementById("myA");
+        if(element.hasAttribute("target"))
+        {
+            element.setAttribute("target","_self");
+        }
+    }
+ </script>
+</body>
+</html>

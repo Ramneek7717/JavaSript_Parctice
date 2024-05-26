@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing object Method Without parentheses</title>
+</head>
+<body>
+    <h1>Accessing object Method without Parentheses</h1>
+    <p>If you access a method <b>without</b> the () parentheses, it will return the <b>function definition:</b></p>
+    <p id="demo"></p>
+    <script>
+     //create an Object:
+     const person={
+         firstName:"John",
+         lastName:"Doe",
+         id:5566,
+         fullName:function(){
+             return this.firstName+" "+this.lastName;
+         }
+     };
+     //Display data from the object:
+     document.getElementById("demo").innerHTML=person.fullName;
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="">
+  Name: <input type="text" id="myInput" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p>If you click submit, without filling out the text field,
+an alert message will occur.</p>
+
+<script>
+document.getElementById("myInput").addEventListener("invalid", myFunction);
+
+function myFunction() {
+  alert("You must fill out the form!");
+}
+</script>
+
+</body>
+</html>

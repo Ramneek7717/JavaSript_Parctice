@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array toReversed() Method </title>
+</head>
+<body>
+    <h1>Array toReversed() Method</h1>
+    <p>The <span style="color: red;">toReversed()</span> method as a safe way to reverse an array without altering the original array.</p>
+     <p>The difference between <span style="color: red;">toReversed ()</span> and <span style="color: red;">reverse()</span>
+      is that the frist method creates a new array,keeping the original array unchanged , while the last method alters the original array.</p>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <script>
+        const months=[
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr"
+        ];
+        document.getElementById("demo1").innerHTML="The unreversed list ="+months;
+        const reversed=months.toReversed();
+        document.getElementById("demo2").innerHTML="The Reversed list ="+reversed;
+        document.getElementById("demo3").innerHTML="After Reversed list ="+months;
+      </script>
+    </body>
+</html>

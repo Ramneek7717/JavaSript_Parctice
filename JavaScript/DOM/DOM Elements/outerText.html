@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM outerText property</title>
+</head>
+<body>
+    <h1>HTML DOM outerText property</h1>
+    <h3>Set the outer text of an element:</h3>
+    <p>When setting the outerText, the entire element gets replaced.</p>
+    <p>Click the button to change(and remove)the h1 element:</p>
+    <button onclick="myFunction()">Change Header</button>
+    <script>
+        function myFunction() {
+          var x = document.getElementsByTagName("h1")[0];
+          x.outerHTML = "Changed content!";
+          }
+    </script>
+</body>
+</html>

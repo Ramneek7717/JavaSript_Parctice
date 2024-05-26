@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The oninput Event</h2>
+
+<p>Use the addEventListener() method to attach an input event to an input element.</p>
+
+<p>Write something in the text field:</p>
+
+Enter name: <input type="text" id="myInput" value="Mickey">
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myInput").addEventListener("input", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "The value of the input field was changed.";
+}
+</script>
+
+</body>
+</html>
+
+  

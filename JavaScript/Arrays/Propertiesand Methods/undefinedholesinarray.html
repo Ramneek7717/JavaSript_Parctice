@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined "Holes " in an array.</title>
+</head>
+<body>
+    <h3>Adding elements with high indexes can create undefined "holes in an array."</h3>
+    <p id="demo"></p>
+    <script>
+        const fruits=[
+            "Banana",
+            "Orange",
+            "Apple"
+        ];
+        fruits[6]="Lemon";
+        let fLen=fruits.length;
+        let text="";
+        for(i=0;i<fLen;i++)
+        {
+            text+=fruits[i]+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

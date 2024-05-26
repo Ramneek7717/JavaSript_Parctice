@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body>
+    <script>
+        //Global variable can be made local(private) with closures
+       //local Variable(access variable defined inside the function)
+        function myFunction()
+       {
+        let a=4;
+        return a*a;
+       }        
+       console.log(myFunction());
+       //Global variable(access variable defined outside the function)
+       let a1=4;
+       function myFunction1()
+       {
+        return a1*a1;
+       }
+       console.log(myFunction1());
+       //Variable created without a declaration keyword(Var,let or const) are always global,even if they are created inside a function.
+       myFunction2();
+       console.log(a2);
+       //a2*a2;
+       function myFunction2(){
+        a2=4;
+       }
+       console.log("without a declaration="+(a2*a2));
+       /* Counter Dilemma
+        you could use a global variable and a function to increase the counter*/
+        //Initiate counter 
+        let counter=0;
+        //Function to increment counter
+        function add()
+        {
+            // Initiate counter
+            let counter =0;
+        }
+         // function to increment counter
+         function add()
+         {
+            counter ++;
+         }
+         // Call add() 3 times
+         add();
+         add();
+         add();
+         // The counter should now be 3 
+         console.log("The counter is:"+counter);
+         //The counter sholud be local to the add()function, to prevet other code from changing it
+         // Initate counter
+          let counter1=0;
+          //Function to increment counter
+          function add1()
+          {
+            let counter1=0;
+            counter1++;
+          }
+          //call add1() 3 times
+          add1();
+          add1();
+          add1();
+          // The counter should now be 3. But it is 0
+          console.log("The counter is:"+counter1);
+          // the result is not 3 because you mix up the global and local counter
+          // A java Script inner function can slove this.
+          //Nested Functions
+          //The inner function plus() has access to the counter varial in the parent function
+            function add2()
+            {
+                let counter2=0;
+                function plus()
+                {
+                  counter2 ++;
+                  
+                }
+                plus();
+                plus();
+                
+                return counter2
+              //  console.log(counter2);
+            }          
+            console.log("add2():\t"+add2());
+           
+            /* This could have solved the counter dilemma , if we could reach the plus()function
+             fron the outside.
+             we also need to find a way to execute counter=0 only once.
+              we need a closure.*/
+              //Closures
+            const add3=(function()// function expression
+            {
+                let counter3=0;
+                return function()// self-invoking functions
+                {
+                    counter3++;
+                    return counter3;
+                }
+            })();
+            function myFunction3()
+            {
+                add3();
+                add3();
+            }
+            console.log(add3());
+            console.log(add3());
+
+
+    </script>
+</body>
+</html>

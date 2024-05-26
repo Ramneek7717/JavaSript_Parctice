@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Minimum Method</title>
+</head>
+<body>
+    <h1>Array Minimum Method</h1>
+    <p>This function loops through an array comparing each value with the lowest value found:</p>
+    <p id="demo1">The list :</p>
+     <p id="demo2">The lowest number is :</p>
+     <script>
+            const points=[40,100,1, 5,25,10];
+        document.getElementById("demo1").innerHTML= points;
+      
+        function myArrayMin(arr)
+        {
+            let len=arr.length;
+            let min=Infinity;
+            while(len--)
+            {
+                if(arr[len]<min)
+                {
+                    min=arr[len];
+                }
+            }
+            return min;
+        }
+        document.getElementById("demo2").innerHTML= myArrayMin(points);
+     </script>
+</body>
+</html>

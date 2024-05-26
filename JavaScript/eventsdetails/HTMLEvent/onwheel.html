@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onwheel Event</h2>
+
+<p>Use the addEventListener() method to attach a "wheel" event to an element:</p>
+
+<div id="myDIV" style="border:1px solid black">
+<p>Roll the mouse wheel over me!</p>
+</div>
+
+<script>
+document.getElementById("myDIV").addEventListener("wheel", myFunction);
+
+function myFunction() {
+  this.style.fontSize = "35px";
+}
+</script>
+
+</body>
+</html>

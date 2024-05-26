@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array with() Method</title>
+</head>
+<body>
+    <h1>Array with() Method</h1>
+    <p> The Array with()method as a safe way to update elements in an array without altering the original array. </p>
+    <p id="demo1"></p>
+    <P id="demo2"></P>
+    <script>
+        const months=[
+            "Januar","Februar",
+            "Mar","April"
+        ];
+        const myMonths=months.with(2,"March");
+        document.getElementById("demo1").innerHTML=months;
+        document.getElementById("demo2").innerHTML=myMonths;
+    </script>
+</body>
+</html>

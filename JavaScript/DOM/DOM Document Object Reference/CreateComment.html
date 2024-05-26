@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document createComment()</title>
+</head>
+<body>
+    <h1>HTML DOM Document createComment()</h1>
+    <p>Create a comment node, and add it to the document:</p>
+    <p id="demo"></p>
+    <script>
+        const comment=document.createComment("MY personal comments");
+        document.body.appendChild(comment);
+        document.getElementById("demo").innerHTML="A comment was added to this documnet, but as yiu know, comments are invisible.";
+    </script>
+</body>
+</html>

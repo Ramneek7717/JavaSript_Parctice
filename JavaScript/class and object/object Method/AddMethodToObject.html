@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a method to an Object</title>
+</head>
+<body>
+    <h1>Adding a method to an Object</h1>
+    <p>Adding a new method to an object is easy:</p>
+    <p id="DEMO"></p>
+    <script>
+        const person={
+            fristName:"John",
+            lastName:"Doe",
+            id:5566
+        };
+        person.name=function(){
+            return this.fristName+" "+this.lastName;
+        };
+        document.getElementById("DEMO").innerHTML="My father is "+person.name();
+    </script>
+</body>
+</html>

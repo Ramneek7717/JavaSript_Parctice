@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String </title>
+</head>
+
+<body>
+    <script>
+        let text = " Vijay kumar";
+        let carName1 = " Volvo XC60 ";//Double quotes
+        let CarName2 = ' Volvo XC60 ';//Single quotes
+        let ans1 = " It's alright ";
+        let ans2 = " He is called 'Rohit' ";
+        let ans3 = ' He is called "Rohit" ';
+        console.log(text);
+        console.log(carName1);
+        console.log(CarName2);
+        console.log(ans1);
+        console.log(ans2);
+        console.log(ans3);
+        //Using length property
+        let length = text.length;
+        console.log(length);
+        //using BlackSlash escape charater
+        let text1 = " we are the so-called \" Vikings\" from the north.";
+        let text2 = " we are the so-called \' Vikings\' from the north.";
+        let text3 = " we are the so-called \\ Vikings\\ from the north.";
+        console.log(text1);
+        console.log(text2);
+        console.log(text3);
+        let text4 = " we are the so-called  Vikings\b from the north.";
+        let text5 = " we are the so-called  Vikings\n from the north.";
+        let text6 = " we are the so-called  Vikings\f from the north.";
+        let text7 = " we are the so-called  Vikings\r from the north.";
+        let text8 = " we are the so-called  Vikings\t from the north.";
+        let text9 = " we are the so-called  Vikings\v from the north.";
+        console.log(text4);
+        console.log(text5);
+        console.log(text6);
+        console.log(text7);
+        console.log(text8);
+        console.log(text9);
+        let text10 = "hello\world!";//breaking string
+        console.log(text10);
+        let text11 = "hello " + "world!";
+        //literals And object
+        let x = "John";
+        let y = new String("John");
+        console.log("String as a literal=" + typeof (x));
+        console.log("String as a Objects=" + typeof (y));
+        //using == and === operator
+        console.log("John==John " + (x == y));
+        console.log("John===John " + (x === y));
+        //String Methods
+        let name = "Hello";
+        let name1 = "world";
+        console.log("charAt(0) method=" + name.charAt(0));
+        console.log("charCodeAt(2)=" + name.charCodeAt(2));
+        console.log("concat()=" + name.concat(name1));
+        console.log("Constructor=" + name.constructor);
+        console.log("endsWith(Hello)=" + name.endsWith("Hello"));
+        console.log("endsWith(Hello)=" + name.endsWith("world"));
+        console.log("String.fromCharCode(65)=" + String.fromCharCode(65));
+        console.log("String.fromCharCode(72,69,76,76,79)=" + String.fromCharCode(72, 69, 76, 76, 79));
+        let text12 = " Hello world,welcome to the universe.";
+        console.log("INCLUDES  1 example=" + text12.includes("world"));
+        console.log("INCLUDES  2 example=" + text12.includes("helloo"))
+        console.log("indexOf=" + text12.indexOf("univers."));
+        console.log("indexOf=" + text12.indexOf("univers"));
+        console.log("lastIndexOf=" + text12.lastIndexOf("univers."));
+        console.log("lastIndexOf=" + text12.lastIndexOf("univers"));
+        console.log("length=" + text12.length);
+        console.log("text11.localCompare(text12)=" + text11.localeCompare(text12));
+        // console.log("match(\"uni\")"+match("uni"));
+        //prototype
+        console.log(" text12.Repeat(2)=" + text12.repeat(2));
+        console.log("text12.replace(\"wrorld\",\"People\")" + text12.replace("world", "People"));
+        let text13 = "Mr Blue has a blue house and a blue car";
+        console.log("replaceAll(/blue/g,\"red\")=" + text13.replaceAll(/blue/g, "red"));
+        console.log("text13.Serach(\"Blue\")=" + text13.search("Blue"));
+        console.log("text13.Serach(\"blue\")=" + text13.search("Blue"));
+        console.log("text13.Serach(/Blue/)=" + text13.search(/Blue/));
+        console.log("text13.Serach(/Blue/i)=" + text13.search(/Blue/i));
+        console.log("text13.slice(0,5)=" + text13.slice(0, 5));
+        console.log("text13.sclice(3)=" + text13.slice(3));
+        console.log("text13.split(\" \")=" + text13.split(" "));
+        console.log("text13.split(\"\")=" + text13.split(""));
+        console.log("text13.split(\" \",3)=" + text13.split(" ", 3));
+        console.log("text13.split(\" b\")=" + text13.split("b"));
+        console.log("text13.split()=" + text13.split());
+        console.log("text12.startsWith(\" Hello\")" + text12.startsWith(" Hello"));
+        console.log("text12.startsWith(\" Hello\")" + text12.startsWith(" Hello", 1));
+        console.log("text12.substr(1,4)=" + text12.substr(1, 4));
+        console.log("text12.substr(2)=" + text12.substr(2));
+        console.log("text12.substring(1,4)=" + text12.substring(1, 4));
+        console.log("text12.substring(2)=" + text12.substring(2));
+        console.log("text12.toLocaleLowerCase=" + text12.toLocaleLowerCase());
+        console.log("text12.toLocaleUpperCase=" + text12.toLocaleUpperCase());
+        console.log("text12.toUpperCase=" + text12.toUpperCase());
+        console.log("text12.toLowerCase=" + text12.toLowerCase());
+        console.log("text12.toString=" + text12.toString());
+        console.log("text12.trim()=" + text12.trim());
+        console.log("text12.trimEnd()=" + text12.trimEnd());
+        console.log("text12.trimStart()=" + text12.trimStart());
+        console.log("text12.valueOf()=" + text12.valueOf());
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

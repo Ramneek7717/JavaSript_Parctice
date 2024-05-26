@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document createTextNode()</title>
+</head>
+<body>
+    <h1>HTML DOM Document createTextNode()</h1>
+    <p>Create a text node and append it to the document:</p>
+    <script>
+        const textNode=document.createTextNode("Hello World");
+        document.body.appendChild(textNode);
+    </script>
+    <p>Create a h1 element with a text node:</p>
+    <h4>The createElement() and CreateTextNode() Methods</h4>
+    <script>
+        const h1=document.createElement("H1");
+        const textNode1=document.createTextNode("Hello World");
+        h1.appendChild(textNode1);
+        document.body.appendChild(h1);
+    </script>
+    <p>Create a p element with a text node:</p>
+     <h1>The createElement() and createTextNode() methods</h1>
+     <script>
+        const p=document.createElement("P");
+        const textNode2=document.createTextNode("This is a paragraph");
+        p.appendChild(textNode2);
+        document.body.appendChild(p);
+    </script>
+</body>
+</html>

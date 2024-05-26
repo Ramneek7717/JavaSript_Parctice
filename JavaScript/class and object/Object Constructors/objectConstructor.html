@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructors</title>
+</head>
+<body>
+    <h1>Object Constructors</h1>
+   <p id="demo"></p>
+   <script>
+    //Constructor function for Person objects
+    function Person(first,last,age,eye)
+    {
+        this.firstName=first;
+        this.lastName=last;
+        this.age=age;
+        this.eyeColor=eye;
+    }
+    //create a Person object
+    const myFather=new Person("John","Doe",50,"blue");
+    //Dispaly age
+    document.getElementById("demo").innerHTML="My father is "+myFather.age+".";
+
+   </script>
+</body>
+</html>

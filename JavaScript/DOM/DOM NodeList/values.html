@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM NodeList values()</title>
+</head>
+<body>
+    <h1>HTML DOM NodeList values()</h1>
+    <!-- <h3>List the document's child nodes:</h3> -->
+      <!-- This is a comment node! -->
+      <!-- <h1>The Element Object</h1>
+      <h2>The values() Method</h2>
+      <p>WhiteSpace between elements are text nodes.Comments are also nodes.</p>
+      <p>The body element's child nodes are:</p>
+      <p id="demo"></p>
+      <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.values())
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+      </script> -->
+      <!-- <h3>List the names of the document's child nodes:</h3> -->
+      <!-- This is a comment node! -->
+      <!-- <p>WhiteSpace between elements are text nodes.Comments are also nodes.</p>
+      <p>The names of the body element's child nodes are:</p>
+      <p id="demo"></p>
+      <script>
+        const list=document.body.childNodes;
+        let text="";
+        for( let x of list.values())
+        {
+            text+=x.nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+      </script> -->
+      <h3>List the types of the document's child nodes:</h3>
+      <p>Whitesoace between elements are text nodes.comments are also nodes.</p>
+      <p>The types of the body elements's child nodes are:</p>
+      <p id="demo"></p>
+      <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.values())
+        {
+            text+="Type: "+x.nodeType+" "+x.nodeName+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+      </script>
+</body>
+</html>

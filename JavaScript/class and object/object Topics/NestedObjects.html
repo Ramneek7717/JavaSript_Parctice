@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Objects</title>
+</head>
+<body>
+    <h1>Nested Objects</h1>
+    <p>Values in an Object can be another object:</p>
+    <p>You can access nested object using the dot notation or the bracket notation:</p>
+    <p id="demo"></p>
+    <script>
+        const myObj={
+            name:"John",
+            age:30,
+            cars:{
+                car1:"Ford",
+                car2:"BMW",
+                car3:"fiat"
+            }
+        };
+        // document.getElementById("demo").innerHTML=myObj.cars.car3;
+        // or
+        // document.getElementById("demo").innerHTML=myObj.cars["car2"];
+        // or
+        // document.getElementById("demo").innerHTML=myObj["cars"]["car3"];
+        // or
+        let p1="cars";
+        let p2="car2";
+        document.getElementById("demo").innerHTML=myObj[p1][p2];
+ </script>
+</body>
+</html>

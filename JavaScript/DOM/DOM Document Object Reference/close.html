@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document close()</title>
+</head>
+<body>
+    <h1>HTML DOM Document close()</h1>
+    <!-- <h3>Open a document,write some text to it, and close it :</h3>
+    <h2>The open() and close() Methods</h2>
+    <p>Click "Open" to open this document, write some text to it and close it:</p>
+    <button onclick="myFunction()">Open</button>
+    <script>
+        function myFunction()
+        {
+            document.open();
+            document.write("<h1> Hello World </h1>");
+            document.write("<p> Open a document overwrites the original content.</p>");
+            document.close();
+        }
+    </script> -->
+    <h3>Open a new window, then open a document, write some text to it, and close it:</h3>
+     <h2>The open() and close() Methods</h2>
+      <p>click "Open" to open a document in a new window,write some text to it and close it:</p>
+      <button onclick="myFunction()">Try it</button>
+      <script>
+        function myFunction()
+        {
+            const myWindow=window.open();
+            myWindow.document.open();
+            myWindow.document.write("<h1> Hello World!</h1>");
+            myWindow.document.close();
+        }
+      </script>    
+
+</body>
+</html>

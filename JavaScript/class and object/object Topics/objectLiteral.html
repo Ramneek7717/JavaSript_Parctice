@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literal</title>
+</head>
+<body>
+    <h1>Create a single object,using an Object literal.</h1>
+    <p id="demo"></p>
+    <script>
+        const person={
+            firstName:"John",
+            lastName:"Doe",
+            age:50,
+            eyeColor:"blue"
+        };
+        document.getElementById("demo").innerHTML=person.firstName+ " is " + person.age+ " years old.";
+
+    </script>
+    <h1>This example create an empty JavaScript Object, and then adds 4 Properties:</h1>
+    <p id="demo1"></p>
+    <script>
+        const person1={};
+        person1.firstName1="John1";
+        person1.lastName1="Doe1";
+        person1.age1=50;
+        person1.eyecolor1="blue";
+        document.getElementById("demo1").innerHTML=person1.firstName1+" is "+ person1.age1+"years old. ";
+    </script>
+    <h1>Using the JavaScript Keyword new</h1>
+     <p>The following example create a new JavaScript object using <span style="color: red;">new Object()</span>, and then adds 4 properties:</p>
+     <p id="demo2"></p>
+    <script>
+         const person2=new Object();
+         person2.firstName2="John2";
+         person2.lastName2="Doe2";
+         person2.age2=50;
+         person2.eyeColor2="Blue";
+         document.getElementById("demo2").innerHTML=person2.firstName2+" is "+person2.age2+ " years old.";
+    </script>
+</body>
+</html>

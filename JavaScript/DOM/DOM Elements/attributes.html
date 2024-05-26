@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element attributes</title>
+</head>
+<body>
+    <h1>HTML DOM Element attribute</h1>
+    <!-- <h3>How many attribute does the  img element have:</h3>
+     <h4>The length property</h4>
+     <img src="klematis.jpg" alt="klematis Flower" width="150" height="113" id="myImg">
+     <p>The number of attribute of the image are:</p>
+     <p id="demo"></p>
+     <script>
+        let num=document.getElementById("myImg").attributes.length;
+        document.getElementById("demo").innerHTML=num;
+     </script> -->
+    <!-- <h3>Display all attribute of an img element:</h3>
+    <h2>The length Property </h2>
+    <img src="klematis.jpg" alt="klematis Flower" width="150" height="113" id="myImg">
+    <p>The attributes of the image are:</p>
+    <p id="demo"></p>
+    <script>
+        const nodeMap=document.getElementById("myImg").attributes;
+        let text="";
+        for(let i=0;i<nodeMap.length;i++)
+        {
+            text+=nodeMap[i].name+"="+nodeMap[i].value+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+   <!-- <h3>How many attributes does the button element have :</h3>
+   <p>Click "Try it" to display the number of button attributes:</p>
+   <button id="myButton" onclick="myFunction()">Try it</button>
+   <p id="demo"></p>
+   <script>
+    function myFunction()
+    {
+        let numb=document.getElementById("myButton").attributes.length;
+        document.getElementById("demo").innerHTML=numb;
+    }
+   </script>  -->
+   <h3>Get the name of a button element's second (index 1 ) attribute:</h3>
+   <h2>The length Property</h2>
+   <button id="myButton" onclick="myFunction()">Try it</button>
+   <p>The button's second attribute(index 1) is.</p>
+   <p id="demo"></p>
+   <script>
+       function myFunction(){
+        let attr=document.getElementById("myButton").attributes[1].name;
+         document.getElementById("demo").innerHTML=attr;
+       }
+   </script>
+        
+</body>
+</html>

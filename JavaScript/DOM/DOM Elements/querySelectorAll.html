@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM querySelectorAll() Method</title>
+</head>
+<body>
+   <h1>HTML DOM querySelectorAll() Method</h1>
+   <!-- <h3>Set the background color of the first element(in "myDiv")with class="example":</h3> -->
+   <!-- <div id="myDiv" style="border:1px solid black">
+     <h2 class="example">A Heading</h2>
+     <p class="example">A paragraph.</p>
+   </div>
+   <script>
+    const element =document.getElementById("myDiv");
+    const list=element.querySelectorAll(".example");
+    list[0].style.backgroundColor="red";
+   </script> -->
+    <!-- <h3>Set the background color of the first &lt;p&gt; element in"myDiv":</h3>
+    <div id="myDiv" style="border: 1px solid black;">
+        <p>This is a p element.</p>
+        <p>This is a p element.</p>
+    </div>
+    <script>
+        const element=document.getElementById("myDiv");
+        const list=element.querySelectorAll("p");
+        list[0].style.backgroundColor="red";
+    </script> -->
+    <!-- <h3>Set the background of the first &lt;p&gt; element in "myDiv" with class="example":</h3>
+     
+<div id="myDIV">
+    <h2 class="example">A heading with class="example" in div</h2>
+    <p class="example">A paragraph with class="example" in div.</p> 
+    <p class="example">Another paragraph with class="example" in div.</p> 
+  </div>
+  
+  <p>Click the button to add a background color to the first p element in DIV with class="example" (index 0).</p>
+  
+  <button onclick="myFunction()">Try it</button>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myDIV").querySelectorAll("p.example");
+    x[0].style.backgroundColor = "red";
+  }
+  </script> -->
+  <!-- <h3>How many elements with class="example" are there in "myDiv":</h3>
+  <div id="myDiv" style="border:1px solid black; padding: 8px;">
+    <h2 class="example">A heading</h2>
+    <p class="example">A paragraph.</p>
+    <p class="example">A paragraph.</p>
+</div>
+<p>HOw many elements with class "example" in "myDiv"?</p>
+<p id="demo"></p>
+<script>
+    const element=document.getElementById("myDiv");
+    const list=element.querySelectorAll(".example");
+    document.getElementById("demo").innerHTML=list.length;
+</script> -->
+<!-- <h3>Set the background of all elements with class="example" in "myDiv":</h3>
+<div id="myDiv" style="border:1px solid black">
+   <h2 class="example">A heading. </h2>
+   <p class="example">A p element.</p>
+   <p class="exampl">A p element.</p>
+   <p>A p <span class="example">Span element</span>.</p>
+</div>
+<script>
+    const element=document.getElementById("myDiv");
+    const list=element.querySelectorAll(".example");
+    for(let i=0;i<list.length;i++)
+    {
+        list[i].style.backgroundColor="red";
+    }
+</script> -->
+<!-- <h3>Set the background color of all &lt;p&gt; elements in "myDiv":</h3>
+<div id="myDiv" style="border:1px solid black;">
+    <h2>A heading</h2>
+    <p>A p element.</p>
+    <p>A p element.</p>
+    <p>A p element with class="example"</p>
+</div>
+<script>
+    const element=document.getElementById("myDiv");
+    const list=element.querySelectorAll("p");
+    for(let i=0;i<list.length;i++)
+    {
+        list[i].style.backgroundColor="red";
+    }
+</script> -->
+<!-- <h3>Set the border style of all &lt;a&gt; elements in "myDiv" that have a "target" attribute:</h3>
+<p>Add a red border to all links in "myDiv" with a traget attribute:</p>
+<div id="myDiv">
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="https://www.disney.com" target="_blank">disney.com</a>
+    <a href="https://www.wikipedia.org" target="_top">wikipedia.org</a>
+</div>
+<script>
+    const element=document.getElementById("myDiv");
+    const list=element.querySelectorAll("a[target]");
+    for(let i=0;i<list.length;i++)
+    {
+        list[i].style.border="10px solid red";
+    }
+</script> -->
+<h3>Set the background color of all &lt;h3&gt; and &lt;span&gt; elements in a document:</h3>
+  <h1>A h1 element</h1>
+  <h2>A h2 element</h2>
+  <h3>A h3 element</h3>
+  <p>A p element</p>
+  <p>A p element with a <span style="color: brown;">span</span> element.</span></p>
+<script>
+    const list=document.querySelectorAll("h3,span");
+    for(let i=0;i<list.length;i++)
+    {
+        list[i].style.backgroundColor="red";
+    }
+</script>
+</body>
+</html>

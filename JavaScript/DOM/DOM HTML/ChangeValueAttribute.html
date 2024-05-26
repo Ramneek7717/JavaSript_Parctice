@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the value of an Attribute</title>
+</head>
+<body>
+    <h1>Chaning the value of an Attribute</h1>
+    <p>document.getEelementByID(id).attribute=new value</p>
+    <p>This example changes the value of the src attribute of an <span style="color: red;"> < </span><span style="color: red;">img</span><span style="color: red;">></span>element:</p>
+    <img id="Image" src="download.jpg" alt="download" height="120" width="160" >
+    <script>
+        document.getElementById("Image").src="landscape.jpg";
+    </script>
+    <p>The  priginal image was simly.gif,but the script chnaged it to landscape.jpg</p>
+</body>
+</html>

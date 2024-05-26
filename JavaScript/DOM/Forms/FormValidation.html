@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validateForm(){
+            let x=document.forms["myForm"]["fname"].value;
+            if(x=="")
+            { 
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <p>HTML form validation can be done by JavaScript.</p>
+    <p>If a form field(fanme) is empty, this function alerts a message, and returns false, to prevent the form from being submitted:</p>
+     <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname" id="">
+        <br>
+        <input type="submit" name="" id="" value="Submit">
+
+     </form>
+</body>
+</html>

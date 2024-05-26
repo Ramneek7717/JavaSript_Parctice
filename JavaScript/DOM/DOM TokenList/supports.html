@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenList supports</title>
+</head>
+<body>
+    <h1>HTML DOMTokenList supports()</h1>
+    <h3>Check if "allow=forms" is supported:</h3>
+    <h1>The supports() Method</h1>
+    <iframe id="myFrame"></iframe>
+    <p>The iframe supports "allow-forms":</p>
+    <p id="demo"></p>
+    <script>
+       const list = document.getElementById("myFrame").sandbox;
+       document.getElementById("demo").innerHTML = list.supports("allow-forms");
+    </script>
+    <h3>Check if "allow-nonsense" is supported:</h3>
+    <iframe id="myFrame1"></iframe>
+    <p>The iframe supports "allow-nonsense":</p>
+    <p id="demo1"></p>
+    <script>
+        const list1=document.getElementById("myFrame1").sandbox;
+        document.getElementById("demo1").innerHTML=list1.supports("allow-nonsense")
+    </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element clientLeft</title>
+</head>
+<body>
+    <h1>HTML DOM Element clientLeft</h1>
+    <h3>Display the width of myDiv's top and left border:</h3>
+    <h2>The clientTop and ClientLeft Properties</h2>
+    <p>Display the width of myDiv's top and left border:</p>
+    <div id="myDiv">
+        <p id="demo"></p>
+    </div>
+    <script>
+        const element=document.getElementById("myDiv");
+        let text="ClientTop :"+element.clientTop+"px<br>";
+        text+="ClientLeft :"+element.clientLeft+"px";
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

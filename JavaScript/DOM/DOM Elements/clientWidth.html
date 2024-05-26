@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element clientWidth</title>
+    <style>
+            #myDiv{
+        height:250px;
+        width:400px;
+        padding:10px;
+        margin:15px;
+        border:5px solid red;
+        background-color:lightblue;
+    }
+
+    </style>
+
+</head>
+<body>
+    <h1>HTML DOM Element clientWidth</h1>
+    <h3>Get the height and width of "myDiv",including padding:</h3>
+    <div id="myDiv">
+        <b>Information about myDiv:</b><br>
+        Height: 250px <br>
+        Width: 400px <br>
+        Padding: 10px <br>
+        Margin: 15px <br>
+        Border: 5px <br>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const element=document.getElementById("myDiv");
+        let text="ClientHeight :"+element.clientHeight+"px<br>";
+        text+="ClientWidth :"+element.clientWidth+"px";
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

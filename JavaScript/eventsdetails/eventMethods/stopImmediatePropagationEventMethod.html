@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopImmediatePropagation() event Method</title>
+</head>
+<body>
+    <h1>stopImmediatePropagation() Event Method</h1>
+    <h3>When clicking on a button.execute the first event handler, and stop the rest of the event handlers from being executed:</h3>
+    <p>This example uses the addEventListener() Method to add two click events to the same button.However, the stopImmediatePropagation() method <b>stops</b> the secomd event handler from being executed.</p>
+    <p><strong>Note:</strong>The stopImmediatePropagation() method is not supported in IE8And earlier versions.</p>
+    <button id="myBtn">Try it</button>
+    <script>
+        function myFunction(event)
+        {
+            alert("Hello World!");
+            event.stopImmediatePropagation();//Try to remove me
+        }
+        function someOtherFunction()
+        {
+            alert("I will not get to say Hello World");
+        }
+        var x=document.getElementById("myBtn");
+        x.addEventListener("click",myFunction);
+        x.addEventListener("click",someOtherFunction);
+    </script>
+</body>
+</html>

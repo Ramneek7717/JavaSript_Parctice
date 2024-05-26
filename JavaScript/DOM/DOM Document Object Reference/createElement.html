@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document CreateElement()</title>
+</head>
+<body>
+    <h1>HTML DOM DOcument CreateElement()</h1>
+    <p>Create a p element and append it to the document:</p>
+    <p>Create a p element with some text:</p>
+    <script>
+        //Create element:
+        const para=document.createElement("p");
+        para.innerText="This is a paragraph.";
+        //Append to body:
+        document.body.appendChild(para);
+    </script>
+    <p>Create a p element and append it to an element:</p>
+      <p>Create a p element and append it to "myDiv":</p>
+      <div id="myDiv" style="padding: 16px; background-color: lightblue;">
+      <h3>A DIV element</h3>
+      </div>
+      <script>
+        //Create element:
+        const para1=document.createElement("p");
+        para1.innerHTML="This is a paragraph";
+        //Append to another element:
+        document.getElementById("myDiv").appendChild(para1);
+      </script>
+      <p>Create a button element:</p>
+      <script>
+        const btn=document.createElement("button");
+        btn.innerHTML="Hello button";
+        document.body.appendChild(btn);
+      </script>
+
+
+</body>
+</html>

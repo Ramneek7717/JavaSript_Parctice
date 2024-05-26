@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document lastModified</title>
+</head>
+<body>
+    <h1>HTML DOM Document lastModified</h1>
+    <!-- <h3>Get the date and time the document was last modified:</h3>
+    <p id="demo"></p>
+    <script>
+        let text=document.lastModified;
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <h3>Convert the lastModified property into a date object:</h3>
+     <p id="demo"></p>
+     <script>
+        const date=new Date(document.lastModified);
+        document.getElementById("demo").innerHTML=date;
+     </script>
+</body>
+</html>

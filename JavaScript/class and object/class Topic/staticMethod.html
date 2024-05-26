@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Methods</title>
+</head>
+<body>
+    <h1>Static Methods</h1>
+    <p>Static class methods are defined on the class itself.</p>
+    <p>You cannot call a static method on an object, only on an object class</p>
+     <h6>A static method is created with the "static" keyword, and you can only call the method on the class itself.</h6>
+     <p id="demo"></p>
+     <script>
+        class Car{
+            constructor(name)
+            {
+                this.name=name;
+            }
+            static hello()
+            {
+                return "Hello!!";
+            }
+        }
+        const myCar=new Car("Food");
+        //You can call 'hello()' on the car Class:
+        document.getElementById("demo").innerHTML=Car.hello();
+        //But Not on a Car Object:
+      //  document.getElementById("demo").innerHTML=myCar.hello();
+        //this will raise an error. 
+     </script>
+</body>
+</html>

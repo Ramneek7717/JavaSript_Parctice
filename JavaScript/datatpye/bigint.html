@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigInt</title>
+</head>
+<body>
+    <script>
+    let x=999999999999999;
+    let y=9999999999999999;
+    console.log(" x=999999999999999\n"+x);
+    console.log(" y=9999999999999999\n"+y);
+    console.log("use BigInt ");
+    let y1=9999999999999999n;
+    console.log(" y1=9999999999999999n\n"+y1);
+    let x2=1234567890123456789012345n;
+    let y3=BigInt("123456789012345678901234567890");
+    console.log("let x2=1234567890123456789012345n;\n"+x2+"\nlet y3=BigInt(\"123456789012345678901234567890\");\n"+y3);
+    let type=typeof y3;
+    console.log(" let type=typeof y3 \t"+type);  
+    console.log("BigInt operators ");
+    console.log("x2+y3="+(x2*y3));
+//    let y4=x2/2;
+   // console.log("y4=x2/2\t"+y4); BigInt  and a Number is not allowed
+   let hex = 0x20000000000003n;
+let oct = 0o400000000000000003n;
+let bin = 0b100000000000000000000000000000000000000000000000000011n;
+  console.log("let hex = 0x20000000000003n;\nlet oct = 0o400000000000000003n;\nlet bin = 0b100000000000000000000000000000000000000000000000000011n;\n"+hex+"\n"+oct+"\n"+bin)
+  </script>
+    
+</body>
+</html>

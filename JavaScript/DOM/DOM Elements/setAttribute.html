@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dom Element setAttribute()</title>
+    <style>
+        .democlass{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element setAttribute()</h1>
+    <!-- <h3>Add a class attribute to an element:</h3>
+    <h1 id="myH1">The Element Object</h1>
+    <h2>The setAtrtribute()</h2>
+    <p>Click "Add Class" to add a class attribute to the h1 element:</p>
+    <button onclick="myFunction()">Add Class</button>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myH1").setAttribute("class","democlass");
+
+        }
+</script> -->
+<!-- <h3>Add a href attribute to an a element:</h3>
+<a  id="myAnchor" >Go to w3schools.com</a>
+<p>Click "add" to add an href attribute to the element above.</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+      document.getElementById("myAnchor").setAttribute("href", "https://www.w3schools.com"); 
+    }
+    </script> -->
+    <h3>Chnage the value of the target attribute to "_self":</h3>
+    <a href="https://www.w3schools.com" id="myA" target="_blank">W3schools</a>
+    <p>Click "Chnage" to change the link traget to "_self"</p>
+    <button onclick="myFunction()">Change</button>
+    <p>Try clicking the link before and after "Change".</p>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myA");
+            if(element.hasAttribute("target"))
+            {
+                element.setAttribute("traget","_self");
+            }
+        }
+    </script>
+</body>
+</html>

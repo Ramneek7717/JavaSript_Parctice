@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Data Type</title>
+</head>
+
+<body>
+    <script>
+        let x = 3.14// A number with decimals
+        let y = 34;  // A number without decimals
+        let z = 123e5;//12300000
+        let z1 = 123e-5;//0.00123
+        let x1 = 999999999999999;// x1 will be 999999999999999
+        let y1 = 99999999999999999;//y1 will be 1000000000000000
+        console.log("A number with decimals x =3.14 :" + x);
+        console.log("A number without  decimals y =34 :" + y);
+        console.log("Exponent notation z=123e5 :" + z);
+        console.log("Exponent notation z=123e-5 :" + z1);
+        console.log("Number without a period or exponent notation x1=9999999999999999 :" + x1);
+        console.log("Number without a period or exponent notation y1=999999999999999999 :" + y1);
+        console.log("Floating point arithmetic x=0.2+0.1 : " + (0.2 + 0.1));
+        console.log("Problem slove (0.2*10+0.1*10)/10 :" + ((0.2 * 10 + 0.1 * 10) / 10));
+        console.log("Add two number x and y :" + (x + y));
+        let a = "10";
+        let b = "20";
+        console.log("Add two string :" + (a + b));
+        console.log("Add a number and a string :" + (x + a));
+        console.log("Add a string and a number :" + (a + x));
+        console.log("Add x+y without  brackets :" + x + y);
+        console.log("Add x+y+z without  brackets x and y is number a is srting :" + x + y + a);
+        let a1 = "100";
+        let b1 = "10";
+        console.log("Try to convert string to numbers in divide operations :" + (a1 / b1))
+        console.log("Try to convert string to numbers in Multiplication operations :" + (a1 * b1))
+        console.log("Try to convert string to numbers in subtraction operations :" + (a1 - b1))
+        console.log("Try to convert string to numbers in  additional operations but not convert:" + (a1 + b1))
+        console.log("NaN - Not a Number( 100/\"Apple\") :" + (100 / "Apple"));
+        console.log(" use function isNaN(100/\"Apple\"):" + isNaN(100 / "Apple"));
+        console.log(" use NaN in mathematical operational (NaN + 5):" + (NaN + 5));
+        console.log(" use NaN in mathematical operational (NaN + \"5\"):" + (NaN + "5"));
+        console.log("  NaN is  NUMBER : typeof NaN : " + typeof (NaN));
+        console.log(" 2/0 :" + (2 / 0));
+        console.log(" -2/0 :" + (-2 / 0));
+        console.log(" typeof infinity return a number :" + typeof (Infinity));
+        console.log(" typeof -infinity return a number :" + typeof (-Infinity));
+        console.log("Numeric constants as hexadecimal if they are preceded by 0x :" + (0xFF));
+        console.log("Numeric constants as octal if they are preceded by 0 :" + (04));
+        let myNumber = 32;
+        console.log("myNumber=" + myNumber);
+        console.log("myNumber.toStrings(32) :" + myNumber.toString(32));
+        console.log("myNumber.toStrings(16) :" + myNumber.toString(16));
+        console.log("myNumber.toStrings(12) :" + myNumber.toString(12));
+        console.log("myNumber.toStrings(10) :" + myNumber.toString(10));
+        console.log("myNumber.toStrings(8) :" + myNumber.toString(8));
+        console.log("myNumber.toStrings(2) :" + myNumber.toString(2));
+        console.log("Using Number as a Ojects");
+        let x2 = 123;
+        let y2 = new Number(123);
+        console.log(" let y2=new Number(123) :" + y2);
+        console.log(" let y2=new Number(123) check typeOf :" + typeof (y2));
+        console.log(" let x2=123;\n let y2=new Number(123)=(x2==y2) :" + (x2 == y2));
+        console.log(" let x2=123;\n let y2=new Number(123)=(x2===y2) :" + (x2 === y2));
+        let z2 = new Number(123);
+        console.log("  let z2=new Number(123);\n let y2=new Number(123)=(x2==y2) :" + (z2 == y2));
+        console.log("  let z2=new Number(123);\n let y2=new Number(123)=(x2===y2) :" + (z2 === y2));
+        console.log("NUMBER METHODS AND PROPERTIES :");
+        console.log("Constructor =134.5.constructor : " + (134.5.constructor));
+        console.log("Epsilon =134.5.EPSILON : " + (134.5.EPSILON));
+        console.log("Number.isFinite(123) :" + Number.isFinite(123));
+        console.log("Number.isFinite(\"123\") :" + Number.isFinite("123"));
+        console.log("Number.isFinite(5-2) :" + Number.isFinite(5 - 2));
+        console.log("Number.isFinite(5/2) :" + Number.isFinite(5 / 2));
+        console.log("Number.isFinite(0) :" + Number.isFinite(0));
+        console.log("Number.isFinite(0/0) :" + Number.isFinite(0 / 0));
+        console.log("Number.isFinite(Infinity) :" + Number.isFinite(Infinity));
+        console.log("Number.isFinite(-Infinity) :" + Number.isFinite(-Infinity));
+        console.log("Number.isFinite(NaN) :" + Number.isFinite(NaN));
+        console.log("isFinite(123) :" + isFinite(123));
+        console.log("isFinite(\"123\") :" + isFinite("123"));
+        console.log("isFinite(-1.23) :" + isFinite(-1.23));
+        console.log("isFinite(5-2) :" + isFinite(5-2));
+        console.log("isFinite(0) :" + isFinite(0));
+        console.log("isFinite(\"Hello\") :" + isFinite("Hello"));
+        console.log("isFinite(\"2005/12/12\") :" + isFinite("2005/12/12"));
+        console.log("NUMBER NaN ");
+        let x10=Number.NaN;
+        console.log("x6=Number.NaN:"+x10);
+        let x101=NaN;
+        console.log("let x101=NaN:"+x101);
+        console.log("isNaN(123) :" + isNaN(123));
+        console.log("isNaN(\"123\") :" + isNaN("123"));
+        console.log("isNaN(-1.23) :" + isNaN(-1.23));
+        console.log("isNaN(5-2) :" + isNaN(5-2));
+        console.log("isNaN(0) :" + isNaN(0));
+        console.log("isNaN(\"Hello\") :" + isNaN("Hello"));
+        console.log("isNaN(\"2005/12/12\") :" + isNaN("2005/12/12"));
+        console.log("isNaN(0/0) :"+isNaN(0/0));
+        console.log("isNaN('') :"+isNaN(''));
+        console.log("isNaN('A') :"+isNaN('A'));
+        console.log("isNaN(true)) :"+isNaN(true));
+        console.log("isNaN(false) :"+isNaN(false));
+        console.log("isNaN('NaN') :"+isNaN('NaN'));
+        console.log("isNaN(NaN) :"+isNaN(NaN));
+        console.log("isNaN(undefined) :"+isNaN(undefined));
+        console.log("isNaN(null) :"+isNaN(null));
+        console.log("Number.isNaN(123) :" +Number.isNaN(123));
+        console.log("Number.isNaN(\"123\") :" + Number.isNaN("123"));
+        console.log("Number.isNaN(-1.23) :" +Number.isNaN(-1.23));
+        console.log("Number.isNaN(5-2) :" + Number.isNaN(5-2));
+        console.log("Number.isNaN(0) :" +Number.isNaN(0));
+        console.log("Number.isNaN(\"Hello\") :" + Number.isNaN("Hello"));
+        console.log("Number.isNaN(\"2005/12/12\") :" + Number.isNaN("2005/12/12"));
+        console.log("Number.isNaN(0/0) :"+Number.isNaN(0/0));
+        console.log("Number.isNaN('') :"+Number.isNaN(''));
+        console.log("Number.isNaN('A') :"+Number.isNaN('A'));
+        console.log("Number.isNaN(true)) :"+Number.isNaN(true));
+        console.log("Number.isNaN(false) :"+Number.isNaN(false));
+        console.log("Number.isNaN('NaN') :"+Number.isNaN('NaN'));
+        console.log("Number.isNaN(NaN) :"+Number.isNaN(NaN));
+        console.log("Number.isNaN(undefined) :"+Number.isNaN(undefined));
+        console.log("Number.isNaN(null) :"+Number.isNaN(null));
+        console.log("POSITIVE_INFINITY");
+        let x4=Number.POSITIVE_INFINITY;
+        console.log("x4=Number.POSITIVE_INFINITY :"+x4);
+        let n=(Number.MAX_VALUE)*2;
+        console.log("n=(Number.MAX_VALUE)*2 : "+n);
+        let x5=100;
+        console.log("let x5=100;\nx5.POSITIVE_INFINITY :"+x5.POSITIVE_INFINITY);
+        console.log("NEGATIVE_INFINITY");
+        let x41=Number.NEGATIVE_INFINITY;
+        console.log("x41=Number.NEGATIVE_INFINITY :"+x41);
+        let n1=(-Number.MAX_VALUE)*2;
+        console.log("n1=Number.NEGATIVE_INFINITY :"+n1);
+        let x51=100;
+        console.log("let x5=100;\n x5.NEGATIVE_INFINITY :"+x51.NEGATIVE_INFINITY);
+        console.log("isInterger");
+        console.log("Number.isInterger(123): "+Number.isInteger(123));
+        console.log("Number.isInterger(-123): "+Number.isInteger(-123));
+        console.log("Number.isInterger('123'): "+Number.isInteger('123'));
+        console.log("Number.isInterger(4-2)"+Number.isInteger(4-2));
+        console.log("Number.isInterger(4/2) :"+Number.isInteger(4/2));
+        console.log("Number.isInterger(5-2): "+Number.isInteger(5-2));
+        console.log("Number.isInterger(5/2):"+Number.isInteger(5/2));
+        console.log("Number.isInterger(0):"+Number.isInteger(0));
+        console.log("Number.isInterger(0/0):"+Number.isInteger(0/0));
+        console.log("Number.isInterger(0.5):"+Number.isInteger(0.5));
+        console.log("Number.isInterger(false): "+Number.isInteger(false));
+        console.log("Number.isInterger(NaN) :"+Number.isInteger(NaN));
+        console.log("Number.isInterger(Infinity):"+Number.isInteger(Infinity));
+        console.log("Number.isInterger(-Infinity):"+Number.isInteger(-Infinity));
+        console.log("isSafeInterger");
+        console.log("Number.isSafeInterger(123):"+Number.isSafeInteger(123));
+        console.log("Number.isSafeInterger(-123):"+Number.isSafeInteger(-123));
+        console.log("Number.isSafeInterger('123'):"+Number.isSafeInteger('123'));
+        console.log("Number.isSafeInterger(5-2)"+Number.isSafeInteger(5-2));
+        console.log("Number.isSafeInterger(0.5):"+Number.isSafeInteger(0.5));
+        console.log("Number.isSafeInterger(0):"+Number.isSafeInteger(0));
+        console.log("Number.isSafeInterger(0/0):"+Number.isSafeInteger(0/0));
+        console.log("Number.isSafeInterger(Math.pow(2,53):"+Number.isSafeInteger(Math.pow(2,53)));
+        console.log("Number.isSafeInterger(Math.pow(2,53)-1)"+Number.isSafeInteger(Math.pow(2,53)-1));
+        console.log("Number.isSafeInterger(true):"+Number.isSafeInteger(true));
+        console.log("Number.isSafeInterger(false):"+Number.isSafeInteger(false));
+        console.log("Number.isSafeInterger(Infinity):"+Number.isSafeInteger(Infinity));
+        console.log("Number.isSafeInterger(-Infinity):"+Number.isSafeInteger(-Infinity));
+        console.log("MAX_SAFE_INTEGER");
+        let x6=Number.MAX_SAFE_INTEGER;
+        console.log("x6=Number.MAX_SAFE_INTEGER :"+x6);
+        let x61=100;
+        console.log("let x61=100;\n x61.MAX_SAFE_INTEGER :"+x61.MAX_SAFE_INTEGER);
+        console.log("MIN_SAFE_INTEGER");
+        let x7=Number.MIN_SAFE_INTEGER;
+        console.log("x7=Number.MIN_SAFE_INTEGER :"+x7);
+        let x71=100;
+        console.log("let x71=100;\n x71.MIN_SAFE_INTEGER :"+x71.MIN_SAFE_INTEGER);
+        console.log("NUMBER MAX_VALUE");
+        let x8=Number.MAX_VALUE;
+        console.log("x6=Number.MAX_VALUE :"+x8);
+        let x81=100;
+        console.log("let x81=100;\n x81.MAX_VALUE:"+x81.MAX_VALUE);
+        console.log("NUMBER MIN_VALUE");
+        let x9=Number.MIN_VALUE;
+        console.log("x9=Number.MIN_VALUE :"+x9);
+        let x91=100;
+        console.log("let x91=100;\n x91.MIN_VALUE:"+x91.MIN_VALUE);
+        console.log("Number.parseFloat()");
+        console.log("Number.parseFloat(10):"+Number.parseFloat(10));
+        console.log("Number.parseFloat(\"10\"):"+Number.parseFloat("10"));
+        console.log("Number.parseFloat(\"10.33\"):"+Number.parseFloat("10.33"));
+        console.log("Number.parseFloat(\"34 45 66\"):"+Number.parseFloat("34 45 66"));
+        console.log("Number.parseFloat(\"He was 40\"):"+Number.parseFloat("He was 40"));
+        console.log("Number.parsefloat(\"40.00\"):"+Number.parseFloat("40.00"));
+        console.log("Number.parsefloat(\" 40 \"):"+Number.parseFloat(" 40 "));
+        console.log("Number.parseFloat(\"40 years\"):"+Number.parseFloat("40 years"));
+        console.log("NUmber.parseFloat(\"40H\"):"+Number.parseFloat("40H"));
+        console.log("Number.parseFloat(\"H40\"):"+Number.parseFloat("H40"));
+        console.log("Number.parseInt()");
+        console.log("Number.parseInt(10):"+Number.parseInt(10));
+        console.log("Number.parseInt(\"10\"):"+Number.parseInt("10"));
+        console.log("Number.parseInt(\"10.00\"):"+Number.parseInt("10.00"));
+        console.log("Number.parseInt(\"10.33\"):"+Number.parseInt("10.33"));
+        console.log("Number.parseInt(\"34 45 66\"):"+Number.parseInt("34 45 66"));
+        console.log("Number.parseInt(\"He was 40\"):"+Number.parseInt("He was 40"));
+        console.log("Number.parseInt(\"40.00\"):"+Number.parseInt("40.00"));
+        console.log("Number.parseInt(\" 40 \"):"+Number.parseInt(" 40 "));
+        console.log("Number.parseInt(\"40 years\"):"+Number.parseInt("40 years"));
+        console.log("NUmber.parseInt(\"40H\"):"+Number.parseInt("40H"));
+        console.log("Number.parseInt(\"H40\"):"+Number.parseInt("H40"));
+        console.log("Number.parseInt(\"10\",10):"+Number.parseInt("10",10));
+        console.log("Number.parseInt(\"010\"):"+Number.parseInt("010"));
+        console.log("Number.parseInt(\"10\",8):"+Number.parseInt("10",8));
+        console.log("Number.parseInt(\"0*10\"):"+Number.parseInt("0*10"));
+        console.log("Number.parseInt(\"10\",16):"+Number.parseInt("10",16));
+        console.log("Number prototype");
+        Number.prototype.myMethod=function()
+        {
+          return this.valueOf()/2;
+        };
+        let n2=55;
+        let x11=n2.myMethod();
+        console.log("x11=n2.myMethod:"+x11); 
+        console.log("Number toExponential()");
+        let num=5.56789;
+        let n3=num.toExponential();
+        console.log("n3=num.toExponentail():"+n3);
+        let n4=num.toExponential(3);
+        console.log("n4=num.toExponentail():"+n4);
+        console.log("Number toFixed():");
+        let num1=5.56789;
+        let n5=num1.toFixed();
+        console.log("n5=num.toFixed():"+n5);
+        let num2=5.56789;
+        let n7=num2.toFixed(2);
+        console.log("n7=num.toFixed(2):"+n7);
+        let num3=5.56789;
+        let n8=num3.toFixed(10);
+        console.log("n8=num.toFixed(10):"+n8);
+        console.log("Number toLocaleString()");
+        let num4=1000000;
+        let text=num4.toLocaleString();
+        console.log("text=num4.toLocalString(): "+text);
+        let text1=num4.toLocaleString("hi-HU");
+        console.log("text1=num4.toLocalString(\"hi-HU\"): "+text1);
+        let text2=num4.toLocaleString("hi-HU",{style:"currency",currency:"INR"});
+        console.log("text1=num4.toLocalString(\"hi-HU\",{style:\"currency,currency:\"INR\"}) "+text2);
+        console.log("Number toPrecision()");
+        let num5=13.3714;
+        let n9=num5.toPrecision(2);
+        console.log(" let num5=13.3714; \nlet n9=num5.toPrecision(2); :"+n9);
+         console.log("num5.toPrecision(2) :"+num5.toPrecision(3));        
+         console.log("num5.toPrecision(2) : "+num5.toPrecision(10));
+         console.log(" NO Formatting num5.toPrecision() : "+num5.toPrecision());                
+         console.log("Number toString()");
+         let num6=15;
+         let text3=num6.toString();
+         console.log("let num6=15;\n text3=num6.toString()="+text3);
+         console.log(" num6.toString(2)="+num6.toString(2));
+         console.log(" num6.toString(8)="+num6.toString(8));
+         console.log(" num6.toString(16)="+num6.toString(16));
+         console.log(" Number valueOf()");
+         let num7=15;
+         let n10=num7.valueOf();
+         console.log("let num7=15;\n   let n10=num7.valueOf()="+n10);
+    </script>
+
+
+</body>
+
+</html>

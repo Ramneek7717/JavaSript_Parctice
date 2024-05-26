@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document defaultView</title>
+</head>
+<body>
+    <h1>HTML DOM DOcument defaultView</h1>
+    <p>Get the document's window object :</p>
+    <h4>The defalutView Property</h4>
+    <p>The defaultView Property returns the current window object :</p>
+    <p id="demo"></p>
+    <script>
+        const view=document.defaultView;
+        document.getElementById("demo").innerHTML=view;
+    </script>
+    <p>Get the size of the window:</p>
+    <h4>Window's width and height is:</h4>
+    <p id="demo1"></p>
+    <script>
+        const view1=document.defaultView;
+        let width=view.innerWidth;
+        let height=view.innerHeight;
+        document.getElementById("demo1").innerHTML=width+ "x" + height;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local variable in function </title>
+</head>
+<body>
+    <script>
+        //Local variable 
+        console.log("\t\t JavaScript Functions\t");
+       // console.log("outside myFunction() carName is Undefined.");
+       //code here can NOT use carName
+        let text="OutSide:"+typeof carName;
+        console.log(text);
+        function myFunction()
+        {
+            //code here CAN use carName
+            let carName="Volvo";
+            let text="Inside:"+typeof carName +"\t"+ carName;
+            console.log(text);
+        }
+        //code here can NOT use carName
+        let x=myFunction();
+       // console.log(x);
+
+    </script>
+    
+</body>
+</html>

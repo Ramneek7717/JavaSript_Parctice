@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element removeAttributeNode()</title>
+    <style>
+        .demoClass{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML DOM Element removeAttributeNode()</h2>
+    <!-- <h3>Remove the class attribute node from the first &lt;h1&gt;element:</h3>
+    <h1 class="demoClass">The Element object</h1>
+    <p>click "Remove" to remove the class attribute node from the first h1 element.</p>
+     <button onclick="myFunction()">Remove</button>
+     <script>
+        function myFunction()
+        {
+         const element=document.getElementsByTagName("H1")[0];
+         const attr=element.getAttributeNode("class");
+         element.removeAttributeNode(attr);
+        }
+     </script> -->
+     <h3>Remove the href attribute node from a link:</h3>
+     <a href="https://www.w3schools.com" id="myAnchor">A Link:go to w3schools.com</a>
+     <p id="demo">Click "Remove" to remove the href attribute node from the a element.</p>
+     <button onclick="myFunction()">Remove</button>
+     <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myAnchor");
+            const attr=element.getAttributeNode("href");
+            element.removeAttributeNode(attr);
+        }
+     </script>
+</body>
+</html>

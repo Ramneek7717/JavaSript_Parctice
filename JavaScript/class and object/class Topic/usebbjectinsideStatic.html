@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use object inside the static method</title>
+</head>
+<body>
+    <h1>Use object inside the static method</h1>
+   <p> if you want to use the myCar object inside the <span style="color: red;">static </span>  method,
+  you can send it as a parameter:</p>
+  <p id="demo"></p>
+  <script>
+    class Car{
+        constructor(name) {
+            this.name=name;
+            
+        }
+        static hello(x)
+        {
+            return "hello  " +x.name;
+        }
+    }
+    const myCar =new Car("Ford");
+    document.getElementById("demo").innerHTML=Car.hello(myCar);
+  </script>
+ </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min With Sort() Method</title>
+</head>
+<body>
+    <h1>Sort Ascending:</h1>
+   <h1>Min With sort() method</h1>
+   <p>After you have sorted an array, you can use the index to obtain the  lowest values.</p>
+   <p>The list of elements <span id="demo1"></span></p>
+   <p>The Lowest Number is : <span id="demo2"></span>.</p>
+    <script>
+        const points=[40,100,1,5,25,10];
+        document.getElementById("demo1").innerHTML=points;
+        points.sort(function(a,b) 
+               {return a-b});
+               //now points[0] conatins the lowest value
+               //and points [points.length-1] conatins the highest value
+               document.getElementById("demo2").innerHTML=points[0];
+    </script>
+     <h1>Sort Descending :</h1>
+     <p>The list of elements <span id="demo11"></span></p>
+   <p>The highest  Number is : <span id="demo21"></span>.</p>
+    <script>
+        const points1=[40,100,1,5,25,10];
+        document.getElementById("demo11").innerHTML=points1;
+        points1.sort(function(a,b) 
+               {return b-a});
+               //now points[0] conatins the highest value
+               //and points [points.length-1] conatins the lowest value
+               document.getElementById("demo21").innerHTML=points1[0];
+    </script>
+</body>
+</html>

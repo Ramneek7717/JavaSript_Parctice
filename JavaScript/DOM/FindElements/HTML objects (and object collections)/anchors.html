@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.anchors</title>
+</head>
+<body>
+    <h1>Finding HTML Elements Using document.anchors</h1>
+    <a  name="html">HTML Tutorial</a><br>
+    <a name="css">CSS Tutorial</a><br>
+    <a name="XML">XML Tutorial</a>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="Number of anchors are : "+document.anchors.length;
+    </script>
+</body>
+</html>

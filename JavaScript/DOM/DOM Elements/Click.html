@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element click()</title>
+</head>
+<body>
+    <h1>HTML DOM Element click()</h1>
+    <h3>Simulate a mouse-click when moving the mouse pointer over a checkBox:</h3>
+    <p>Hover over the checkBox to Simulate a mouse-click.</p>
+    <form action="">
+        <input type="checkbox" name="" id="myCheck" onmouseover="myFunction()">
+    </form>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myCheck").click();
+        }
+    </script>
+</body>
+</html>

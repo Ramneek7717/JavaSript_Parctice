@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array splice () method</title>
+</head>
+<body>
+    <h1>Array splice() method</h1>
+    <p> <span style="color: red;">splice()</span> method can be used to add new items to an array:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const fruits=[
+            "Banana",
+            "Orange","Apple","Mango"
+        ];
+        document.getElementById("demo1").innerHTML=fruits;
+        fruits.splice(2,0,"lemon","Kiwi");
+        document.getElementById("demo2").innerHTML=fruits;
+    </script>    
+    <p><strong>Note</strong>
+    <br>
+    The first parameter (2) defines the position where new elements should be added (spliced in).
+
+The second parameter (0) defines how many elements should be removed.
+
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+</p>
+<br><hr>
+<p>The splice () method adds new elements to an array, new elements to an array, and returns an array with the deleted elements (if any):</p>
+
+<p id="demo11"></p>
+<p id="demo21"></p>
+<p id="demo31"></p>
+<script>
+    const fruits1=[
+        "Banana",
+        "Orange",
+        "Apple",
+        "Mango"
+    ];
+    document.getElementById("demo11").innerHTML="Original Array :<br> "+fruits;
+    let remove=fruits1.splice(2,2,"Lemon","kiwi");
+    document.getElementById("demo21").innerHTML="new Array:<br>"+fruits1;
+    document.getElementById("demo31").innerHTML="Removed Items:<br> "+remove;    
+</script>
+<br>
+<hr>
+<h1>Using splice() to Remove Elements</h1>
+<p>With clever parameter setting, you can use <span style="color: red;">splice()</span> to remove elments without leaving "holes" in the array:</p>
+ <p id="demo21"></p>
+ <p id="demo22"></p>
+ <script>
+    const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+   
+document.getElementById("demo21").innerHTML = fruits2;
+fruits2.splice(0, 1);
+document.getElementById("demo22").innerHTML = fruits2;
+ </script>
+ <p>
+    The first parameter (0) defines the position where new elements should be added (spliced in).
+<br>
+The second parameter (1) defines how many elements should be removed.
+<br>
+The rest of the parameters are omitted. No new elements will be added.
+ </p>
+</body>
+</html>

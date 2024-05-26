@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document embeds</title>
+</head>
+<body>
+    <h1>HTML DOM Document embeds</h1>
+    <p>Number of embed elements in a document:</p>
+    <p id="demo"></p>
+    <embed src="pic_trulli.jpg" type="image/jpg">
+    <embed src="pic_trulli.jpg" type="image/jpg">
+    <script>
+        let num=document.embeds.length;
+        document.getElementById("demo").innerHTML=num;
+    </script>
+    </body>
+</html>

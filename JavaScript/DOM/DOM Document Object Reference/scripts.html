@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document scripts</title>
+</head>
+<body>
+    <h1>HTML DOM Document scripts</h1>
+    <!-- <h3>Number of script elements in the document:</h3>
+    <script>
+        document.write("Hello World!");
+    </script>
+    <p>The number of script elements in the document:</p>
+     <p id="demo"></p>
+     <script>
+        document.getElementById("demo").innerHTML=document.scripts.length;
+     </script> -->
+     <!-- <h3>Return the content of the first script element:</h3>
+     <p id="demo"></p>
+     <script>
+        document.getElementById("demo").innerHTML=document.scripts[0].text;
+     </script> -->
+     <!-- <h3>Return the content of the first script element:</h3>
+     <script>
+        document.write("Hello World!");
+     </script>
+     <p>The content of the first script element:</p>
+     <p id="demo"></p>
+     <script>
+        document.getElementById("demo").innerHTML=document.scripts.item(0).text;
+     </script> -->
+     <h3>Return the content of the script element with id ="myScript":</h3>
+     <!-- <script>
+        document.write("Hello world!");
+     </script>
+     <p>Return the contents of the script element with id="myScript":</p>
+     <p id="demo"></p>
+     <script id="myScript">
+        let text=document.scripts.namedItem("myScript").text;
+        document.getElementById("demo").innerHTML=text;
+     </script> -->
+     <h3>Loop over all script elements and output each id</h3>
+      <script id="myFirstScript">
+        document.write("Hello World!");
+      </script>
+      <p>Dispaly the id of each script element:</p>
+      <p id="demo"></p>
+      <script id="mySecondScript">
+        const collection=document.scripts;
+        let text="";
+        for(let i=0;i<collection.length;i++)
+        {
+            text+=collection[i].id+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+     </script>
+</body>
+</html>

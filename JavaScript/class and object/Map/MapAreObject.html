@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map are objects</title>
+</head>
+<body>
+    <h1>Map are objects</h1>
+    <p><span style="color: red;">typeof</span> returns objects:
+    </p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["Apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo").innerHTML= typeof fruits;
+    </script>
+</body>
+</html>

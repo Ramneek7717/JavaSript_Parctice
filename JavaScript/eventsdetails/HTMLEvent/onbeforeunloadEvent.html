@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Event = onbeforeunload Event</title>
+</head>
+<!-- <body onbeforeunload="return myFunction()">
+    <h1>onbeforeunload Event</h1>
+    <h3>Call a function when the page is about to be unloaded:</h3>
+    <p>Reload this page, or click on the link below to invoke the onbeforeunload event.</p>
+     <a href="https://www.w3schools.com">
+        click here to go to w3schools.com
+     </a>
+     <script>
+        function myFunction()
+        {
+            return "write something clever here...";
+        }
+     </script> -->
+<!-- <body onbefoeunload="return myFunction()">
+    <h1>In HTML</h1>
+    <h1>HTML DOM Events</h1>
+    <h2>The beforeunload Event</h2>
+    <p>This example assigns an "onbefoeunload" event to a body element.</p>
+    <p>Close this window,press F5 or click on the link below to invoke the onbeforeunload event.</p>
+    <a href="https://www.w3schools.com"> click here to go w3schools.com</a>
+    <script>
+        function myFunction()
+        {
+            return "write something clever here...";
+        }
+    </script> -->
+ <body>
+    <!-- <h1>In JavaScript</h1>
+    <h1>HTML DOM Events</h1>
+    <h2>The beforeUnload Event</h2>
+    <p>Use the HTML DOM to assign an "onbeforeunload" event to the window object.</p>
+    <p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
+    <a href="https://www.w3schools.com">Click here to go w3schools.com</a>
+    <script>
+        window.onbeforeunload=function(event){
+            event.returnValue="Write something clever here..";
+        }
+    </script> -->
+    <h1>In JavaScript,using the addEventListeber() method:</h1>
+    <p>Use the addEventListener() method to attach a "beforeunload" event to the window object.</p>
+    <p>Close this window, press F5 or click on the link below to invke the beforeunload event.</p>
+    <a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+    <script>
+        window.addEventListener("beforeunload",function(event)
+        {event.returnValue="write something clever here.."});
+    </script>
+</body>
+</html>

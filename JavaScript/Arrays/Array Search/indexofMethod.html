@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array indexOf() Method</title>
+</head>
+<body>
+    <h1>Array indexOf() Method</h1>
+    <p>The <span style="color: red;">indexOf()</span> method searches an array for an element value and returns its position.</p>
+    <p><strong>Note</strong>
+    <br>
+ The frist item has position 0, the second item has position 1 ,and so on.</p>
+ <p>Search an array for the item "Apple"</p>
+ <p id="demo1"></p>
+ <p id="demo"></p>
+ <p id="demo3"></p>
+ <p id="demo4"></p>
+ <script>
+    const fruit=[
+        "Apple",
+        "Orange",
+        "Apple","Mango"
+    ];
+    document.getElementById("demo1").innerHTML=fruit;
+    let position=fruit.indexOf("Apple")+ 1;
+    let position1=fruit.indexOf("Apple1");
+    document.getElementById("demo").innerHTML="Apple is found in position " + position;
+    document.getElementById("demo3").innerHTML="Apple1 is found in position " + position1;
+    let position2=fruit.indexOf("Apple",1);
+    document.getElementById("demo4").innerHTML="Apple is found in position " + position2;
+
+ </script>
+</body>
+</html>

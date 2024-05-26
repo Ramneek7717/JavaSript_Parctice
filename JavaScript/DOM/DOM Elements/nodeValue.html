@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM nodeValue Property</title>
+</head>
+<body>
+    <h1>HTML DOM nodeValue property</h1>
+    <h3>Return the node value of the first button element in the document:</h3>
+    <button>Try it</button>
+    <p>The node value of the first button element is:</p>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementsByTagName("BUTTON")[0];
+        let value=element.childNodes[0].nodeValue;
+        document.getElementById("demo").innerHTML=value;
+    </script>
+</body>
+</html>

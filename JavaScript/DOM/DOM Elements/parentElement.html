@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM parentElement Property</title>
+    <style>
+        div{
+            box-sizing: border-box;
+            padding: 16px;
+            width: 100%;
+            background-color: red;
+            color: #fff;
+        }
+        .closebtn{
+            float:right;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .closebtn:hover{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM parentElement Property</h1>
+    <!-- <h3>Get the node name of the parent element of a &lt;li &gt; element:</h3>
+      <p>Example list:</p>
+      <ul>
+        <li id="myLi">Coffee</li>
+        <li>Tea</li>
+      </ul>
+      <p>Click the button to get the node name of the parent element of the li element in the list.</p>
+      <button onclick="myFunction()">try it</button>
+      <p id="demo"></p>
+      <script>
+        function myFunction()
+        {
+            var x=document.getElementById("myLi").parentElement.nodeName;
+            document.getElementById("demo").innerHTML=x;
+        }
+      </script> -->
+      <h3>Click on an element(&lt;span&gt;) to hide its parent element(&lt;div&gt;):</h3>
+      <div>
+        <span onclick="this.parentElement.style.display = 'none';" class="closebtn">&times;</span>
+        <p>To close this container, click on the X symbol to the right.</p>
+      </div>
+</body>
+</html>

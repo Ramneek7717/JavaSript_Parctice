@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array includes Methods</title>
+</head>
+<body>
+    <h1>Array inclides() Method</h1>
+    <p>This allows us to check if an element is present in an array (including NaN,unlike IndefOf)</p>
+    <p>Check if the fruit array contains "Mango" :</p>
+    <p id="demo1"></p>
+    <P id="demo2"></P>
+    <p><strong>Note:</strong>
+        The includes method is not supported in Edge 13 ( and earlier versions).
+    </p>
+    <script>
+        const fruit=[
+            "Banana",
+            "Orange",
+            "Apple",
+            "Mango"
+        ];
+        document.getElementById("demo1").innerHTML=fruit;
+        document.getElementById("demo2").innerHTML=fruit.includes("Mango");
+    </script>
+    
+</body>
+</html>

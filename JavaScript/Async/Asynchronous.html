@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaScript</title>
+</head>
+<body>
+    <h1>Asynchronous JavaScript</h1>
+    <!-- <h3>Waiting for a Timeout</h3>
+    <p>When using the javascript function setTimeout(),you can specify a callback function to be executed on time-out.</p>
+    <h4>setTimeout() with a CallBack</h4>
+    <p>Wait 3 seconds (3000 milliseconds) for this page to change. </p>
+    <h1 id="demo"></h1>
+    <script>
+        setTimeout(myFunction,3000);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="I am p";
+        }
+    </script> -->
+    <!-- <h3>Instead of passing the name of a function as an argument to another function,you can always pass a whole function instead:</h3>
+    <h2>setInterval() with a callback</h2>
+    <p>Wait 3 seconds(3000 milliseconds) for this page to change.</p>
+    <h1 id="demo"></h1>
+    <script>
+        setTimeout(function(){ myFunction("I am h1");},3000);
+        function myFunction(value)
+        {
+            document.getElementById("demo").innerHTML=value;
+        }
+    </script> -->
+    <h1>Waiting for Intervals:</h1>
+    <p>When using the JavaScript function setInterval(), you can specify a callback function to be executed for each interval:</p>
+    <h2>setInterval() with a Callback</h2>
+    <p>Using setInterval() to display the every second(1000 milliseconds).</p>
+    <h1 id="demo"></h1>
+    <script>
+        setInterval(myFunction,1000);
+        function myFunction()
+        {
+            let d= new Date();
+            document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        }
+    </script>
+</body>
+</html>

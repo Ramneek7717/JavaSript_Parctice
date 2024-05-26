@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using if ,if else and else if condition</title>
+</head>
+
+<body>
+    <script>
+        //Simple Calculator
+        console.log("\t\t\t\t\t\t\t\t\t\t\t\tCALCULATOR");
+        // Select the Operator *,-,+,/
+        const operator = prompt('Select the Operator *,-,+,/ :');
+        //Take the user input
+        const opreand1 = Number(prompt('Enter the Frist No.='));
+        const opreand2 = Number(prompt('Enter the Second No.='));
+        console.log(opreand1);
+        console.log(opreand2);
+        if (operator == '*') {
+            if (isNaN(opreand1)) {
+                console.log("Plz enter the frist no. in Number ");
+            }
+            else if (isNaN(opreand2)) {
+                console.log("Plz enter the second no. in Number ");
+            }
+            else {
+                console.log(`${opreand1} * ${opreand2} = ${opreand1 * opreand2}`);
+            }
+        }
+        else if (operator == '/') {
+
+            if (isNaN(opreand1)) {
+                console.log("Plz enter the frist no. in Number ");
+            }
+            else if (isNaN(opreand2)) {
+                console.log("Plz enter the second no. in Number ");
+            }
+            else {
+                console.log(`${opreand1} / ${opreand2} = ${opreand1 / opreand2}`);
+            }
+        }
+        else if (operator == '+') {
+
+            if (isNaN(opreand1)) {
+                console.log("Plz enter the frist no. in Number ");
+            }
+            else if (isNaN(opreand2)) {
+                console.log("Plz enter the second no. in Number ");
+            }
+            else {
+                console.log(`${opreand1} + ${opreand2} = ${opreand1 + opreand2}`);
+            }
+        }
+        else if (operator == '-') {
+
+            if (isNaN(opreand1)) {
+                console.log("Plz enter the frist no. in Number ");
+            }
+            else if (isNaN(opreand2)) {
+                console.log("Plz enter the second no. in Number ");
+            }
+            else {
+                console.log(`${opreand1} - ${opreand2} = ${opreand1 - opreand2}`);
+            }
+        }
+        else {
+            console.log("Enter the Worng Operator");
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

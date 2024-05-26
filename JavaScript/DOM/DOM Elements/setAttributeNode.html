@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element setAttributeNode()</title>
+    <style>
+        .democlass{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element setAttributeNode()</h1>
+    <!-- <h3>Set the class attribute node of the first &lt;h1&gt;element:</h3>
+    <p>Click "Chnage" to set the class atttribute node of the first header.</p>
+    <button onclick="myFunction()">Change</button>
+    <script>
+        function myFunction()
+        {
+            const attr=document.createAttribute("class");
+            attr.value="democlass";
+            const element=document.getElementsByTagName("H1")[0];
+            element.setAttributeNode(attr);
+        }
+    </script> -->
+    <h3>Set thehref atttribute node of a &lt;a&gt; element:</h3>
+    <a id="myAnchor">Go to w3schools.com</a>
+    <p>Click "Add" to add a href attribute to the anchor above.</p>
+    <button onclick="myFunction()">Add</button>
+    <script>
+        function myFunction()
+        {
+            const attr=document.createAttribute("href");
+            attr.value="https://www.w3schools.com";
+            const element=document.getElementById("myAnchor");
+            element.setAttributeNode(attr);
+        }
+    </script>
+</body>
+</html>

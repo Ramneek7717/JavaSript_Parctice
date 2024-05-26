@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element getElementsByClassName()</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element getElementsByClassName()</h1>
+    <!-- <h3>Change the text of the frist list item with class="child":</h3>
+    <ul class="example">
+        <li class="child">Coffee</li>
+        <li class="child">Tea</li>
+    </ul>
+    <p>Click "Change" to change the text of the first list item:</p>
+    <button onclick="myFunction()">
+     Change
+    </button>
+    <script>
+        function myFunction()
+        {
+            const list=document.getElementsByClassName("example")[0];
+            list.getElementsByClassName("child")[0].innerHTML="Milk";
+        }
+    </script> -->
+    <!-- <h3>Number of elements with class="child" in "myDiv":</h3>
+    <div id="myDiv">
+        <p class="child">I am a paragraph</p>
+        <p class="child">I am a paragraph</p>
+        <p class="child">I am a paragraph</p>
+    </div>
+    <p>The number of elements with class "child" are:</p>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("myDiv");
+        const nodes=element.getElementsByClassName("child");
+        document.getElementById("demo").innerHTML=nodes.length;
+    </script> -->
+    <!-- <h3>Change the size of the second element with class="child":</h3>
+    <div id="myDiv">
+        <p class="child">I am a paragraph</p>
+        <p class="child">I am a paragraph</p>
+        <p class="child">I am a paragraph</p>
+    </div>
+    <p>Click "change" to chnage the size of the second paragraph with class="child":</p>
+    <button onclick="myFunction()">Change</button>
+     <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myDiv");
+            element.getElementsByClassName("child")[1].style.fontSize="24px"
+        }
+     </script> -->
+     <!-- <h3>Chnage the size of the first element with "child" and "color" classes inside the second element with class="example":</h3>
+     <div class="example">
+         <p class="child">I am a paragraph.</p>
+     </div>
+     <div class="example">
+        <p class="child color">I am a paragraph.</p>
+        <p class="child color">I am a paragraph.</p>
+     </div>
+     <div class="example">
+        <p class="child color">I am a paragraph.</p>
+        <p class="child color">I am a paragraph.</p>
+     </div>
+     <p>Click "Change" to change the size of the first paragraph with classes "child" and "color" inside the second div element with class="example".</p>
+      <button onclick="myFunction()">Change</button>
+      <script>
+        function myFunction()
+        {
+            const elements=document.getElementsByClassName("example")[1];
+            elements.getElementsByClassName("child color")[0].style.fontSize="24px";
+        }
+      </script>     -->
+      <h3>Change the color of all elements in "myDiv" with class="child":</h3>
+      <div id="myDiv">
+        <p class="child">I am a paragraph.</p>
+        <p class="child">I am a paragraph.</p>
+        <p class="child">I am a paragraph.</p>
+        <p>I am a paragraph <span class="child">with a span element</span>.</p>
+      </div>
+      <p>Click "Change" to chnage the color of all elements with class="child":</p>
+      <button onclick="myFunction()">Change</button>
+      <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myDiv");
+            const node=element.getElementsByClassName("child");
+            for(let i=0;i<node.length;i++)
+            {
+                node[i].style.color="red";
+            }
+        }
+      </script>
+</body>
+</html>

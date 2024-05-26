@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element tagName</title>
+</head>
+<body>
+    <h1>The tagName Property</h1>
+    <!-- <h1>Get the tagName of the "demo" element:</h1>
+    <p id="demo"></p>
+    <script>
+        let name=document.getElementById("demo").tagName;
+        document.getElementById("demo").innerHTML=name;
+    </script> -->
+     <h1>Find which element triggered an event:</h1>
+      <p>Click on any elements in this document to see which element triggered the onclick event.</p>
+      <button>This is a button</button>
+      <p><span>This is span element.</span></p>
+      <p id="demo"></p>
+      <script>
+        function myFunction(event)
+        {
+            const element=event.traget;
+            document.getElementById("demo").innerHTML="Triggered by "+element.tagName;
+        }
+      </script>
+</body>
+</html>

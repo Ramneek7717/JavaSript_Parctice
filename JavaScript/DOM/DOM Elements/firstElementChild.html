@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element firstElementChild</title>
+</head>
+<body>
+    <h1>HTML DOM Element FirstElementChild</h1>
+    <!-- <h3>Get the HTML content of the first child element:</h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>The HTML content of the list's first child is:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.getElementById("myList").firstElementChild.innerHTML;
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <!-- <h3>Get the tag name of the firstchild element of "myDiv":</h3>
+    <div id="myDiv">
+        <p>A P element-First Child in "myDiv"</p>
+        <span>A Span element-Last child in "myDiv" is:</span>
+    </div>
+    <p>The tag name of the first child element in "myDiv" is:</p>
+    <p id="demo"></p>
+    <script>
+        let name=document.getElementById("myDiv").firstElementChild.tagName;
+        document.getElementById("demo").innerHTML=name;
+    </script> -->
+    <h3>Get the text of the first child element of a select element:</h3>
+    <select  id="mySelect" size="4">
+        <option value="">Audi</option>
+        <option value="">BMW</option>
+        <option value="">Saab</option>
+        <option value="">Volvo</option>
+    </select>
+    <br><br>
+    <p>The text of the first child element of the select element is:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.getElementById("mySelect").firstElementChild.text;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

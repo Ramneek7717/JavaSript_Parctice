@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    <script>
+        console.log("The Global Object");
+        let x=myFunction();//x will be the window object
+        function myFunction(){
+            return this;
+        }  
+        console.log(x);
+        console.log("Invoking a Function as a Method");
+        const myObject={
+            firstName:"John",
+            lastName:"Deo",
+            fullName:function(){
+                return this.firstName+" "+this.lastName;
+            }
+        }
+        console.log(myObject.fullName());//Will return "John Doe"
+        console.log("this will return [object object] (the owner object)");
+        const myObject1={
+            fristName:"John",
+            lastName:"Doe",
+            fullName:function(){
+                return this;
+            }
+        }
+        // This will return [Object Object  ](the owner object)
+        console.log(myObject1.fullName());
+        console.log("Invoking a Function with a Function Constructor");
+        //this is a function constructor:
+          function myFunction1(arg1,arg2)
+          {
+            this.fristName=arg1;
+            this.lastName=arg2;
+          }
+          //this creates a new object
+          const myObj=new myFunction1("John","Doe");
+          //THis will return "John"
+         console.log( myObj.fristName);
+
+    </script>
+</body>
+</html>

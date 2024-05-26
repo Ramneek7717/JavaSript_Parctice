@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Set and add literal values:</title>
+</head>
+<body>
+   <h1>Create a Set and add Literal values:</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        //Create a Set 
+        const letters=new Set();
+        //Add Values to the Set
+        letters.add("a");
+        letters.add("b");
+        letters.add("c");
+        //Dispaly the set and set size
+        let text="";
+        for(let x of letters)
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML="Display the set Element <br>"+text;
+        document.getElementById("demo1").innerHTML="Add values to a set size : "+letters.size;
+    </script>
+</body>
+</html>

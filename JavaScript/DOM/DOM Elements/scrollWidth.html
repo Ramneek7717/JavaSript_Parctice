@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element scrolWidth</title>
+    <style>
+        /* #myDiv
+        {
+            margin-top:10px;
+            height: 250px;
+            width: 250px;
+            overflow: auto;
+        }
+        #content
+        {
+            height: 800px;
+            width: 2000px;
+            padding: 10px;
+            background-color: coral;
+        } */
+        /* How padding, border, and scrollbar affects the scrollWidth and scrollHeight: */
+        #content{
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            padding: 15px;
+            border: 10px solid black;
+            margin: 10px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element scrollWidth</h1>
+    <!-- <h3>Get the height and width of an element, including padding:</h3>
+    <h2>The scrollHeight and scrollWidth properties</h2>
+    <div id="mydiv">
+        <div id="content">
+            some content..
+        </div>
+    </div>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("content");
+        let y=element.scrollHeight;
+        let x=element.scrollWidth;
+        document.getElementById("demo").innerHTML="Height: "+y+"Width: "+x;
+    </script> -->
+    <!-- <h3>How padding, border, and scrollbar affects the scrollWidth and scrollHeight:</h3>
+     <h2>The scrollHeight and scrollWidth Properties</h2>
+     <p>These properties return the height and width including padding,set excluding borders,scrollbars, or margins.</p>
+     <p>Try to remove and/or chnage the different CSS property values, and click "Run again to understand how it works."</p>
+     <div id="content">Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..</div>
+     <p id="demo"></p>
+     <script>
+        const element=document.getElementById("content");
+        let y=element.scrollHeight;
+        let x=element.scrollWidth;
+        document.getElementById("demo").innerHTML="Height :"+y+" Width: "+x;
+     </script> -->
+     <h3>Set the height and width of an element to the values returned from scrollHeight and scrollwidth:</h3>
+     <button onclick="myFunction()">Adjust</button>
+     <p>Click "Adjust" to set the width and height of "content" to the values returned from scrollHeight and scrollWidth.</p>
+     
+<div id="content">Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..Some content..</div>
+<script>
+    function myFunction()
+    {
+        const element=document.getElementById("content");
+        element.style.height=element.scrollHeight+"px";
+        element.style.width=element.scrollWidth+"px";
+    }
+</script>
+</body>
+</html>

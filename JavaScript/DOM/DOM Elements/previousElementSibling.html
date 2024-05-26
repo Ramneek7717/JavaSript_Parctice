@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element previousElementSibling</title>
+</head>
+<body>
+    <h1>HTML DOM Element previousElementSibling</h1>
+    <h3>Return the HTML content of the previous sibling:</h3>
+    <ul>
+        <li id="item1">Coffee(first item)</li>
+        <li id="item2">Tea (second item)</li>
+    </ul> 
+    <p>The previous sibling of the second list item has the text:</p>
+    <p id="demo"></p>
+    <script>
+        let text=document.getElementById("item2").previousElementSibling.innerHTML;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

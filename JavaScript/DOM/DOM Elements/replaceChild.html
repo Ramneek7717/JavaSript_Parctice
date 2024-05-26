@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element replaceChild()</title>
+</head>
+<body>
+    <h1>HTML DOM Element replaceChild()</h1>
+    <!-- <h3>Replace a text node in am &lt;li&gt; element with a new text node:</h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>Click "Replace" to replace the first item in the list.</p>
+    <button onclick="myFunction()">"Replace"</button>
+    <p>This example replaces the Text Nide "cofffe" with a Text node "Water" Replacing the entire li element is also an alternative."></p>
+    <script>
+        function myFunction()
+        {
+            //Select first child element:
+            const element=document.getElementById("myList").children[0];
+            //Create a new text node:
+            const newNOde=document.createTextNode("Water");
+            //Replace the text node:
+            element.replaceChild(newNOde,element.childNodes[0]);
+        }
+    </script> -->
+    <h3>Replace an &lt;li&gt;element with a new &lt;li&gt;element:</h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>Click the button to replace the first item in the list.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            const element=document.createElement("li");
+            const textNode=document.createTextNode("Water");
+            element.appendChild(textNode);
+            const list=document.getElementById("myList");
+            list.replaceChild(element,list.children[0]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The new Set() Method</title>
+</head>
+<body>
+    <h1>The new set() Method</h1>
+    <p>Pass an Array to the <span style="color: red;">new Set()</span> constructor:</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        //Create a Set
+        const letters=new Set(["a","b","c"]);
+        //Display set
+        let text="";
+        for(let x of letters)
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML="Dispaly the set elementsn <br> " +text;
+        document.getElementById("demo1").innerHTML=" Dispaly the set size :"+letters.size;
+    </script>
+</body>
+</html>

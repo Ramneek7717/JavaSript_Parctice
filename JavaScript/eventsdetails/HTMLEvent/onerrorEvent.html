@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Event onerror Event</title>
+</head>
+<body>
+    <h1>HTML DOM Event onerror Event</h1>
+    <h1>Execute a JavaScript if an error occurs when loading an image:</h1>
+    <p>Use the addEventListener() method to attach a "error" event to an img element.</p>
+    <img src="image.gif" alt="image" id="myImg">
+    <p id="demo"></p>
+    <script>
+        document.getElementById("myImg").addEventListener("error",myFunction);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="The image cloud not be loaded."
+        }
+    </script>
+</body>
+</html>

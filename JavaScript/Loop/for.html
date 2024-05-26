@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        // program 1.
+         const cars=["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+         let text="";
+         console.log(text);
+         for(let i=0;i<cars.length;i++)
+         {
+              text+=cars[i];
+              console.log(cars[i]);
+         }
+         //program 2.
+         for(let i=0;i<5;i++)
+         {
+            console.log("The Number is "+i);
+         }
+         //program 3
+         for(let i=0,len=cars.length;i<len;i++)
+         {
+            text+=cars[i];
+            console.log(cars[i]);
+         }
+         //Program 4 when we want values are set before the looop starts
+         let i=2;
+         let len=cars.length;
+         for(;i<len;i++)
+         {
+            text+=text+cars[i];
+            console.log(cars[i]);
+         }
+         //Program 5 when we want increment your vaules inside the loop
+         let i1=0;
+         let len1=cars.length;
+         for(;i<len;)
+         {
+            text+=cars[i];
+            console.log(cars[i]);
+            i++;
+         }
+         //Program 6 Loop Scope
+         var i2=5;
+         console.log("before for loop i2="+i2);
+         for(var i2=0;i2<10;i2++)
+         {
+            console.log("inside the for loop=\t"+i2);
+         }
+         i2=10;
+         console.log("Out Side i2="+i2);
+         //using let in a loop
+         let i3=5;
+         for(let i3=0;i3<10;i3++)
+         {
+            console.log("inside the for loop using let =\t"+i3);
+         }
+          console.log("outside the for loop using let ="+i3);
+         //The For In Loop
+         console.log("The For In Loop\nusing through the properties of an Object ");
+         const person={fname:"John",lname:"Doe",age:25};
+         for(let x in person)
+         { 
+            console.log(person[x]);
+         }
+         console.log("The For in Loop\nUsing the properties of an Arrayis order is not important");
+         const numbers=[45,4,9,16,25];
+         for(let x in numbers)
+         {
+            console.log(numbers[x]);
+         }
+         console.log("Array.forEach()\n use the value ,index, array");
+         const numbers1=[45,4,9,16,25];
+         numbers1.forEach(myFunction);
+         function myFunction(value,index,array)
+          {
+           // console.log(`value=${value}, index=${index},array=${array}`);
+              console.log(value);
+            
+          }
+          console.log("Use Only the value parameter");
+          numbers1.forEach(myFunction1);
+          function myFunction1(value)
+          {
+            console.log(value);
+          }
+          console.log("The For Of Loop\nusing Arrays,Strings,Maps,NodesLists and More");
+          console.log("Looping over an Array")
+          const cars1=["BMW","Volvo","Mini"];
+          for(let x of cars1)
+          {
+            console.log(x);
+          }
+          console.log("Looping over a String");
+          let language="JavaScript";
+          for(let x of language)
+          {
+            console.log(x);
+          }
+         
+
+
+
+          
+</script>
+</body>
+</html>

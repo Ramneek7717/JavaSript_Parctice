@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number </title>
+</head>
+<body>
+    <script>
+        // Armstrong Number
+        let number1=Number.parseInt((prompt("Enter the Number")));
+      
+        let number=number1;
+       // console.log(number);
+        let result=0;
+        let reminder;
+        while(number!=0)
+        {
+            reminder=Number.parseInt(number%10);
+            result=Number.parseInt(result+(reminder*reminder*reminder));
+           // console.log(result);
+            number=Number.parseInt(number/10);
+        }
+        //console.log(result);
+        //console.log(number);
+        if(result===number1)
+        {
+            console.log(result+"\tis Armstrong Number ");
+        }
+        else
+        {
+            console.log(result+ "\tis not Armstrong Number" );
+        }
+    </script>
+    
+</body>
+</html>

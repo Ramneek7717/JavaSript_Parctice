@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element nodeType</title>
+</head>
+<body>
+    <h1>HTML DOM Element nodeType</h1>
+    <!-- <h3>Get the node type of the body element:</h3>
+    <p id="myP">Click the button to get the node type of this element.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("myP").nodeType;
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script> -->
+    <!-- <h3>Retrun the node type of the body element:</h3>
+    <p>The node type of the body element is:</p>
+    <p id="demo"></p>
+    <script>
+        let type=document.body.nodeType;
+        document.getElementById("demo").innerHTML=type;
+    </script> -->
+    <h3>Display the node types of all elements:</h3>
+    <p>whitespace between elements are considered text nodes.</p>
+    <!-- MY personal comment goes here.. -->
+    <div>Comments are considered comment nodes.</div>
+    <p>The node types of the body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const nodes=document.body.childNodes;
+        let text="";
+        for(let i=0;i<nodes.length;i++)
+        {
+            text+=nodes[i].nodeType+" "+nodes[i].nodeName+"<br>";
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

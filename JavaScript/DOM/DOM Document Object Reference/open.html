@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document open()</title>
+</head>
+<body>
+    <h1>HTML DOM Document open()</h1>
+    <!-- <h3>Open this document,write some text,and close:</h3>
+    <p>Open a document deletes existing content.</p>
+    <p>Open this document and write some text to it:</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            document.open();
+            document.write("<h1>Hello World</h1>");
+            document.close();
+        }
+    </script> -->
+    <!-- <h3>Using document.open() in a new window:</h3>
+    <p>
+        Click "Open" to open a document in a new window,write some text to it and close it:
+    </p>
+    <button onclick="myFunction()">
+     Try it
+    </button>
+    <script>
+        function myFunction()
+        {
+            const myWindow=window.open();
+            myWindow.document.open();
+            myWindow.document.write("<h1> Hello World! </h1>");
+            myWindow.document.close();
+        }
+    </script> -->
+    <h3>If document.write() is used on a closed document,document.open() is automatically called.This will delete existing content.</h3>
+    <p>This will delete existing content.</p>
+    <button onclick="myFunction()">
+      Try it
+    </button>
+    <script>
+        function myFunction()
+        {
+            document.write("<h1>Hello World</h1>");
+        }
+    </script>
+</body>
+</html>

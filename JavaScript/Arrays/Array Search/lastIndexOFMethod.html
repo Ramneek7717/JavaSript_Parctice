@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array lastIndexOf() Method</title>
+</head>
+<body>
+    <h1>Arrays The lastIndexOf() Method</h1>
+    <p id="demo3"></p>
+ <p id="demo4"></p>
+ <p id="demo5"></p>
+ <script>
+    const fruit=[
+        "Apple",
+        "Orange",
+        "Apple","Mango"
+    ];
+    document.getElementById("demo3").innerHTML=fruit;
+    let position=fruit.lastIndexOf("Apple")+ 1; 
+    document.getElementById("demo4").innerHTML="Apple is found in position " + position;
+    let position2=fruit.lastIndexOf("Apple",-1);
+    document.getElementById("demo5").innerHTML="Apple is found in position " + position2;
+
+    </script>
+</body>
+</html>

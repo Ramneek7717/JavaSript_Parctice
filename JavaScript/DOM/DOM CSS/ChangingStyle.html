@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Changing CSS</title>
+</head>
+<body>
+    <h1>DOM-Changing CSS</h1>
+    <p>The HTML DOM allows JavaScript to CHnage the style of HTML elements.</p>
+    <h3>Changing HTML Style</h3>
+    <p>To change the style of an HTML element, use this syntax:</p>
+    <p>document.getElementBYID(id).style.property=new style</p>
+    <p>The Following example changes the style of a <span style="color: red;"><</span><span style="color: red;">p</span><span style="color: red;">></span> element:</p>
+     <p id="p2">Hello World!</p>
+     <script>
+        document.getElementById("p2").style.color="blue";
+     </script>
+     <p>This example changes the style of the HTML element with <span style="color: red;">id="id1"</span>,when the user clicks a button:</p>
+     <h1 id="id1">My Heading 1</h1>
+     <button type="button" onclick="document.getElementById('id1').style.color='red'">Click Me!</button>
+      
+    </body>
+</html>

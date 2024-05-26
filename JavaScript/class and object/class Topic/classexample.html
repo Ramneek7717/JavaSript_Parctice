@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class first example</title>
+</head>
+<body>
+    <h1>Classes</h1>
+    <p>Creating two car objects from a car class:</p>
+    <p id="demo"></p>
+    <script>
+        class car{
+            constructor(name,year)
+         {
+            this.name=name;
+            this.year=year;
+         }
+        }
+        const mycar1=new car ("Ford",2014);
+        const mycar2=new car("Audi",2019);
+        document.getElementById("demo").innerHTML=mycar1.name +"         "+mycar2.name;
+    </script>
+</body>
+</html>

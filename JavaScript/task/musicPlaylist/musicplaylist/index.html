@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music playList website and app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header-nav">
+        <!-- this is header bar -->
+        <div id="header" >
+        <header>
+            <ul>
+                <li class="dropdown1"class="dropbtn1"><i class="fa-solid fa-bars bars" ></i> 
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <!-- This is left-side-text -->
+                        <div id="left-side">
+                            <ul>
+                                <li><i class="fa-solid fa-user-plus"></i> Login/Sign Up</li>
+                                <li><i class="fa-solid fa-house"></i>Home</li>
+                                <li> <i class="fa-solid fa-radio"></i>Radio</li>
+                                <li><i class="fa-solid fa-podcast"></i>Podcast</li>
+                                <li><i class="fa-solid fa-music"></i>My music</li>
+                                <li><i class="fa-solid fa-earth-americas"></i>languages <br>(set Music Languages)</li>
+                                <li>Night Mode <i class="fa-solid fa-toggle-off" style="float: right;"></i></li>
+                                <hr>
+                                <li><b>Go Premium</b></li>
+                                <li>Get Gaana Plus</li>
+                                <li><span>Welcome Offer</span> 1 Month Trail@ just<i class="fa-solid fa-indian-rupee-sign" style="color: rgb(77, 76, 76);"></i>1 </li>
+                                <hr>
+                                <li><b>Quick Access</b></li>
+                            </ul>
+                        </div>
+                        <!-- This is end of left-side-text -->
+                    </div>
+                </li>
+                <li><img src="pic/logo3.jpg" alt="logo"></li>
+                <li ><button id="search"><i class="fa-solid fa-magnifying-glass"></i>Search Artists,Songs,Albums</button></li>
+                <li><button class="trial">Welcome offer:1 months Trial @ <i class="fa-solid fa-indian-rupee-sign"></i>1</button></li>
+                <li><button class="Ganna-plus">Get Ganna Plus</button></li>
+                <li class="login"><button>Log In/ Sing Up</button></li>
+            </ul>
+        </header>
+        </div>
+        <!-- this is end of header section -->
+        <!-- this is nav section -->
+        <div id="nav">
+        <nav>
+            <ul>
+                <li>All</li>
+                <li>Trending Songs</li>
+                <li>New Songs</li>
+                <li class="dropdown"class="dropbtn">Moods & Genres &#11167
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Party</a>
+                            <a href="#">Workout</a>
+                            <a href="#">Ghazals</a>
+                            <a href="#">EMD</a>
+                            <a href="#">Bhakti</a>
+                            <a href="#">90s & 2000s</a>
+                        </div>
+                </li>
+                <li>Albums</li>
+                <li class="dropdown" class="dropbtn"> Top Playlist &#11167
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Top Hindi Songs</a>
+                            <a href="#">Top Punjabi Songs</a>
+                            <a href="#">Top Haryanvi Songs</a>
+                            <a href="#">Top Bhojpuri Songs</a>
+                            <a href="#">Top Bollywood Songs</a>
+                            <a href="#">Top English Songs</a>
+                            <a href="#">Top Bhakit Songs</a>
+                    </div>
+                <li class="dropbtn dropdown"> Top Artist &#11167
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Arjit Singh</a>
+                            <a href="#">Lata Mangeshkar</a>
+                            <a href="#">A R Rahman</a>
+                            <a href="#">Atif Aslam</a>
+                            <a href="#">Kishore Kumar</a>
+                        </div>
+                </li>
+                <li>Radio</li>
+                <li>Podcast</li>    
+                <li>My Music</li>
+            </ul>
+        </nav>
+        </div>
+        <!-- This is end of nav section -->
+    </div>
+    <!--listsong and playsilder start section -->
+    <div class="listsong-playsilder">
+        <!--list song section start-->
+        <div class="container1" id="myDIV">
+            <div class="songList1">
+                <h1>Song List<i class="fa-solid fa-xmark" onclick="myFunction1()"></i></h1>
+                <div class="songItemContainer1" >
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song1</span>
+                        <span class="songlistplay1"><span class="timestamp1"><i id="0" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song2</span>
+                        <span class="songlistplay1"><span class="timestamp1"> <i id="1" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song3</span>
+                        <span class="songlistplay1"><span class="timestamp1"><i id="2" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song4</span>
+                        <span class="songlistplay1"><span class="timestamp1"> <i id="3" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song5</span>
+                        <span class="songlistplay1"><span class="timestamp1"> <i id="4" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song6</span>
+                        <span class="songlistplay1"><span class="timestamp1"> <i id="5" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song7</span>
+                        <span class="songlistplay1"><span class="timestamp1"><i id="6" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song8</span>
+                        <span class="songlistplay1"><span class="timestamp1"><i id="7" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song9</span>
+                        <span class="songlistplay1"><span class="timestamp1"> <i id="8" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                    <div class="songItem1">
+                        <img alt="1">
+                        <span class="songName1">song10</span>
+                        <span class="songlistplay1"><span class="timestamp1"> <i id="9" class="far songItemPlay1 fa-circle-play"></i> </span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+        <!-- <script src="index.js"></script> -->
+        <!--list song section end-->
+    <!--  Start playsilder -->
+    <div id="playslider">
+        <!-- This is slider-playlist part -->
+        <div class="container">
+            <div class="top">
+            <i class="fa-solid fa-backward left arrow"></i>
+            <div class="frame">
+                <div class="silder" >
+                    <img src="covers1/1.jpg"  alt="1.jpg" class="image" onclick="myFunction()" width="800px" height="300px">
+                    <img src="covers1/2.webp"  alt="2.webp" class="image"onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/3.jpg"  alt="3.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/4.jpg"  alt="4.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/5.jpg"  alt="5.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/6.jpg"  alt="6.jpg" class="image" onclick="myFunction()" width="800px" height="300px">
+                    <img src="covers1/7.jpg"  alt="7.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/8.jpg"  alt="8.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/9.jpg"  alt="9.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    <img src="covers1/10.jpg"  alt="10.jpg" class="image" onclick="myFunction()"width="800px" height="300px">
+                    
+                </div><!--end silder-->
+            </div><!--end frame-->
+            <i class="fa-solid fa-forward right arrow"></i>
+        </div><!--end top-->
+        <div class="bottom">
+            <!-- <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div> -->
+    
+        </div><!--end bottom-->
+        </div><!--end container-->
+        <!-- <script src="sslider.js"></script> -->
+        <!-- end of slider-play part -->
+    </div>
+    <!--end playsilder-->
+    </div>
+
+    <!--end listsong and playsilder start section -->
+    <!-- This is playlist title -->
+    <div id="playlist">
+        <!-- this is title 1 type -->
+
+        <div class="title-song-container" class="title1">
+            <h4>New Releases</h4>
+            <div class="song-container">
+                <div class="song1 songlist">
+                <img src="pic/punjabisong.png" alt="song1" onclick="myFunction()" >
+                <p>Punjabi Song</p>
+            </div>
+           <div class="song1 songlist">
+                <img src="pic/hindi songs.jpg" alt="song1" onclick="myFunction()">
+                <p>Hindi Song</p>
+            </div>
+                <div class="song1 songlist">
+                   <img src="pic/1.jpg" alt="song1" onclick="myFunction()">
+                   <p>English Song</p>
+                </div>
+                <div class="song1 songlist">
+                    <img src="pic/2.jpg" alt="song1" onclick="myFunction()">
+                    <p>Haryanvi Song</p>
+                </div>
+                   
+            </div>        
+            
+        <!-- this is title  type 2 -->
+        <div class="title-song-container"  class="title2">
+            <h4>Radio</h4>
+            <div class="song-container">
+                <div class="song2 songlist">
+                <img src="pic/party non stop mashup.jpg" alt="song1" onclick="myFunction()">
+                <p>Party Non Stop</p>
+            </div>
+           <div class="song2 songlist">
+                <img src="pic/workout.jpg" alt="song1" onclick="myFunction()">
+                <p>Workout</p>
+            </div>
+                <div class="song2 songlist">
+                   <img src="pic/international Rock.jpg" alt="song1" onclick="myFunction()">
+                   <p>International Rock</p>
+                </div>
+                <div class="song2 songlist">
+                    <img src="pic/international retro.jpg" alt="song1" onclick="myFunction()">
+                    <p>International Retro</p>
+                </div>
+            </div>
+        </div>
+        <!-- this is title  type 3 -->
+        <div class="title-song-container"  class="title3">
+            <h4>Featured Artists</h4>
+            <div class="song-container">
+                <div class="song3 songlist ">
+                    <img src="pic/arijit singh.jpg" alt="song1" width="50px" height="100px"onclick="myFunction()">
+                     <p>Arijit Singh</p>
+                </div>
+               
+                <div class="song3 songlist" >
+                    <img src="pic/Lata  Mangeshkar.jpg" alt="song1" width="50px" height="100px" onclick="myFunction()"> 
+                    <p>Lata Mangeshkar</p>
+                </div>
+                <div class="song3 songlist">
+                    <img src="pic/A R Rahman.jpg" alt="song1" width="50px" height="100px" onclick="myFunction()">
+                    <p>A R Rahman</p>
+                </div>
+                <div class="song3 songlist">
+                    <img src="pic/Afit Aslam.jpg" alt="song1" width="50px" height="100px" onclick="myFunction()">
+                     <p>Afit Aslam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  playlist title  -->
+    <!-- This is  play button section -->
+    <div id="playsection">
+        <input type="range" name="" id="myProgressBar" min="0" value="0" max="100" style="width: 100%;">
+        <div id="Play-button-section">
+            <!-- <div class="play-image-section">
+               <img src="pic/musicImage.jpg" alt="musicImage" width="100px" height="50px" id="yourImgId"> -->
+               <!-- <img src="pic/song.gif" alt="gifwhenweplay" width="100px" height="20px" id="gif"> -->
+               <div class="songInfo">
+             
+            <!-- </div> -->
+               <span id="songName">Baby Calm Down</span>
+               <img src="pic/song.gif" width="42px" alt="" id="gif"> 
+            </div>
+            <div id="button">
+                <i class="fa-solid fa-repeat" id="repeat" ></i>
+                <i class="fa-solid fa-backward" id="backward" ></i>
+                <i class="fa-solid fa-circle-play" id="play" ></i>
+                <i class="fa-solid fa-forward" id="forward" ></i>
+                <i class="fa-solid fa-shuffle" id="shuffle" ></i>
+                <i class="fa-solid fa-volume-high" id="volume"  >
+                 <input type="range" id="volumeRange"  min=0 max=1 step=0.01 value='0.30'>
+               </i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- This is all another details -->
+    <div class="all-details">
+        <!-- This is Title section -->
+        <div class="title">
+            <h1>Bas Bajna Chahiye Gaana</h1>
+            <p>Gaana is your gateway to the best and latest in music, offering over 30 million songs across diverse languages including Hindi, English, Bollywood, and regional tracks. Stream your favourite Hindi songs, Bollywood music, English MP3 songs, radio, podcast and regional music online or download songs to enjoy anytime, anywhere</p>
+        </div>
+        <hr>
+        <!-- This is KeepInTouch_ExperienceApp section -->
+        <div class="KeepInTouch_ExperienceApp">
+            <div class="keepInTouch">
+                <h4>KEEP IN TOUCH</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="ExperienceApp">
+                <h4>EXPERIENECE APP</h4>
+                <i class="fa-brands fa-google-play"></i>
+                <i class="fa-brands fa-apple"></i>
+            </div>
+        </div>
+        <hr>
+        <!-- This is Terms-Policy-Partners section -->
+        <div class="Terms_Policy_FQA">
+            <div class="Trems"> 
+                <a href="#">Trems of Use</a>
+            </div>
+            <div class="Policy">
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="Partners">
+                <a href="#">Partners</a>
+            </div>
+            <div class="FQA">
+                <a href="#FQA">FQA</a>
+            </div>
+        </div>
+        <hr>
+        <!-- This is QuickLinks section -->
+        <div class="quickLinksHeader">
+            <h3>QuickLinks</h3>
+        </div>
+        <div class="quickLinks">
+           
+            <div class="albums">
+                <ul>
+                    <li><h4>Albums</h4></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Hindi</a></li>
+                    <li><a href="#">Telugu</a></li>
+                    <li><a href="">Punjabi</a></li>
+                    <li><a href="#">Haryanvi</a></li>
+                    <li  class="view-all"><a href="#">View all</a></li>
+                </ul>
+
+            </div>
+            <div class="genres">
+                <ul>
+                    <li><h4>Genres</h4></li>
+                    <li><a href="#">Bollywood Songs</a></li>
+                    <li><a href="#">Devotional songs</a></li>
+                    <li><a href="#">Ghazals</a></li>
+                    <li><a href="#">Bhajan</a></li>
+                    <li><a href="#">Patriotic Songs</a></li>
+                    <li  class="view-all"><a href="#">View all</a></li>
+                </ul>
+            </div>
+            <div class="Artist">
+                <ul>
+                    <li><h4>Artist</h4></li>
+                    <li><a href="#">Arjit Singh</a></li>
+                    <li><a href="#">Atif Aslam</a></li>
+                    <li><a href="#">Kishore Kumar</a></li>
+                    <li><a href="#">A R Rahman</a></li>
+                    <li><a href="#">Lata Mangeshkar</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+           <div class="New Release">
+                <ul>
+                    <li><h4>New Release</h4></li>
+                    <li><a href="#">New English</a></li>
+                    <li><a href="#">New Hindi</a></li>
+                    <li><a href="#">New Telugu</a></li>
+                    <li><a href="">New Punjabi</a></li>
+                    <li><a href="#">New Haryanvi</a></li>
+                    <li  class="view-all"><a href="#"> View all</a></li>
+                </ul>
+           </div>
+           <div class="Trending-songs">
+                <ul>
+                    <li><h4>Trending Songs</h4></li>
+                    <li><a href="#">Vibe Song</a></li>
+                    <li><a href="#">Hanuman Chalisa</a></li>
+                    <li><a href="#">Leke Prabhu Ka Naam</a></li>
+                    <li><a href="#">Koi Sehri Babu</a></li>
+                    <li><a href="#">Ruaan</a></li>
+                    <li><a href="#">Udd Jaa Kaale Kaava</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="Trending-Albums">
+                <ul>
+                    <li><h4>Trending-Albums</h4></li>
+                    <li><a href="#">Sad Songs</a></li>
+                    <li><a href="#">Ram Aayenge to Angana Sajaungi</a></li>
+                    <li><a href="#">Master Tamil</a></li>
+                    <li><a href="#">Bhakit Songs</a></li>
+                    <li><a href="#">Shape of You</a></li>
+                    <li><a href="#">Punjabi Songs</a></li>
+                    <li><a href="#">SherShaah</a></li>
+                    <li><a href="#">Happy  Anniversary</a></li>
+                    <li><a href="# ">Dhamaka</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="Lyrics">
+                <ul>
+                    <li><h4>Lyrics</h4></li>
+                    <li><a href="#">Perfect Lyrics</a></li>
+                    <li><a href="#">Ek Pyar ka Nagma Hai Lyrics</a></li>
+                    <li><a href="#">Shree Hanuman Chalisa Lyrics</a></li>
+                    <li><a href="#">Memories Lyrics</a></li>
+                    <li><a href="#">Memories Lyrics</a></li>
+                    <li><a href="#">Memories Lyrics</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>     
+            <div class="Old-Song">
+                <ul>
+                    <li><h4>Old Song</h4></li>
+                    <li><a href="#">Old Hindi Songs</a></li>
+                    <li><a href="#">Old English Songs</a></li>
+                    <li><a href="#">Old Punjabi Songs</a></li>
+                    <li><a href="#">Old Telugu Songs</a></li>
+                    <li><a href="#">Old Tamil Songs</a></li>
+                    <li><a href="#">Old Bhojpuri Songs </a></li>
+                    <li><a href="#">Old Malayalam Songs</a></li>
+                    <li><a href="#">Old Haryanvi Songs</a></li>
+                    <li><a href="#">Old Rajasthni Songs</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="Podcasts">
+                <ul>
+                    <li><h4>Podcasts</h4></li>
+                    <li><a href="#">Sunday Suspense</a></li>
+                    <li><a href="#">Riya's Retro</a></li>
+                    <li><a href="#">MD Motivation</a></li>
+                    <li><a href="#">RJ Kartik Motivation</a></li>
+                    <li><a href="#">Choti si kahani</a></li>
+                    <li><a href="#">Story Podcasts</a></li>
+                    <li><a href="#">Life ki Rann Neeti</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="Gaana-Hits">
+                <ul>
+                    <li><h4>Gaana-Hits</h4></li>
+                    <li><a href="#">Happy Birthday Songs</a></li>
+                    <li><a href="#">Bollywood Wedding Songs</a></li>
+                    <li><a href="#">Bollywood Mashups Songs</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="Regional-Playlists">
+                <ul>
+                    <li><h4>Regional Playlists</h4></li>
+                    <li><a href="#">Urdu top songs</a></li>
+                    <li  class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="Devotional-Songs">
+                <ul>
+                    <li><h4>Devotional Songs</h4></li>
+                    <li><a href="#">Bhajan Gold Songs</a></li>
+                    <li class="view-all"><a href="#">View All</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- This is footer section -->
+    <div class="footer">
+        <footer>
+            <hr>
+        <p>&copy;Entertainment Network India Ltd. 2024,All Right Reserved.</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+    <!-- <script src="sslider.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Setters(The set Keyword)</title>
+</head>
+<body>
+    <h1>JavaScript Setters(The set Keyword)</h1>
+    <p>This example uses a <span style="color: red;">lang</span> property to <span style="color: red;">set</span> the  value of the <span style="color: red;">language</span> property</p>
+     <p id="demo"></p>
+     <script>
+        //Create an Object:
+        const person={
+            fristName:"John",
+            lastName:"Doe",
+            language:"NO",
+            set lang(value)
+            {
+                this.language=value;
+
+            }
+        };
+        //Set a property using set:
+        person.lang="en";
+        //Display data from the object:
+        document.getElementById("demo").innerHTML=person.language;
+     </script>
+</body>
+</html>

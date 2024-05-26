@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element previousSibling</title>
+</head>
+<body>
+    <h1>HTML DOM Element previousSibling</h1>
+    <h3>Retrun the HTML Content of the previous sibling of a list item:</h3>
+    <ul><li id="item1">Coffee(first item)</li><li id="item2">Tea(second item)</li></ul>
+    <p>The HTML content of the previus sibling of the second list item is:</p>
+    <p id="demo"></p>
+    <p><strong>Note:</strong>Whitespace between elements is considered text nodes.</p>
+    <p>If you add whitespace between the two li elements, the result will be "undefined".</p>
+    <script>
+        let text=document.getElementById("item2").previousSibling.innerHTML;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

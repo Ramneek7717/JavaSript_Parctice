@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> instanceof Map </title>
+</head>
+<body>
+    <h1>instanceof Map</h1>
+    <p><span style="color: red;">instanceof</span> Map returns true:
+    </p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["Apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        //Retruns true:
+        document.getElementById("demo").innerHTML=  fruits instanceof Map;
+    </script>
+</body>
+</html>

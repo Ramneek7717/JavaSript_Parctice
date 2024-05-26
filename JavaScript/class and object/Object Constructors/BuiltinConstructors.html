@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-in JavaScript Constructors</title>
+</head>
+<body>
+    <h1>Built-in JavaScript Constructor</h1>
+    <p id="demo"></p>
+    <script>
+        const string=new String();//A new String Object
+        const number=new Number();//A new Number Object
+        const boolean=new Boolean();//A new Boolean Object
+        const object=new Object();//A new Object object
+        const array=new Array();//A new Array object
+        const regexp=new RegExp();//A new RegExp object
+        const function1=new Function();//A new Function Object
+        const date=new Date();//A new Date object
+        //Display the type of all objects
+        document.getElementById("demo").innerHTML="String : "+typeof string+"<br>"+
+                                                   "Number : "+typeof number+"<br>"+
+                                                   "Boolean : "+typeof boolean+"<br>"+
+                                                   "Object : "+typeof object+"<br>"+
+                                                   "Array : "+typeof array+"<br>"+
+                                                   "RegExp : "+typeof regexp+"<br>"+
+                                                   "Function : "+typeof function1+"<br>"+
+                                                   "Date : "+typeof date+"<br>";
+                                                   
+    </script>                                     
+    <p>There is no need to use new String(),new Number(),new Boolean(),new Array(),and new RegExp()</p>
+    <p>Use literals instead like:myArray=[]</p>
+     <p>The <span style="color: red;">Math()</span> object is not in the list. <span style="color: red;">Math</span> is a global object.The<span style="color: red;"> new</span> keyword cannot be used on<span style="color: red;"> Math.</span></p>
+     <p>As you can see above, JavaScript has object versions of the primitive data types String, Number, and Boolean. But there is no reason to create complex objects. Primitive values are much faster:
+        <br>
+        Use string literals "" instead of new String().
+        <br>
+        Use number literals 50 instead of new Number().
+        <br>
+        Use boolean literals true / false instead of new Boolean().
+        <br>
+        Use object literals {} instead of new Object().
+        <br>
+        Use array literals [] instead of new Array().
+        <br>
+        Use pattern literals /()/ instead of new RegExp().
+        <br>
+        Use function expressions () {} instead of new Function()</p>
+        <p id="demo1"></p>
+        <script>
+            const string1=" ";// String Object
+            const number1=50;//Number Object
+            const boolean1=false;// Boolean Object
+            const object1={};// Object object
+            const array1=[];// Array object
+            const regexp1=/()/;// RegExp object
+            const function11=function(){};//Function 
+            //Display the type of all objects
+            document.getElementById("demo1").innerHTML="String : "+typeof string1+"<br>"+
+                                                       "Number : "+typeof number+"<br>"+
+                                                       "Boolean : "+typeof boolean1+"<br>"+
+                                                       "Object : "+typeof object1+"<br>"+
+                                                       "Array : "+typeof array1+"<br>"+
+                                                       "RegExp : "+typeof regexp1+"<br>"+
+                                                       "Function : "+typeof function11+"<br>";
+                                                       
+        </script>   
+    </body>
+</html>

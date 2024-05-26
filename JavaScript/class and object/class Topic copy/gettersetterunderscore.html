@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use an underscore character _ before the property name to seprate the getter /setter</title>
+</head>
+<body>
+    <p>Using an underscore character is common practice when using getters/setters in JavaScript, But not mandatory, you can name them anything you like , but not the same as the property name.</p>
+    <p id="demo"></p>
+    <script>
+        class Car{
+            constructor(brand)
+            {
+                this._carname=brand;
+            }
+            get carname()
+            {
+                return this._carname;
+            }
+            set carname(x)
+            {
+                this._carname=x;
+            }
+        }
+        const myCar=new Car("Ford");
+        document.getElementById("demo").innerHTML=myCar.carname;
+        
+    </script>
+</body>
+</html>

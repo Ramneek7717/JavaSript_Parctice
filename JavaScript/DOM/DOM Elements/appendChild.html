@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element appendChild()</title>
+</head>
+<body>
+    <h1>HTML DOM Element appendChild()</h1>
+     <!-- <h3>Append an item to a list:</h3>
+     <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+     </ul>
+     <p>Click "Append" to append an item to the end of the list:</p>
+     <button onclick="myFunction()">Append</button>
+     <script>
+        function myFunction()
+        {
+          //Create an "li" node:
+          const node=document.createElement("li");
+          //Create a text node:
+          const textnode=document.createTextNode("water");
+          //Append the text node to the "li" node:
+          node.appendChild(textnode);
+          //Append the "li" node to the list:
+          document.getElementById("myList").appendChild(node);
+        }
+    </script> -->
+    <!-- <h3>Move an item from one list to another:</h3>
+    <ul id="mylist1">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <ul id="myList2">
+        <li>Water</li>
+        <li>Milk</li>
+    </ul>
+    <p>Click "Move" to move an item from one list to another:</p>
+    <button onclick="myFunction()">
+        Move
+    </button>
+    <script>
+        function myFunction()
+        {
+            const node=document.getElementById("myList2").lastElementChild;
+            document.getElementById("mylist1").appendChild(node);
+        }
+    </script> -->
+    <h3>To create a paragraph with a text. <br>
+        <ul>
+            <li>Create a paragraph element</li>
+            <li>Create a text node</li>
+            <li>Append the text node to the paragraph</li>
+            <li>Append the paragraph to the document.</li>
+        </ul></h3>
+        <!-- <h4>create a p element and append it to a div element:</h4>
+        <p>Click "Append" create a paragrapgh and append it to myDIV:</p>
+        <button onclick="myFunction()">Append</button>
+        <div id="myDiv">
+            <h2>I am myDiv</h2>
+        </div>
+        <script>
+            function myFunction()
+            {
+                //Create a p element:
+                const para=document.createElement("p");
+                //Create a text node:
+                const node=document.createTextNode("This is a paragraph.");
+                //Append text node to the p element: 
+                para.appendChild(node);
+                //Append the p element to the body:
+                document.getElementById("myDiv").appendChild(para);  
+            }
+        </script> -->
+        <h4>Create a p element and append it to the document's body:</h4>
+        <p>Click "Append" to create a p element and append it to the document's body:</p>
+        <button onclick="myFunction()">Append</button>
+        <script>
+            function myFunction()
+            {
+                const para=document.createElement("p");
+                const node=document.createTextNode("This is a paragraph.");
+                para.appendChild(node);
+                document.body.appendChild(para);
+            }
+        </script>
+</body>
+</html>

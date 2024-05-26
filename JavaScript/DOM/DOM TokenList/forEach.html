@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenList forEach()</title>
+</head>
+<body>
+    <h1>HTML DOMTokenList forEach()</h1>
+    <!-- <h3>Get a DOMTokenList from "demo":</h3>
+    <p>The class tokens in "demo" are:</p>
+    <p id="demo" class="c1 c2 c3"></p>
+    <script>
+        let list=document.getElementById("demo").classList;
+        document.getElementById("demo").innerHTML=list;
+    </script> -->
+    <h3>Execute a function for each token:</h3>
+    <h2>The forEach() Method</h2>
+    <p>The tokens in the list are:</p>
+    <p id="demo" class="c1 c2 c3"></p>
+    <script>
+        let list=document.getElementById("demo").classList;
+        let text="";
+        list.forEach(function(token,index)
+        {
+            text+="Token "+ index +"= "+token+"<br>";
+        });
+        document.getElementById("demo").innerHTML=text;
+    </script>
+
+</body>
+</html>

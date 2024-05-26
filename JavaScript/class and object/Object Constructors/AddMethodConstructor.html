@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Method to a Constructor</title>
+</head>
+<body>
+ <h1>Adding a Method to a Constructor</h1>
+ <p>Your constructor function can also define methods:</p>
+    <p id="demo"></p>
+    <script>
+        //Constructor function for Person objects
+        function Person(first,last,age,eye)
+        {
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+            this.name=function(){
+                return this.firstName+" "+this.lastName
+            };
+        }
+        //Create a Person object
+        const myFather=new Person("John","Doe",50,"blue");
+        //Display full name
+          document.getElementById("demo").innerHTML="My father is "+myFather.name();
+     
+</script>
+<p> You cannot add a new method to an object constructor the same way you add a new method to an existing object.
+
+</p>
+<p>Adding method to an object constructor must be done inside the constructor function:
+
+</p>
+<p>The changeName() function assigns the value of name to the person's lastName Property.</p>
+<p id="demo1"></p>
+<script>
+    //Constructor function for Person objects
+    function Person1(firstName1,lastName1,age1,eyeColor1)
+    {
+        this.firstName1=firstName1;
+        this.lastName1=lastName1;
+        this.age1=age1;
+        this.eyeColor1=eyeColor1;
+        this.changeName= function(name1)
+        {
+            this.lastName1=name1;
+        };
+    }
+    //Create a Person object
+    const myMother1=new Person1("Sally","Rally",48,"green");
+    //Change last name
+    myMother1.changeName("Doe");
+    //Display last name
+    document.getElementById("demo1").innerHTML="My mother's last name is "+myMother1.lastName1;
+</script>
+
+</body>
+</html>

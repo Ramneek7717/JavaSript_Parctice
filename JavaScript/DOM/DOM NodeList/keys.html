@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML  DOM NodeList keys()</title>
+</head>
+<body>
+    <h1>HTML DOM NodeList keys()</h1>
+    <!-- <h3>List the keys of the document's child nodes:</h3> -->
+    <!-- This is a comment node! -->
+    <!-- <p>Whitespace between elements are text nodes. Comments are also nodes.</p>
+    <p>The keys of the body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.keys())
+        {
+            text+=x+"<br>";
+
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script> -->
+    <h3>List the documents's child nodes:</h3>
+    <p>WhiteSpace between elements are text nodes.Comments are also nodes.</p>
+    <p>The body element's child nodes are:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.body.childNodes;
+        let text="";
+        for(let x of list.values())
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

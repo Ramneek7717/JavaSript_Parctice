@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map.delete()</title>
+</head>
+<body>
+    <h1>Map.delete()</h1>
+    <p>The <span style="color: red;">delete()</span> method removes a Map element:
+    </p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["Apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        //Delete an Element
+        fruits.delete("Apples");
+        document.getElementById("demo").innerHTML=fruits.size;
+    </script>
+</body>
+</html>

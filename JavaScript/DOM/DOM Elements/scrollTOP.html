@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element scrollTOP</title>
+    <style>
+      <!--   #myP{
+            background-color: yellow;
+        } -->
+        .slideUp{
+        animation-name: slideUp;
+        animation-name: slideUp;
+        animation-duration: 1s;
+        animation-duration: 1s;
+        visibility: visible;
+        }
+        @keyframes slideUp
+        {
+            0%
+            {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        body
+        {
+            height: 15000px;;
+        }
+        .col-1{
+            float: left;
+        }
+        .col-2
+        {
+            float:left;
+            padding-left: 25px;
+        }
+        img
+        {
+            width:180px;
+            height: 100px;
+            visibility: hidden;
+        }
+        hr{
+            margin-top: 400px;
+        }
+
+    </style>
+</head>
+<!-- <body style="font-size: 20px;height: 1500px;">
+   <h1>HTML DOM Element scrollTop</h1> -->
+   <!-- <h3>Get the number of pixels the content of "myDiv" is scrolled.</h3>
+   <h3>Scroll the contents of "myDiv" to 50 pixels horizontally and 10 pixels vertically: </h3>
+   <h3>Scroll the contents of "myDiv" by 50 pixels horizontally and 10 pixels vertically: </h3>
+   <h3>Scroll the contents of body by 30 pixeks horizontally and 10 pixels vertically:</h3>
+   <h3>Toggle between class names on different scroll positions-when the user scrolls down 50 pixels from the top of the page, the class name "test" will be added to an element(and removed when scrooled up again):</h3> -->
+   <!-- <h1>The onscroll Event</h1>
+   <p id="myP" style="position: fixed;">
+    If you scroll 50 pixels down from the top of this page, the class "test" is added to this paragrapg.
+    scroll up again to remove the class.
+   </p>
+   <script>
+    window.onscroll=function()
+    {myFunction()};
+    function myFunction()
+    {
+        if(document.getElementById.scrollTop>50)
+        {
+            document.getElementById("myP").className="test";
+        }
+        else
+        {
+            document.getElementById("myP").className="";
+        }
+    }
+   </script> -->
+   <body>
+   <h3>Slide in an element when the user has scrolled down 350 pixels from the top of the page(add the slideUp class):</h3>]
+    <h1>The onscroll Event</h1>
+    <p>Scroll down this page.</p>
+    <p>When you have scrolled 350px from the top,an image will slide in.</p>
+     <hr>
+     <div class="col-1">
+        <img src="img_pulpit.jpg" alt="" id="myImg" width="304" height="228">
+     </div>
+     <div class="col-2">
+        Just some text..
+     </div>
+     <script>
+        window.onscroll=function(){myFunction()};
+        function myFunction()
+        {
+            if(document.documentElement.scrollTop>350)
+            {
+                document.getElementById("myImg").className="slideUp";
+            }
+        }
+     </script>
+</body>
+</html>

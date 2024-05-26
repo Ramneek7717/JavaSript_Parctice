@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Attribute specified</title>
+</head>
+<body>
+    <h1>HTML DOM Attribute specified</h1>
+    <h3>ISs the style attribute specified?:</h3>
+    <div id="myDiv" style="background-color: red;width:50px;height: 50px;"></div>
+    <p>Is the style attribute specified?</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=document.getElementById("myDiv").getAttributeNode("style").specified;
+    </script>
+</body>
+</html>

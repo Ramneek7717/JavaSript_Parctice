@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Call()</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            fristName: "John",
+            lastName: "Doe",
+            fullName: function () {
+                return this.fristName + " " + this.lastName;
+            }
+        }
+        //this will return "John Doe"
+        console.log(person.fullName());
+        // The JavaScript call() Method
+        //This example calls the fullNmae Method of person1,using it on person11
+        const person1 = {
+            fullName: function () {
+                return this.fristName + " " + this.lastName;
+            }
+        }
+        const person11 = {
+            fristName: "John",
+            lastName: "Doe"
+        }
+        const person12 = {
+            fristName: "Mary",
+            lastName: "Doe"
+        }
+        //this will return "John Doe"
+        console.log(person1.fullName.call(person11));
+        console.log(person1.fullName.call(person12));
+        //The call() Method with Arguments
+         const person2={
+            fullName: function(city,country){
+                return this.fristName+" "+this.lastName+","+city+","+country;
+            }
+         }
+         const person21={
+            fristName:"John",
+            lastName:"Doe"
+
+         }
+        console.log( person2.fullName.call(person21,"Oslo","Norway"));
+    </script>
+</body>
+
+</html>

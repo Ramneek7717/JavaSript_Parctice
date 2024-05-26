@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element isEqualNode()</title>
+</head>
+<body>
+    <h1>HTML DOM Element isEqualNode()</h1>
+    <h3>Check if two list items in  two different lists are equal:</h3>
+    <p>Click the buttons to compare thr <strong>First item</strong> in two of thw lists.</p>
+    <button onclick="myFunction('myList1','myList2')">Compare List 1 and List 2</button>
+    <button onclick="myFunction('myList1','myList3')">Comapre list 1 and 3</button>
+    <br><br>
+    List 1:
+    <ul id="myList1">
+        <li>Water</li>
+        <li>Milk</li>
+    </ul>
+    <ul id="myList2">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <ul id="myList3">
+        <li>Water</li>
+        <li>Fire</li>
+    </ul>
+    <p id="demo"></p>
+    <script>
+        function myFunction(x,y)
+        {
+            var item1=document.getElementById(x).firstChild;
+            var item2=document.getElementById(y).firstChild;
+            var x=item1.isEqualNode(item2);
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

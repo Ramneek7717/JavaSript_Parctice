@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenList length</title>
+</head>
+<body>
+    <h1>HTML DOMTokenList length</h1>
+    <h3>Get the number of tokens(classes) in the list:</h3>
+    <h2>The length Property</h2>
+    <p>The number of class tokens in "demo" are:</p>
+    <p id="demo" class="c1 c2 c3"></p>
+    <script>
+        const list=document.getElementById("demo").classList;
+        let number=list.length;
+        document.getElementById("demo").innerHTML=number;
+    </script>
+</body>
+</html>

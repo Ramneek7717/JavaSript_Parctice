@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM querySelector() method</title>
+    <style>
+        #myDiv{
+            border:1px solid black;
+            padding: 8px;
+        }
+        a[target]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM querySelector() Method</h1>
+    <!-- <h3>Chnage the text of the first child element with class="example" A heading with class="example" in div.in a &lt;div&gt; element:</h3>
+    <div id="myDiv">
+        <h2 class="example">A heading with class="example" in div.</h2>
+        <p class="example">A paragraph with class="example" in div.</p>
+    </div>
+    <p>Click the button to chnage the text of the first element with class="example" in div.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+    {
+        var x=document.getElementById("myDiv");
+        x.querySelector(".example").innerHTML="Hello world!";
+    }
+    </script> -->
+    <!-- <h3>Chnage the text of the first &lt;p&gt; element in a &lt;div&gt; element:</h3>
+     <div id="myDiv">
+        <p>This is a p element.</p>
+        <p>This is also a p element.</p>
+     </div>
+     <script>
+        const x=document.getElementById("myDiv");
+        x.querySelector("p").innerHTML="Hello World!";
+     </script> -->
+     <!-- <h3>Chnage the text of the first &lt;p&gt;element with class="example" in a &lt;div&gt; element:</h3>
+      <div id="myDIV">
+       <h2 class="example">A heading with class="example" in div</h2>
+       <p class="example">A paragraph with class="example" in div.</p>
+       <p class="example">Also a paragraph with class="example" in div.</p> 
+     </div>
+     <p>Click the button to change the text of the first p element with class="example" in div.</p>
+     <button onclick="myFunction()">Try it</button>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      x.querySelector("p.example").innerHTML = "Hello World!";
+    }
+    </script> -->
+    <!-- <h3>Change the text of an element with id="demo" in a &lt;div&gt; element:</h3>
+    <div id="myDiv">
+        <p id="demo">This is a p element with id="demo" in a div.</p>
+    </div>
+    <p>Click the button to chnage the text of the p element in div.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("myDiv");
+            x.querySelector("#demo").innerHTML="Hello World!";
+        }
+    </script> -->
+    <!-- <h3>Add a red border to the first &lt;A&gt; element that has a traget attribute inside a &lt;div&gt; element:</h3>
+    <p>The CSS selector a[traget] make sure that all links with a target attribute gets a yellow background:</p>
+    <div id="myDiv">
+        Three links inside div:
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="http://www.disney.com" target="_blank">disney.com</a>
+        <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    </div>
+    <p>Click the button to add a red border to the frist link that has a tagret attribute inside the div element.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("myDiv");
+            x.querySelector("a[target]").style.border="10px solid red";
+        }
+    </script> -->
+    <!-- <h3>This example demonstrates how multiple selectors work. <br>
+        Assume that you have two elements: a &lt;h2&gt; and a &lt;h3&gt; element. <br>
+        The following code will add a background color to the first &lt;h2&gt; element in &lt;div&gt;</h3>
+        <div id="myDiv">
+            <h2>A h2 element in div</h2>
+            <h3>A h3 element in div</h3>
+        </div>
+        <script>
+            var x=document.getElementById("myDiv");
+            x.querySelector("h2,h3").style.backgroundColor="red";
+        </script> -->
+        <h3>However, if the &lt;h3&gt; element was placed before the &lt;h2&gt; element in &lt;div&gt;.The &lt;h3&gt; element is the one that will get the red background color.</h3>
+        <div id="myDiv">
+            <h3>A h3 element in div</h3>
+            <h2>A h2 element in div</h2>
+        </div>
+        <script>
+            var x=document.getElementById("myDiv");
+            x.querySelector("h2,h3").style.backgroundColor="red";
+        </script>
+</body>
+</html>

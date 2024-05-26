@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenList</title>
+    <style>
+        /* .myStyle{
+            background-color: coral;
+            padding: 16px;
+        }
+        .anotherClass{
+            text-align: center;
+            font-size: 25px;
+        }
+        .thirdClass
+        {
+            text-transform: uppercase;
+        }
+        .dropbtn{
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn:hover,.dropbtn:focus
+        {
+            background-color: #3e8e41;
+        }
+        .dropdown
+        {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content
+        {
+            display: none;
+            position:absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.2);
+        }
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a{
+            background-color: #f1f1f1;
+        }
+        .show{
+            display: block;
+        } */
+        body{
+            margin: 0;
+            font-size: 28px;
+        }
+        .header
+        {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+        #navbar{
+            overflow: hidden;
+            background-color: #333;
+        }
+        #navbar a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .content {
+            padding: 16px;
+        }
+        .sticky
+        {
+            position: fixed;
+            top:0;
+            width: 100%;
+        }
+        .sticky+.content{
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<!-- <body>
+    <h1>HTML DOMTokenList</h1> -->
+    <!-- <h3>Add a "myStyle" class to an element:</h3>
+    <h2>The add() Method</h2>
+    <button onclick="myFunction()">Add</button>
+    <p>Click "Add" to add the "myStyle" class to myDiv.</p>
+    <div id="myDiv">
+        <p>I am a myDiv.</p>
+    </div>
+    <script>
+        function myFunction(){
+            const list=document.getElementById("myDiv").classList;
+            list.add("myStyle");
+        }
+    </script> -->
+    <!-- <h3>Remove the "myStyle" class from an element:</h3>
+    <h2>The Remove() Method</h2>
+    <button onclick="myFunction()">Remove</button>
+    <p>Click "Remove" to remove the "myStyle" class from myDiv.</p>
+    <div id="myDiv" class="myStyle">
+        <p>I am myDiv</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").classList.remove("myStyle");
+        }
+    </script> -->
+    <!-- <h3>Toggle "myStyle" on and off:</h3>
+    <h2>The  toggle() Method</h2>
+    <button onclick="myFunction()">Toggle</button>
+    <p>Click "Toggle" to toggle "myStyle" on and off.</p>
+    <div id="myDiv">
+        <p>I am myDiv.</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").classList.toggle("myStyle");
+        }
+    </script> -->
+    <!-- <h3>Add multiple classes to the an element:</h3>
+    <h2>The add() Method</h2>
+    <button onclick="myFunction()">Add</button>
+    <p>Click "Add" to add multiple classes to myDiv.</p>
+    <div id="myDiv">
+        <p>I am myDiv.</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").classList.add("myStyle","anotherClass","thirdClass");
+        }
+    </script> -->
+    <!-- <h3>Remove multiple classes from an element:</h3>
+    <h2>The remove() method</h2>
+    <button onclick="myFunction()">Remove</button>
+    <p>Click "Remove" to remove multiple classes from myDiv.</p>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am myDiv.</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("myDiv").classList.remove("myStyle","anotherClass","thirdClass");
+        }
+    </script> -->
+    <!-- <h3>Get the number of class names for an element:</h3>
+    <h2>The length Property</h2>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am a myDiv.</p>
+    </div>
+    <p>The number of class names in myDiv are:</p>
+    <p id="demo"></p>
+    <script>
+       let numb=document.getElementById("myDiv").classList.length;
+       document.getElementById("demo").innerHTML=numb; 
+    </script> -->
+    <!-- <h3>Get the class names of the "myDiv" element:</h3>
+    <h2>The classList Property</h2>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am myDiv.</p>
+    </div>
+    <p>The class names of "myDiv are:"</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.getElementById("myDiv").classList;
+        document.getElementById("demo").innerHTML=list;
+    </script> -->
+    <!-- <h3>Get the first class of an element:</h3>
+    <h2>The item() Method</h2>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am a myDiv.</p>
+    </div>
+    <p>The class name of the first class in "myDiv" is:</p>
+    <p id="demo"></p>
+    <script>
+        let className=document.getElementById("myDiv").classList.item(0);
+        document.getElementById("demo").innerHTML=className;
+    </script> -->
+    <!-- <h3>Does an element has a "myStyle" class?</h3>
+    <h2>The contains() Method</h2>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am myDiv.</p>
+    </div>
+    <p>Does the "myDiv" element have a class of "myStyle"?</p>
+    <p id="demo"></p>
+    <script>
+        let x=document.getElementById("myDiv").classList.contains("myStyle");
+        document.getElementById("demo").innerHTML=x;
+    </script> -->
+    <!-- <h3>Remove "anotherClass" if an element has a "myStyle" class.</h3>
+    <h2>The contains() and remove() Methods</h2>
+    <p>Click "Remove" to remove "anotherClass",if "myDiv" has a "myStyle" class.</p>
+    <button onclick="myFunction()">Remove</button>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am myDiv.</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myDiv");
+            if(element.classList.contains("myStyle"))
+            {
+                element.classList.remove("anotherClass");
+            }
+        }
+    </script> -->
+    <!-- <h3>Toggle between classes to create a dropdown button:</h3>
+    <h2>The onclick Event</h2>
+    <p>Click on the button to open the dropdown menu.</p>
+    <div class="dropdown">
+        <button id="myBtn" class="dropbtn">Dropdown</button>
+        <div id="myDropDown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <script>
+        //Get the button,and when the user clicks on it, execute myFunction
+        document.getElementById("myBtn").onclick=function(){myFunction()};
+        //myfunction toggles between adding and removing the show class, which is used to hide and show the dropdown content
+        function myFunction()
+        {
+            document.getElementById("myDropDown").classList.toggle("show");
+        }
+    </script> -->
+    <body onscroll="myFunction()">
+    <div class="header">
+       <h3>HTML DOM tokenList</h3>
+       <h3>Create a sticky navigation bar:</h3>
+       <h2>Scroll Down</h2>
+       <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <div id="navbar">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">News</a>
+        <a href="javascript:void(0)">Contact</a>
+    </div>
+    <div class="content">
+        <h3>sticky Navigation Example</h3>
+        <p>The navBar will stick to top when you reach its scroll position.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+    <script>
+        const navbar=document.getElementById("navbar");
+        const sticky=navbar.offsetTop;
+        function myFunction()
+        {
+            if(window.pageYOffset>=sticky)
+            {
+                navbar.classList.add("sticky");
+            }
+            else
+            {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

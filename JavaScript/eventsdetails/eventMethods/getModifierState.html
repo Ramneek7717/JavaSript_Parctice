@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvent getModifierState() Method</title>
+</head>
+<body>
+    <h1>MouseEvent getModifierState() Method</h1>
+    <!-- <h3>Is the Caps lock Key activated?</h3>
+    <p>Click in the input field,then activate the Cap Lock Key and Click in the input field again:</p>
+    <input type="text" size="40" onmousedown="myFunction(event)">
+    <p id="demo"></p>
+    <script>
+     function myFunction(event) {
+    let x = event.getModifierState("CapsLock");
+    document.getElementById("demo").innerHTML = "Caps Lock activated: " + x;
+    }
+    </script> -->
+    <h3>Is the shift key breing presses dwon?</h3>
+    <p>Click in the input field, then hold down the Shift key and click in the input field again:</p>
+    <input type="text" size="40" onmousedown="myFunction(event)">
+    <p id="demo"></p>
+    <script>
+        function myFunction(event)
+        {
+            let x=event.getModifierState("Shift");
+            document.getElementById("demo").innerHTML="Pressing the shift key: "+x;
+        }
+    </script>
+</body>
+</html>

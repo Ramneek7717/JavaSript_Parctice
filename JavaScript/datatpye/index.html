@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+</head>
+
+<body>
+    <script>
+        //Print the text in three way 
+        //1.By Alret  
+        //alert("Hello World");
+        // 2. By console 
+        // console.log("Hello world");
+        //3. By Document
+        //document.write("Hello World");
+        // variable var ,let,const
+        var x = 4;
+        var y = 5;
+        var z = x + y;
+        console.log("Value using  var " + z);
+        let x1 = 9;
+        let y1 = 5;
+        let z1 = x1 - y1;
+        console.log("Value using let " + z1);
+        const x2 = 6;
+        const y2 = 3;
+        const z2 = x2 * y2;
+        console.log("Value using const  " + z2);* /
+        //OPREATORS
+        //1.Assignment opreator
+        /*let a = 10;
+        console.log("Print the value of a using assignment opreator=" + a);
+        let b = 5;
+        console.log(`Addition  Assignment Opreator ${a} and ${b}=` + (a += b));
+        console.log(`Subtraction  Assignment Opreator ${a} and ${b}=` + (a -= b));
+        console.log(`Multipilcation  Assignment Opreator ${a} and ${b}=` + (a *= b));
+        console.log(`Division  Assignment Opreator ${a} and ${b}=` + (a /= b));
+        console.log(`Modulus  Assignment Opreator ${a} and ${b}=` + (a %= b));
+        console.log(` Exponentiation Assignment Opreator ${a} and ${b}=` + (a **= b));
+        //2. Airthmatic opreator
+        // addtion
+        let a1 = 4;
+        let b1 = 5;
+        let c1 = a1 + b1;
+        console.log(`sum of ${a1} & ${b1} variable=` + c1);
+        //subtraction
+        let a2 = 5;
+        let b2 = 3;
+        let c2 = a2 - b2;
+        console.log(`Subtraction of ${a2} & ${b2} variable=` + c2);
+        //Multipication
+        let a3 = 5;
+        let b3 = 3;
+        let c3 = a3 * b3;
+        console.log(`Multipilcation of ${a3} & ${b3} variable=` + c3);
+        //Division
+        let a4 = 5;
+        let b4 = 3;
+        let c4 = a2 / b2;
+        console.log(`Division of ${a4} & ${b4} variable=` + c4);
+        //Exponentiational
+        let a5 = 5;
+        let b5 = 3;
+        let c5 = a5 ** b5;
+        console.log(`Division of ${a5} & ${b5} variable=` + c5);
+        //Modulus 
+        let a6 = 5;
+        let b6 = 3;
+        let c6 = a6 % b6;
+        console.log(`Division of ${a6} & ${b6} variable=` + c6);
+        //Increment 
+        let a7 = 5;
+        ++a7;
+        console.log(`Icrement opreator  use before variable` + a7);
+        a7++;
+        console.log(`Icrement opreator  use after variable` + a7);
+        //decrement 
+        let a8 = 5;
+        --a8;
+        console.log(`Decrement opreator  use before variable` + a8);
+        a8--;
+        console.log(`Decrement opreator  use after variable` + a8);
+        // Comparison  opreator 
+        let a9 = 12;
+        let b9 = 5;
+        let c9 = 'hello'
+        console.log(`equal to operator== ${a9} and ${b9}` + (a9 == b9));
+        console.log(`equal value and equal type operator=== ${a9} and ${c9}` + (a9 === c9));
+        console.log(` not equal to operator!= ${a9} and ${b9}` + (a9 != b9));
+        console.log(` not equal  value and equal type  operator!== ${a9} and ${c9}` + (a9 !== c9));
+        console.log(`greater than operator> ${a9} and ${b9} >` + (a9 > b9));
+        console.log(`less than operator< ${a9} and ${b9} <` + (a9 < b9));
+        console.log(`greater  than or equal to  operator ${a9} and ${b9} >=` + (a9 >=b9));
+        console.log(`less than or equal to operator ${a9} and ${b9} <=` + (a9 <= b9));
+        console.log(`ternary operator ${a9} and ${b9} ?` + (a9>b9?"true":"false"));
+        // String Comparison 
+        let text1="A";
+        let text2="B";
+        let result=text1<text2;
+        console.log(`String Compare between ${text1} < ${text2}  `+result);
+        let text11="20";
+        let text21="5";
+        let result1=text11<text21;
+        console.log(`String Compare between ${text11} < ${text21} `+result1);
+        let text12="Rohit";
+        let text22="Kumar";
+        let result2=text12+" "+text22;
+        console.log(`String Compare between ${text12} " " ${text22} `+result2);
+        let text13="What a very ";
+         let text23="nice day";
+          text13 += text23;
+         console.log(`String Compare between (${text13}) and (${text23}) =  `+(text13+=text23));
+
+         console.log("Adding String and Number x=5 +5="+(5+5)+" y=\"5\"+5= "+("5"+5)+" z=\"hello\"+5 ="+("hello"+5));
+         console.log("LOGICAL OPREATOR");
+         let a10=5;
+         let b10=4;
+         console.log(`logical AND operator ${a10} ===5 && ${b10}===5 ` + ((a10===5) &&(b10===5)?"true":"false"));
+         let a11=5;
+         let b11=4;
+         console.log(`logical OR operator  ${a10}===5 || ${b10}===5 ` + ((a10===5)||(b10===5)?"true":"false"));
+         let a12=true;
+         let b12=4;
+         console.log(`logical NOT opreator  ${a12} =` + (!a12?"true":"false"));         
+        console.log(`typeof  ${a12} = `+typeof(a12));
+        console.log("BITWISE Opreator");
+        console.log(` AND(&)=5 & 1 = `+(5&1));
+        console.log(` OR(|)=5 | 1 = `+ (5 |1));
+        console.log(` NOT(~)=~ 1 = `+(~1));
+        console.log(` XOR(^)=5 ^ 1 = `+(5^1));
+        console.log(` left shift(<<)=5<<1 = `+(5<<1));
+        console.log(` right shift(>>)=5>>1 = `+(5>>1));
+        console.log(` unsigned(>>>)=5>>> 1 = `+(5>>>1));
+       
+
+
+    </script>
+</body>
+
+</html>

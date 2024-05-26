@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Function concept</title>
+</head>
+<body>
+    <script>
+        let number1=Number(prompt("Enter the First value="));
+        console.log("Frist value="+number1);
+        let number2=Number(prompt("Enter the second vaule"));
+        console.log("Second value="+number2);
+        let select=Number(prompt("Select the Opeartion:-\nEnter 1 for  Addition two number\nEnter 2 for Subtraction two Number\nEnter 3 for Multiplication two Number\nEnter 4 Division two Number "));
+        switch(select)
+        {
+            case 1:
+            console.log("sum =\t"+add(number1,number2));
+            break;
+            case 2:
+            console.log("subtract =\t"+subtract(number1,number2));
+            break;
+            case 3:
+            console.log("multiply =\t"+multiply(number1,number2));
+            break;
+            case 4:
+            console.log("division =\t"+division(number1,number2));
+            break;
+            default:
+            console.log("Press worng key");
+        }
+        function add(n1,n2)
+        {
+            return n1+n2;
+        }
+      
+        function subtract(n1,n2)
+        {
+            return n1-n2;
+        }
+        
+        function multiply(n1,n2)
+        {
+            return n1*n2;
+        }
+       
+        function division(n1,n2)
+        {
+            return n1/n2;
+        }
+        
+        
+    </script>
+</body>
+</html>

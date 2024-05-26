@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoking a Function as a Function</title>
+</head>
+<body>
+    <script>
+        console.log("Default global object.");
+        function myFunction(a,b)
+        {
+            return a*b;
+        }
+        let x1=myFunction(10,2);
+        console.log(x1);
+        console.log("wimdow.myFunction.");
+        function myFunction(a,b)
+        {
+            return a*b;
+        }
+        console.log(window.myFunction(10,2));//will also return 20
+        
+    </script>
+</body>
+</html>

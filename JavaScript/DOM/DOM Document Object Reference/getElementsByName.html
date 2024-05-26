@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document getElementsByName()</title>
+</head>
+<body>
+    <h1>HTML DOM Document getElementsByName()</h1>
+    <h3>Get all elements with the name "fname":</h3>
+    <p>
+        Frist Name: <input type="text" name="fname" id="" value="Michael"> 
+    </p>
+    <p>
+        Frist Name: <input type="text" name="fname" id="" value="Doug">
+    </p>
+    <p> The tag name of the first element with the name "fname" is:</p>
+    <p id="demo"></p>
+    <script>
+        let elements=document.getElementsByName("fname");
+        document.getElementById("demo").innerHTML=elements[0].tagName;
+    </script>
+    <h3>Number of elements with name="animal" :</h3>
+     Cats: <input type="checkbox" name="animal" id="" value="Cats">
+     Dogs: <input type="checkbox" name="animal" id="" value="Dogs">
+     <p>Number of elements with name="animal" is:</p>
+     <p id="demo1"></p>
+     <script>
+        let num=document.getElementsByName("animal").length;
+        document.getElementById("demo1").innerHTML=num;
+     </script>
+     <h3>Check all input elements with type="checkbox" that have the name "animal":</h3>
+     Cats: <input type="checkbox" name="animal1" id="" value="cats">
+     Dogs: <input type="checkbox" name="animal1" id="" value="Dogs">
+     <p>Check the checkboxes that have a name="animal": </p>
+     <script>
+        const collection=document.getElementsByName("animal1");
+        for(let i=0;i<collection.length;i++)
+        {
+            if(collection[i].type=="checkbox")
+            {
+                collection[i].checked=true;
+            }
+        }
+     </script>    
+</body>
+</html>

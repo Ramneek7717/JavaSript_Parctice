@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Function() Constructor</title>
+</head>
+<body>
+    <script>
+
+        console.log("The Function() Constructor");
+        //Function Can also be defined with a built-in JavaScript function constructor called Function()
+        const myFunction=new Function("a","b","return a * b ");
+        let x=myFunction(4,3);
+        console.log(x);
+        //You actually don't have to use the function constructor 
+        const myFunction1=function (a,b){return a*b};
+        let x1=myFunction1(4,2);
+        console.log(x1);
+       
+ </script>
+</body>
+</html>

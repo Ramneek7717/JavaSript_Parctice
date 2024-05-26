@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EVENT =onblur Event</title>
+</head>
+<body>
+    <h1>HTML EVENT = onblur Event</h1>
+    <!-- <h3>Call a function when a user leaves an input field:</h3>
+    Enter your name: <input type="text" name="" id="fname" onblur="myFunction()">
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    <script>
+        function myFunction()
+        {
+            let x= document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+    </script> -->
+    <!-- <h1>In HTML :</h1>
+    <p>This example assigns an "onblur" event to an input element.</p>
+    <p>Write in the input field and click outside the filed to lose focus (blur).</p>
+    <input type="text" onblur="myFunction()">
+    <script>
+        function myFunction()
+        {
+            alert("Input field lost focus.");
+        }
+    </script> -->
+    <!-- <h1>In JavaScript:</h1>
+    <p>Use the HTML DOM to assign an "onblur" event to an input element.</p>
+    <p>Write in the input field and click outside the field to lose focus(blur).</p>
+    <input type="text" name="" id="fname">
+    <script>
+        document.getElementById("fname").onblur=function(){myFunction()};
+        function myFunction()
+        {
+            alert("Input Field lost focus.");
+        }
+    </script> -->
+    <!-- <h1>In JavaScript,using the addEventListener() method:</h1>
+    <p>Use the addEventListener() method to attach a "blur" event to an input element.</p>
+    <p>Write something in the input field, and then click outside the field to lose focus(blur).</p>
+    <input type="text" name="" id="fname">
+    <script>
+        document.getElementById("fname").addEventListener("blur",myFunction);
+        function myFunction()
+        {
+            alert("Input field lost foucs.");
+        }
+    </script> -->
+    <!-- <h3>Using onfocus and onblur attributes:</h3>
+    <p>When you enter the input field,a function sets the background color to yellow.</p>
+    <p>when you leave the input field, a function sets the background color to red.</p>
+    Enter your name: <input type="text" name="" id="myInput" onfocus="focusFunction()"onblur="blurFunction()">
+    <script>
+        function focusFunction()
+        {
+            document.getElementById("myInput").style.backgroundColor="yellow";
+
+        }
+        function blurFunction()
+        {
+            document.getElementById("myInput").style.background="red";
+        }
+    </script> -->
+    <!-- <h3>Event delegation: using <b>focus</b> and <b>blur</b> events:</h3>
+    <h4>set <b>useCapture</b> parameter of addEventListener() to <b> true:</b></h4>
+    <p>When you enter the input field,a function sets the background color to yellow.</p>
+    <p>when you leave the input field, a function sets the background color to red.</p>
+    <form action="" id="myForm">
+        <input type="text" name="" id="myInput">
+    </form>
+    <script>
+        let x =document.getElementById("myForm");
+        x.addEventListener("focus",myFocusFunction,true);
+        x.addEventListener("blur",myBlurFunction,true);
+        function myFocusFunction()
+        {
+            document.getElementById("myInput").style.backgroundColor="yellow";
+        }
+        function myBlurFunction()
+        { 
+           document.getElementById("myInput").style.backgroundColor=" red";
+        }
+    </script> -->
+    <h3>Event delegation:using <b>focusin</b> and <b>focusout</b> events:</h3>
+    <p>When you enter the input field,a function sets the background color to yellow.</p>
+    <p>when you leave the input field, a function sets the background color to red.</p>
+    <form action="" id="myForm">
+        <input type="text" id="myInput">
+    </form>
+    <script>
+        let x = document.getElementById("myForm");
+        x.addEventListener("focusin",myFocusFunction);
+        x.addEventListener("focusout",myBlurFunction);
+        function myFocusFunction()
+        {
+            document.getElementById("myInput").style.backgroundColor="yellow";
+        }
+        function myBlurFunction()
+        {
+            document.getElementById("myInput").style.backgroundColor="blue ";
+        }
+    </script>
+
+</body>
+</html>

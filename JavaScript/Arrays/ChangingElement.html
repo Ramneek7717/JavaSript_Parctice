@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing An Array Element</title>
+</head>
+<body>
+    <h1>This statement changes the value of the frist element in cars:</h1>
+      <h3>Bracket Indexing</h3>
+      <p>JavaScript array elements are accessed using numeric indexs (Starting from 0).</p>
+      <p id="demo">
+
+      </p>
+      <script>
+        const cars=[
+            "Saab",
+            "Volvo",
+            "BMW"
+        ];
+        cars[0]="Opel";
+        document.getElementById("demo").innerHTML=cars;
+      </script> 
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.forms</title>
+</head>
+<body>
+    <h1>Finding HTML Elements Using document.forms</h1>
+   <form action="">
+    Frist name: <input type="text" name="fname" value="Donald">
+    <input type="submit" value="submit" id="">
+
+   </form>
+   <p id="demo"></p>
+   <script>
+    document.getElementById("demo").innerHTML="Number of forms: "+document.forms.length;
+   </script>
+</body>
+</html>

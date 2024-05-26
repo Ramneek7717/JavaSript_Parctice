@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document write()</title>
+</head>
+<body>
+    <h1>HTML DOM Document write()</h1>
+    <!-- <h3>Write some text directly to the HTML output:</h3>
+    <script>
+        document.write("Hello world!");
+    </script>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in rem iste.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, earum facere repellendus cumque ut autem accusantium ea dignissimos laudantium dicta! Quaerat sapiente voluptatibus fugiat optio in reprehenderit molestias et animi deleniti earum tenetur, repellat voluptatum reiciendis nam! Ab sunt rem quo doloremque necessitatibus in voluptatem?</p> -->
+     <!-- <h3>Write some HTML elements directly to the HTML output:</h3>
+     <script>
+        document.write("<h2>Hello World!</h2><p>Have a nice day!")
+     </script>
+     <h2>The Lorem Ipsum Passage</h2>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi molestiae numquam repellendus unde laboriosam dolores nostrum totam quisquam sint doloribus molestias officia natus aperiam blanditiis, rem accusamus ipsam rerum. Eaque modi quam culpa velit.</p> -->
+     <!-- <h3>Using document.write() after a document is loaded,deletes all existing HTML:</h3>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus numquam est alias quia quis tempore id maiores vero possimus voluptatibus voluptatem dolore iusto sunt, repudiandae commodi architecto nulla quibusdam ratione ab labore corporis.</p>
+      <p>Using document.write() after a document is loaded,deletes all existing HTML:</p>
+      <button type="button" onclick="myFunction()">Click me!</button>
+      <script>
+        function myFunction()
+        {
+            document.write("Hello World");
+        }
+      </script> -->
+      <!-- <h3>Write a date object directly to the HTML output</h3>
+      <script>
+        document.write(Date());
+      </script> -->
+      <!-- <h3>Open an output strem,add some HTML,then close the output stream</h3>
+      <p>Open a Document deletes existing content.</p>
+      <p>Open this document and write some text to it :</p>
+      <button onClick="myFunction()">Try it</button>
+      <script>
+        function myFunction(){
+        document.open();
+        document.write("<h1>Hello World</h1>");
+        document.close();}
+      </script> -->
+      <!-- <h3>Open a new window and write some HTML into it:</h3>
+      <p>Click "open" to open a new window.</p>
+      <button onclick="myFunction()">Open</button>
+      <script>
+        function myFunction()
+        {
+            const myWindow=window.open();
+            myWindow.document.write("<h1>New Window</h1>");
+            myWindow.document.write("<p>Hello World!</p>")
+        }
+      </script> -->
+      <!-- <h3>The Difference Between write() and writeln()</h3>
+      <p>The writeln()method is only usefuyl when writing to text documents(type=".txt").</p>
+      <p>Write() does NOT add a new line(CR) after each statement.</p>
+      <p>writeln() DOES add a new line(CR)after each statement.</p>
+      <pre>
+        <script>
+            document.write("Hello World!");
+            document.write("Have a nice day!");
+            document.write("<br>");
+            document.writeln("Hello World!");
+            document.writeln("Have a nice day!");
+        </script>
+      </pre>
+      <p>It makes no sense to use writeln() in HTML.</p>
+      <p>Carriage return (CR) is ignored in HTML.</p> -->
+      <h3>If you want new lines in HTML you must use paragraphs or br tags:</h3>
+      <script>
+        document.write("Hello World!");
+        document.write("<br>");
+        document.write("Have a nice day!");
+      </script>
+      <script>
+        document.write("<p> Hello World!</p>");
+        document.write("<p> Have a nice day!</p>");
+      </script>
+</body>
+</html>

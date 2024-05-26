@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element outerHTML</title>
+</head>
+<body>
+    <h1>HTML DOM Element outerHTML</h1>
+    <!-- <h3>Change the first h2 element and it's content:</h3>
+    <p>Click "Change" to chnage the first h2 header to a h3.</p>
+    <button onclick="myFunction()">Chnage</button>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementsByTagName("h3")[0];
+            element.outerHTML="<h3>You  changed me and my content!<h3>";
+        }
+    </script> -->
+    <!-- <h3>Replace an element with a header:</h3>
+    <p id="myP">I am a paragraph! click "Change" to repalce me with a header.</p>
+    <button onclick="myFunction()">Change</button>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myP");
+            element.outerHTML="<h2> This is a h2 element.</h2>";
+        }
+    </script> -->
+    <!-- <h3>Alert the outer HTML of a h1 element:</h3>
+    <p>Click "Alert" to alert the outer HTML of the h1 element.</p>
+    <button onclick="myFunction()">Alert</button>
+    <script>
+        function myFunction()
+        {
+            let html=document.getElementsByTagName("h3")[0].outerHTML;
+            alert(html);
+        }
+    </script> -->
+    <h3>Alert the outer HTML of a ul element:</h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Click "Alert" to alert the outer HTML content of the ul element.</p>
+    <button onclick="myFunction()">Alert</button>
+    <script>
+        function myFunction()
+        {
+            let html=document.getElementById("myList").outerHTML;
+            alert(html);
+        }
+    </script>
+</body>
+</html>

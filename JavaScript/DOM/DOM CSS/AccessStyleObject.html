@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access a Style Object</title>
+    <style>
+        body{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Access a Style Object</h1>
+    <p>The Style object can be accessed from the head section of the document,or from specific HTML element(s).</p>
+    <p>Accessing style object(s) from the head section of the document:</p>
+    <p>Click the button to display the style properties of this document.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementsByTagName("STYLE")[0];
+            document.getElementById("demo").innerHTML=x.innerHTML;
+        }
+    </script>
+</body>
+</html>

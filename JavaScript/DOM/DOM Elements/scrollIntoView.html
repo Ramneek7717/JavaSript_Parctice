@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element scrollIntoView</title>
+     <style>
+        #myDiv
+        {
+            height: 250px;
+            width: 250px;
+            overflow: auto;
+            background-color: coral;
+        }
+        #content{
+            margin: 500px;
+            height: 800px;
+            width: 2000px;
+            background-color: coral;
+        }
+     </style>
+</head>
+<body>
+    <h1>HTML DOM Element scrollIntoView</h1>
+    <!-- <h3>Scroll the element width id="content" into the visible area of the browser window:</h3>
+    <button onclick="myFunction()">Scroll</button>
+    <p>Click "Scroll" to scroll to the top of the element with id="content".</p>
+    <div id="myDiv">
+        <div id="content">
+            <p>Some text inside an element.</p>
+            <p>Some text inside an element.</p>
+            <p>Some text imside an element.</p>
+        </div>
+    </div>
+    <script>
+     function myFunction()
+     {
+        const element=document.getElementById("content");
+        element.scrollIntoView();
+     }
+    </script> -->
+    <h3>Scroll to the top or to the bottom of an element:</h3>
+     <p>Click the buttons to scroll to the top or to the bottom of the element with id="content".</p>
+     <p>
+        <button onclick="scrollToTop()">Scroll to the top</button>
+        <button onclick="scrollToBottom()">Scroll to the bottom</button>
+     </p>
+    <div id="myDIV">
+    <div id="content">
+    <div style="position:absolute;top:0;">Some text at the top</div>
+    <div style="position:absolute;bottom:0">Some text at the bottom</div>
+     </div>
+     </div>
+
+<script>
+const element = document.getElementById("content");
+
+function scrollToTop() {
+  element.scrollIntoView(true);
+}
+
+function scrollToBottom() {
+  element.scrollIntoView(false);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM isSameNode() Method</title>
+</head>
+<body>
+    <h1>HTML DOM isSameNode() method</h1>
+    <!-- <h3>Check if two nodes are, in fact, the same node:</h3>
+     <p>Click the button to check if the ul element with id="myList" is the same as the document's first ul element.</p>
+     <button onclick="myFunction()">Trt it</button>
+     <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+     </ul>
+     <p><strong>Note:</strong>
+     Firefox stopped supported this method as of version 10,Instead, use=== to comare if two nodes are the same.</p>
+     <p id="demo"></p>
+     <script>
+        function myFunction()
+        {
+            var item1=document.getElementById("myList");
+            var item2 = document.getElementsByTagName("UL")[0];
+            var x=item1.isSameNode(item2);
+            document.getElementById("demo").innerHTML=x;
+        }
+     </script> -->
+     <h3>Using the === operator to check if two nodes are the same node:</h3>
+     <p>Click the button to check if the ul element with id="myList" is the same as the document's first ul element.If so add a color to its first child.</p>
+     <button onclick="myFunction()">Try it</button>
+     <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+     </ul>
+     <script>
+        function myFunction()
+        {
+            var item1=document.getElementById("myList");
+            var item2=document.getElementsByTagName("UL")[0];
+            if(item1===item2)
+            {
+                alert("THEY ARE THE SAME!!");
+            }
+            else
+            {
+                alert("They are not the same.");
+            }
+        }
+     </script>
+</body>
+</html>

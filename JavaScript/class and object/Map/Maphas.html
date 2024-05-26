@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map.has()</title>
+</head>
+<body>
+    <h1>Map.has()</h1>
+    <p>The <span style="color: red;">has()</span> method returns true if a key exists in a Map:
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["Apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo").innerHTML=fruits.has("Apples");
+        //Delete an element
+        fruits.delete("bananas");
+        document.getElementById("demo1").innerHTML=fruits.has("bananas");
+    </script>
+</body>
+</html>

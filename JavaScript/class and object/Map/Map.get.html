@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map.get()</title>
+</head>
+<body>
+    <h1>Map.get()</h1>
+    <p>The <span style="color: red;">get()</span> method gets the value of a key in a Map:</p>
+    <p id="demo1"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo1").innerHTML=fruits.get("apples");
+    </script>
+</body>
+</html>

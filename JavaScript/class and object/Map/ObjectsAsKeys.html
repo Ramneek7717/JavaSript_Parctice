@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects as Keys</title>
+</head>
+<body>
+    <h1>Objects as Keys</h1>
+    <p>Being able to use objects as keys is an important Map feature.</p>
+     <p id="demo"></p>
+     <script>
+        //Create Objects
+        const apples={name:'Apples'};
+        const bananas={name:'Bananas'};
+        const oranges={name:'Oranges'};
+        //Create a Map
+        const fruits=new Map();
+        //Add  the Objects to the Map
+        fruits.set(apples,500);
+        fruits.set(bananas,300);
+        fruits.set(oranges,200);
+        document.getElementById("demo").innerHTML=fruits.get(apples);
+
+     </script>
+     <p><strong>Remember:</strong>The key is an objcet(apples),not a string ("apples") <br>
+    if we use get it will be returns undefined</p>
+    <p id="demo1"></p>
+    <script>
+        //Create Objects
+        const apples1={name:'Apples'};
+        const bananas1={name:'Bananas'};
+        const oranges1={name:'Oranges'};
+        //Create a Map
+        const fruits1=new Map();
+        //Add  the Objects to the Map
+        fruits.set(apples1,500);
+        fruits.set(bananas1,300);
+        fruits.set(oranges1,200);
+        document.getElementById("demo1").innerHTML=fruits.get("apples1");
+
+     </script>
+</body>
+</html>

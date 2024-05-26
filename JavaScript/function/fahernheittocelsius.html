@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit to celsius</title>
+</head>
+<body>
+    <script>
+        //Accessing a function with The()operator invokes(calls)the function
+       console.log("Convert from Fahrenheit to celsius");
+       let value=toCelsius(77);
+        console.log(value);
+         function toCelsius(f)
+       {
+        return((5/9)*(f-32));
+        
+       }
+       //Accessing a function with incorrect parameters can return an incorrect answer
+       function toCelsius1(Fahrenheit)
+       {
+        return(5/9)*(Fahrenheit-32);
+       }
+       let value1=toCelsius1();
+       console.log(value1);
+       //Accessing a function without() return the function and Not the function result
+       function toCelsius2(Fahrenheit)
+       { 
+        return(5/9)*(Fahrenheit-32);
+       }
+       let value2=toCelsius2;
+       console.log(value2);
+       console.log(typeof(value2));
+       //Functions used as variable Values
+       let text="The Temperature is "+ toCelsius3(77)+" Celsius.";
+       function toCelsius3(Fahrenheit){
+        return (5/9)*(Fahrenheit-32);
+
+       }
+       console.log(text);
+    </script>
+      
+       
+    
+</body>
+</html>

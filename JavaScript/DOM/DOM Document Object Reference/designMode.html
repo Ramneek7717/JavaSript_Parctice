@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document designMode</title>
+</head>
+<body>
+    <h1>HTML DOM Document designMode</h1>
+    <p>Get the designMode:</p>
+    <p>The designMode property returns if this document is editable:</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=document.designMode;
+    </script>
+    <p>Make the document editable:</p>
+    <p>This document is editable. the designMode is set to "on" .</p>
+    <p>Try editing any text insid this document.</p>
+    <script>
+        document.designMode="on";
+    </script>
+</body>
+</html>

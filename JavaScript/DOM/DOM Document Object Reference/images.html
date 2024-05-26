@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML DOM Document images</title>
+</head>
+<body>
+    <h1>HTML DOM Document images</h1>
+    <!-- <h3>The number of img elements in the document:</h3>
+     <img src="klematis.jpg" alt="flower" width="150" height="113">
+     <img src="klematis2.jpg" alt="flower" width="'152" height="128">
+     <img src="pic_trulli.jpg" alt="pic_trulli" width="120" height="140">
+     <p>The number of images is:</p>
+     <p id="demo"></p>
+     <script>
+        let numb=document.images.length;
+        document.getElementById("demo").innerHTML=numb;
+     </script> -->
+     <!-- <h3>Loop over all img element,and output the URL(src) of each:</h3>
+     <img src="klematis.jpg" alt="klematis" width="150" height="120">
+     <img src="klematis2.jpg" alt="klematis2" width="150" height="120">
+     <p>Display the URL of each ing element:</p>
+     <p id="demo"></p>
+     <script>
+        const myImages=document.images;
+        let text="";
+        for(let i=0;i<myImages.length;i++)
+        {
+            text+=myImages[i].src+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+     </script> -->
+     <!-- <h3>The URL of the first img element is:</h3>
+     <img src="klematis.jpg" alt="klematis" width="150" height="120">
+     <img src="klematis2.jpg" alt="klematis2" width="120" height="150">
+     <p>The URL of the first image is:</p>
+     <p id="demo"></p>
+     <script>
+        let scr=document.images[0].src;
+        document.getElementById("demo").innerHTML=scr;
+     </script> -->
+     <!-- <h3>The URL of the first img element is:</h3>
+     <img src="klematis.jpg" alt="klematis" width="150" height="120">
+     <img src="klematis2.jpg" alt="klematis2" width="150" height="120">
+     <p>The URL of the first image is:</p>
+     <p id="demo"></p>
+     <script>
+        let src=document.images.item(0).src;
+        document.getElementById("demo").innerHTML=src;
+     </script> -->
+     <!-- <h3>The URL of the img element with id="myImages" is:</h3>
+     <img id="myImages" src="klematis.jpg" alt="klematis" width="150" height="120">
+     <img src="klematis2.jpg" alt="klematis2" width="150" height="120">
+     <p>The URL of the img element with id="myImages" is:</p>
+     <p id="demo"></p>
+     <script>
+        let src1=document.images.namedItem("myImages").src;
+        document.getElementById("demo").innerHTML=src1;
+     </script> -->
+    <h3>Add a black border to the first img element:</h3>
+    <img id="myImages" src="klematis.jpg" alt="klematis" width="150" height="120">
+    <img src="klematis2.jpg" alt="klematis2" width="150" height="120">
+    <p id="demo"></p>
+    <script>
+        const img=document.images[0];
+        img.style.border="10px solid black";
+    </script>
+
+
+</body>
+</html>

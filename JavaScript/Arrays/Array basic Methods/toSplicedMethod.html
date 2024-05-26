@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array toSpliced() Methods</title>
+</head>
+<body>
+    <h1>Array toSpliced() Method</h1>
+    <p>The difference between the new <strong>toSpliced()</strong> method and the old <strong>splice() </strong> method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array</p>
+    <P id="demo1"></P>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+ <script>
+    const months=[
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr"
+    ];
+    document.getElementById("demo1").innerHTML=months;
+    month1=months.toSpliced(0,1);
+    document.getElementById("demo2").innerHTML=month1;
+    document.getElementById("demo3").innerHTML=months;
+    </script>
+</body>
+</html>

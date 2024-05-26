@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Use the addEventListener() method to attach a "toggle" event to a details element.</p>
+
+<p>Open the details.</p>
+
+<details id="myDetails">
+<summary>Copyright 1999-2014.</summary>
+<p> - by Refsnes Data. All Rights Reserved.</p>
+<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+<script>
+document.getElementById("myDetails").addEventListener("toggle", myFunction);
+
+function myFunction() {
+  alert("The ontoggle event occured.");
+}
+</script>
+
+</body>
+</html>

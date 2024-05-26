@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript promise Object</title>
+</head>
+<body>
+    <h1>JavaScript Promise Object</h1>
+    <!-- <p>A promise contains both the producing code and calls to the consuming code:</p>
+    <h2>The then() method</h2>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(some)
+        {
+            document.getElementById("demo").innerHTML=some;
+        }
+        let myPromise=new Promise(function(myResolve,myReject)
+                                    {
+                                        let x=0;
+                                        //Some code (try to change x to 5)
+                                        if(x==0)
+                                        {
+                                            myResolve("OK");
+                                        }
+                                        else{
+                                            myReject("Error");
+                                        }
+                                    });
+        myPromise.then(
+            function(value)
+            {
+                myDisplayer(value);
+            } ,
+            function(error)
+            {
+                myDisplayer(error);
+            });
+        
+    </script> -->
+    <!-- <h3>Waiting for a Timeout</h3>
+    <h2>setInterval() with a CallBack</h2>
+    <p>Wait 3 seconds(3000 milliseconds) for this page to change. </p>
+    <h1 id="demo"></h1>
+    <script>
+        setTimeout(function(){myFunction("I am P");},3000);
+        function myFunction(value)
+        {
+            document.getElementById("demo").innerHTML=value;
+        }
+    </script> -->
+     <h3>Waiting for TimeOut using Promise</h3>
+     <h2>The then() Method</h2>
+     <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+     <h1 id="demo"></h1>
+     <script>
+        const myPromise= new Promise(function(myResolve,myReject)
+                                     { setTimeout(function(){
+                                        myResolve("i am P");
+                                     },3000);});
+                                     myPromise.then(function(value){
+                                                    document.getElementById("demo").innerHTML=value;
+                                                   });
+     </script>
+
+
+</body>
+</html>

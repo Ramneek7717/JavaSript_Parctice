@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element hasChildNodes()</title>
+</head>
+<body>
+    <h1>HTML DOM Element hasChildNodes()</h1>
+    <!-- <h3>Does an element have child nodes:</h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Does the list above have any child nodes?</p>
+    <p id="demo"></p>
+    <p>If you renove the child nodes of the list result will be false.</p>
+    <p><strong>Note:</strong>WhiteSpace between nodes is considered text nodes. <br>
+       if you leave any white space or line feeds, the list still has child nodes.
+    </p>
+    <script>
+        let answer=document.getElementById("myList").hasChildNodes();
+        document.getElementById("demo").innerHTML=answer;
+    </script> -->
+    <h3>Remove the first child node of an element:</h3>
+     <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+     </ul>
+     <p>Click the button to remove the child nodes fron the list,one by one:</p>
+     <button onclick="myFunction()">Try it</button>
+     <p><strong>Note:</strong>
+      WhiteSpace between nodes is considered text nodes. <br>
+      Some of the child nodes you remove are invisible white space or line feeds.
+    </p>
+    <script>
+        function myFunction()
+        {
+            const element=document.getElementById("myList");
+            if(element.hasChildNodes())
+            {
+                element.removeChild(element.childNodes[0]);
+            }
+        }
+    </script>
+</body>
+</html>

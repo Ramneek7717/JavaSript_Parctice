@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use a setter to change the carname to "Volvo":</title>
+</head>
+<body>
+    <h1>Use a setter to chnage the carname to "Volvo</h1>
+    <p>When using a setter to set a property value, you do not use parantheses.</p>
+    <p id="demo"></p>
+    <script>
+        class Car
+        {
+            constructor(brand)
+            {
+                this._carname=brand;
+            }
+            set carname(x)
+            {
+                this._carname=x;
+            }
+            get carname()
+            {
+                return this._carname;
+            }
+        }
+        const myCar =new Car("Ford");
+        myCar.carname="Volvo";
+        document.getElementById("demo").innerHTML=myCar.carname;
+    </script>
+</body>
+</html>

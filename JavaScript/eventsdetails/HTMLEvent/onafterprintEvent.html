@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event-onafterprint Event</title>
+</head>
+<!-- <body onafterprint="myFunction()">
+    <h1>HTML Event-onafterprint Event</h1>
+    <h3>Call a function when a page starts printing:</h3>
+    <h2>Print this document!</h2>
+    <p><b>Tip</b>:The keybord shortcut ctrl+p prints a page.</p>
+    <script>
+        function myFunction()
+        {
+            alert("This document is now being printed");
+        }
+    </script> -->
+<!-- <body onafterprint="myFunction()">
+ <h1>IN HTML</h1>
+ <h1>HTML DOM Events</h1> 
+ <h2>The afterPrint Event</h2>
+ <p>This example assigns an "onafterprint" event to the body element.</p> 
+ <h3>Print this document!</h3>
+ <p><b>Tip</b>: The Keyborad shortcut crtl+P prints a page.</p> 
+ <script>
+    function myFunction()
+    {
+        alert("This document is now being printed");
+    }
+ </script>      -->
+ <body>
+    <h1>IN JavaScript</h1>
+    <h1>HTML DOM Events</h1>
+    <h2>The afterprint Event</h2>
+    <!--<p>Use the HTML DOM to assign an "onafterprint" event to a body element.</p>
+    <h3>Print this document!</h3>
+    <p><b>Tip:</b> The keyboard shortcut Ctrl+P prints a page.</p>
+    <script>
+        document.getElementsByTagName("body")[0].onafterprint=function(){myFunction()};
+        function myFunction()
+        {
+            alert("This document is now being printed");
+        }
+    </script> -->
+    <h3>In JavaScript, using the addEventListener() method:</h3>
+    <p>Use the addEventListener() method to attach an "afterprint" event to the window object.</p>
+    <h3>Print this document!</h3> 
+    <p><b>Tip :</b>The keyBoard shortcut ctrl+P prints a page.</p>
+    <script>
+        window.addEventListener("afterprint",myFunction);
+        function myFunction()
+        {
+            alert("This document is now being printed");
+        }
+    </script>
+
+</body>
+</html>

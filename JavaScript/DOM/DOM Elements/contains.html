@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element contains()</title>
+</head>
+<body>
+    <h1>HTML DOM Element conatins()</h1>
+    <h3>Is "mySPAN" a descendant of "myDiv"?</h3>
+    <div id="myDiv">
+        <p>I am a p element inside "myDiv",and I have a <span id="mySPAN"><b>span</b></span> element inside of me.</p>
+    </div>
+    <p>Does the div element conatin a span element?</p>
+    <p id="demo"></p>
+    <script>
+        const span=document.getElementById("mySPAN");
+        let answer=document.getElementById("myDiv").contains(span);
+        document.getElementById("demo").innerHTML=answer;
+    </script>
+</body>
+</html>

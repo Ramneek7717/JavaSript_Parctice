@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding HTML Elements by Tag Name</title>
+</head>
+<body>
+    <h1>Finding HTMl Elements by Tag Name</h1>
+    <p>This example demonstrates the <b>getElementsByTagName method.</b></p>
+    <p>This example finds all <span style="color: red;">p</span> element:</p>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML="The text in first paragraph ( index 0) is:"+element[0].innerHTML;
+    </script>
+    <p>This example finds the element with <span style="color:red">id="main"</span>, and then finds all <span style="color:red"><</span><span style="color:red">p</span><span style="color:red">></span> element inside <span style="color:red">main</span>:</p>
+     <div id="main">
+        <p>
+            Finding HTML elements by Tag Name
+        </p>
+        <p>This example demonstartes the <b>getElementsByTagName</b> method.</p>
+      </div>
+      <script>
+        const x=document.getElementById("main");
+        console.log(x);
+        const y=document.getElementsByTagName("p");
+         console.log(y);
+        document.getElementById("demo").innerHTML="The first Paragraph(index 0) inside \"main\" is: "+y[0].innerHTML;
+      </script>
+</body>
+</html>

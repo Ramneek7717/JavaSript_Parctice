@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOMTokenList value</title>
+    <style>
+        .myStyle{
+            background-color: coral;
+            padding: 16px;
+        }
+        .anotherClass{
+            text-align: center;
+            font-size: 25px;
+        }
+        .thirdClass{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOMTokenList value</h1>
+    <h3>Get an element's classList as a string:</h3>
+    <h2>The value Property</h2>
+    <div id="myDiv" class="myStyle anotherClass thirdClass">
+        <p>I am myDiv.</p>
+    </div>
+    <p>The classList of "myDiv" is:</p>
+    <p id="demo"></p>
+    <script>
+        const list=document.getElementById("myDiv").classList;
+        let text=list.value;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

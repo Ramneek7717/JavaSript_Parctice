@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element hasAttributes()</title>
+</head>
+   <!-- without attributes -->
+   <body>
+    <!-- with atttributes -->
+<!-- <body style="color: red;"> -->
+    <h1>HTML DOM Element hasAttributes()</h1>
+    <h3>Does the body element have attributes?</h3>
+    <p>The body element has attributes:</p>
+    <p id="demo"></p>
+    <p>Adding an attribute to the body element,and the result will be true.</p>
+    <script>
+        let answer=document.body.hasAttributes();
+        document.getElementById("demo").innerHTML=answer;
+    </script>
+</body>
+</html>

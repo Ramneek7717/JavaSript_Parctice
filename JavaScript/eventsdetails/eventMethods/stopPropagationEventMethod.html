@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopPropagation() Event method</title>
+    <style>
+        div{
+            padding: 50px;
+            background-color: rgba(255,0,0,0.2);
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>stopPropagation() Event method</h1>
+    <h3>Prevent any propagation of the same event:</h3>
+    <p>Click Div 1:</p>
+    <div onclick="func2()">DIV 2
+      <div onclick="func1(event)">Div 1</div>
+    </div>
+    stop propagation:
+    <input type="checkbox" id="check">
+    <p></p>
+    <p>Because DIV 1 is inside Div 2, both DIV s get clicked when you click on DIV 1.</p>
+    <p>Check the stop propagation checkbox, and try again.</p>
+    <p>The stopPropagation() method allows you to prevent propagationof the current event.</p>
+    <script>
+        function func1(event)
+        {
+            alert("DIV 1");
+            if(document.getElementById("check").checked)
+            {
+                event.stopPropagation();
+            }
+        }
+        function func2()
+        {
+            alert("DIV 2");
+        }
+    </script>
+</body>
+</html>

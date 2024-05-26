@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Values() Method</title>
+</head>
+<body>
+  <h1>The values() Method</h1>
+  <p>The <span style="color: red;">values()</span> method returns an Iterator conatining all the values in a Set:</p>
+    <p id="demo"></p>
+    <script>
+        //Create a Set
+        const letters=new Set(["a","b","c"]);
+        //Display set.size
+        document.getElementById("demo").innerHTML=letters.values();
+        
+    </script>
+    <p>Now you can use the Iterator object to access the elements:</p>
+    <p id="demo1"></p>
+    <script>
+        //Create a Set
+        const letters1=new Set(["a","b","c"]);
+        //List all Elements
+        let text="";
+        for( const x of letters1.values())
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo1").innerHTML=text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map.clear()</title>
+</head>
+<body>
+    <h1>Map.clear()</h1>
+    <p>The <span style="color: red;">clear()</span> method removes all elements from a Map:
+    </p>
+    <p id="demo"></p>
+    <script>
+        //Create a Map
+        const fruits=new Map([
+            ["Apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        fruits.clear();
+        document.getElementById("demo").innerHTML=fruits.size;
+    </script>
+</body>
+</html>

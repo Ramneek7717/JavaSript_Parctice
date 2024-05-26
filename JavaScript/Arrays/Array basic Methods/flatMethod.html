@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array flat() Method</title>
+</head>
+<body>
+    <h1>Array flat() Method</h1>
+    <p>The <span style="color: red;"> flat()</span> method creates a new array with sub-array element concatenated to a specified depth.</p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <script>
+        const myArr=[
+            [1,2],[3,4],[5,6]
+        ];
+        document.getElementById("demo1").innerHTML=myArr;
+        const newArr =myArr.flat();
+        document.getElementById("demo").innerHTML=newArr;
+    </script>
+</body>
+</html>

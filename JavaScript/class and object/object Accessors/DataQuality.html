@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Quality</title>
+</head>
+<body>
+    <h1>Data Quality</h1>
+    <p>JavaScript can secure better data quality when using getters and setters.</p>
+    <p>Using the <span style="color: red;">lang</span> property, in this example, returns the value of the <span style="color: red;"> language</span> property in uppercase:</p>
+    <p id="demo"></p>
+    <script>
+        //Create an Object:
+        const person={
+            firstName:"John",
+            lastName:"Doe",
+            language:"en",
+            get lang()
+            {
+                return this.language.toUpperCase();
+            }
+        };
+        //Dispaly data from the object using a getter:
+        document.getElementById("demo").innerHTML=person.lang;
+    </script>
+    <p>Using the <span style="color: red;">lang</span> property, in this example, stores an upper case value in the <span style="color: red;">language</span> property:</p>
+    <p id="demo2"></p>
+    <script>
+        //create an object:
+        const person1={
+            fristName1:"John",
+            lastName1:"Doe",
+            language1:"",
+            set lang(lang){
+                this.language1=lang.toUpperCase();
+            }
+        };
+        //set a property using set:
+        person1.lang="en1";
+        //Display data from the object:
+        document.getElementById("demo2").innerHTML=person1.language1;
+    </script>
+</body>
+</html>

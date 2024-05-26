@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The add() Method</title>
+</head>
+<body>
+    <h1>The add() Method</h1>
+    <p>Adding new elements to a set in existing elements.</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        //Create a new Set
+        const letters=new Set(["a","b","c"]);
+        //Add a new elements
+        letters.add("d");
+        letters.add("e");
+          //Display set.size
+          let text="";
+        for(let x of letters)
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo").innerHTML="Display the set Element <br>"+text;
+        document.getElementById("demo1").innerHTML="Add values to a set size : "+letters.size;
+       
+  </script>
+  <p>If you add equal elements, only the first will be saved:</p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <script>
+    //create a set
+    const letters1=new Set();
+    //add values to the set
+    letters1.add("a");
+    letters1.add("b");
+    letters1.add("c");
+    letters1.add("c");
+    letters1.add("c");
+    letters1.add("c");
+       //Display set.size
+       let text1="";
+        for(let x1 of letters1)
+        {
+            text1+=x1+"<br>";
+        }
+        document.getElementById("demo2").innerHTML="Display the set Element <br>"+text1;
+        document.getElementById("demo3").innerHTML="Add values to a set size : "+letters1.size;
+       
+  </script>
+</body>
+</html>

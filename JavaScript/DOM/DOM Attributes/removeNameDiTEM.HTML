@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Attributes removedNamedItem()</title>
+</head>
+<body>
+    <h1>HTML DOM Attributes removeNamedItem()</h1>
+    <h3>Remove the <b>type</b> attribute from an inpudt button:</h3>
+    <input type="button" name="" id="myInput" value="OK">
+    <p>Click the button below to remove the type attribute of the input element above.</p>
+    <button onclick="myFunction()">Try it</button>
+     <script>
+        function myFunction()
+        {
+            const nodeMap=document.getElementById("myInput").attributes;
+            nodeMap.removeNamedItem("type");
+        }
+     </script>
+</body>
+</html>

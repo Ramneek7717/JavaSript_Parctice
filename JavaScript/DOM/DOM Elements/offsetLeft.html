@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element offsetLeft</title>
+    <style>
+        #myDiv{
+            top: 40px;
+            left:50px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            position: relative;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM Element offsetLeft</h1>
+    <!-- <h3>Get the offsetLeft position of "myDiv":</h3>
+    <div id="myDiv">
+        <p>The offsetLeft of "myDiv" is:</p>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const element=document.getElementById("myDiv");
+        document.getElementById("demo").innerHTML=element.offsetLeft;
+    </script> -->
+    <h3>Get the positions of "myDiv":</h3>
+    <div id="myDiv">
+        <p>The offsetLeft of "myDiv" is:</p>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const element=document.getElementById("myDiv");
+        let text="Left:"+element.offsetLeft+"<br>Top :"+element.offsetTop;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

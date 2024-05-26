@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element insertAdjacentHTML()</title>
+</head>
+<body>
+    <h1>HTML DOM Element insertAdjacentHTML()</h1>
+     <!-- <h3>Insert a new p element after a header element:</h3>
+     <button onclick="myFunction()">Insert</button>
+     <p>Click "Insert" to insert a paragraph after the header.</p>
+     <h2 id="myH2">My Header</h2>
+     <script>
+        function myFunction(){
+            const h2=document.getElementById("myH2");
+            let html="<p>MY New paragraph.</p>";
+            h2.insertAdjacentHTML("afterend",html);
+        }
+     </script> -->
+     <!-- <h3>Using "afterbegin":</h3>
+     <button onclick="myFunction()">Insert</button>
+     <p>Click "Insert" to insert a span inside the header:</p>
+     <h2 id="myH2">My Header</h2>
+    <script>
+    function myFunction() {
+      const h2 = document.getElementById("myH2");
+      let html = "<span style='color:red'>My span</span>";
+      h2.insertAdjacentHTML("afterbegin", html);
+    }
+    </script> -->
+    <!-- <h3>Using "beforebegin":</h3>
+    <button onclick="myFunction()">Insert</button>
+    <p>Click "Insert" to insert a span before the header:</p>
+    
+    <h2 id="myH2">My Header</h2>
+    
+    <script>
+    function myFunction() {
+      const h2 = document.getElementById("myH2");
+      let html = "<span style='color:red'>My span</span>";
+      h2.insertAdjacentHTML("beforebegin", html);
+    }
+    </script> -->
+    <h3>Using "beforeend":</h3>
+    <button onclick="myFunction()">Insert</button>
+    <p>Click "Insert" to insert a span inside the header:</p>
+    <h2 id="myH2">My Header</h2>
+    <script>
+     function myFunction() {
+      const h2 = document.getElementById("myH2");
+      let html = "<span style='color:red'>My span</span>";
+      h2.insertAdjacentHTML("beforeend", html);
+    }
+    </script>
+</body>
+</html>

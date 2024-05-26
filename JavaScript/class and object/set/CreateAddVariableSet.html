@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Set and add Variables:</title>
+</head>
+<body>
+    <h1> Create a Set and add Variables</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        //Create a set
+        const letters=new Set();
+        //Create Variables
+        const a="a";
+        const b="b";
+        const c="c";
+        //Add the Variables to the Set
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+        //Display set.size
+        let text="";
+        for(let x of letters)
+        {
+            text+=x+"<br>";
+        }
+        document.getElementById("demo1").innerHTML="Display the set Element <br>"+text;
+        document.getElementById("demo2").innerHTML="Add values to a set size : "+letters.size;
+    </script>
+</body>
+</html>

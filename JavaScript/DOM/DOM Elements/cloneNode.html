@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element cloneNode()</title>
+</head>
+<body>
+    <h1>HTML DOM Element cloneNode()</h1>
+    <!-- <h3>Copy a li element from "myList2" to "myList1":</h3>
+    <h2>The cloneNode() Method</h2>
+    <button onclick="myFunction()">Copy</button>
+    <p>Click "Copy" to copy an item from one list to another.</p>  
+        <ul id="myList1">
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ul>
+        <ul id="myList2">
+            <li>Water</li>
+            <li>Milk</li>
+        </ul>
+
+        <p>If you change the <b>deep</b> parameter to false, only an empty LI element will be cloned.</p>
+
+    <script>
+        function myFunction() {
+        const node = document.getElementById("myList2").lastChild;
+        const clone = node.cloneNode(true);
+        document.getElementById("myList1").appendChild(clone);
+        }
+    </script> -->
+    <h3>Copy the "demo" element, including attribute and child elements,and append it to the document:</h3>
+    <button onclick="myFunction()">Copy</button>
+    <p>Click "Copy" to copy the "demo" element, including all its attributes and child elements, and append it to the document.</p>
+    <div id="demo" style="border:1px solid black;background-color: pink;">
+       <p style="color: red;">A P element</p>
+       <p style="color:green;">A P element</p>
+       <p style="color: blue;">A P elment</p>
+    </div>
+    <script>
+        function myFunction()
+        {
+            const node=document.getElementById("demo");
+            const clone=node.cloneNode("true");
+            document.body.appendChild(clone);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM ownerDocument Property</title>
+</head>
+<body>
+    <h1>HTML DOM ownerDocument Property</h1>
+    <h3>Get the node type of the owner document of a p element:</h3>
+    <p id="myP">Click the button get the node type of the owner document of this &lt;p&gt; element.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("myP").ownerDocument.nodeType;
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

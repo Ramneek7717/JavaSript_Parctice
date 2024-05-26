@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element getBoundingClientRect()</title>
+    <h1>HTML DOM Element getBoundingClientRect()</h1>
+    <h3>Return the size of an element and its position relative to the viewport:</h3>
+</head>
+<body>
+    <div onscroll="myFunction()" style="height:200px; width:300px; overflow:auto;">
+        <div id="myDiv" style="width:250px; height:150px; padding:16px; border:1px solid black;">
+        Scroll to display the bounding client rect of the element with the border.
+        </div>
+        <div style="width:1000px; height:1000px;"></div>
+        </div>
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          const element = document.getElementById("myDiv");
+          const rect = element.getBoundingClientRect();
+        
+          document.getElementById("demo").innerHTML =
+        "Left: " + rect.left.toFixed() + ", Top: " + rect.top.toFixed() + ", Width: " + rect.width + ", Height: " + rect.height;
+        }
+        </script>
+   
+</body>
+</html>

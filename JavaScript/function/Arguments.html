@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguments </title>
+</head>
+<body>
+    <script>
+        console.log("The Arguments Object");
+        console.log("This way you can simply use a function to find the highest value in a list of numbers");
+         let x=findMax(1,123,500,115,44,88);
+         console.log("Using the Arguments Objects Maximum values ="+x);
+        function findMax()
+        {
+            let max=-Infinity;
+            for(let i=0;i<arguments.length;i++)
+            {
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max;
+        } 
+        console.log("Using the Arguments create a functin to sum all input values");
+        let x1=sumAll(1,123,500,115,44,88)
+        function sumAll(){
+            let sum=0;
+            for(let i=0;i<arguments.length;i++)
+            {
+                sum+=arguments[i];
+            }
+            return sum;
+        }
+        console.log("Using the Arguments Objects a function to sum all input values\t:"+x1);
+
+        
+    </script>
+</body>
+</html>

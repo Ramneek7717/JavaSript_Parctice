@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Document addEventListener()</title>
+</head>
+<body>
+    <h1>DOM Document addEventListener()</h1>
+    <h4>Add a click event to the document:</h4>
+    <p>Click anywhere in the document to display "Hello World!".</p>
+    <!-- <p id="demo"></p> -->
+    <!-- <script>
+        document.addEventListener("click",myFunction);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="HELLO WORLD";
+        }
+    </script> -->
+    <!-- <p>Simpler Syntax:</p>
+    <script>
+        document.addEventListener("click",function()
+        {
+            document.getElementById("demo").innerHTML="HELLO WORLD!";
+        });
+    </script>
+<p>The <span style="color: red;">addEventListener()</span> method attaches an event handler to a document.</p> -->
+  <!-- You can add many event Listeners to the document: -->
+    <!-- <p>This example adds two click events to the document.</p>
+    <p>Click anywhere in the document.</p>
+    <p id="demo1"></p>
+    <script>
+        document.addEventListener("click",myFunction1);
+        document.addEventListener("click",myFunction2);
+        function myFunction1()
+        {
+            document.getElementById("demo1").innerHTML+="First function was executed!"
+        }
+        function myFunction2()
+        {
+            document.getElementById("demo1").innerHTML+="Second function was executed!"
+        }
+
+    </script> -->
+    <!-- You can add different types of events: -->
+    <!-- <p>This example adds many events on the document.</p>
+    <p id="demo"></p>
+    <script>
+        document.addEventListener("mouseover",myFunction);
+        document.addEventListener("click",mySecondFunction);
+        document.addEventListener("mouseout",myThridFunction);
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="Moused Over!"
+        }
+        function mySecondFunction()
+        {
+            document.getElementById("demo").innerHTML="Clicked!<br>"
+        }
+        function myThridFunction()
+        {
+            document.getElementById("demo").innerHTML="Moused out!<br>"
+        }
+    </script> -->
+     <!-- <p>When passing parameters,use an "anonymous function" to call a function with the parameters:</p>
+      <p>How to pass parameter values with the addEventListener() method.</p>
+      <p>Click anywhere in the document to perform a calculation.</p>
+      <p id="demo"></p>
+      <script>
+        let p1=5;
+        let p2=7;
+        document.addEventListener("click",function(){
+            myFunction(p1,p2);
+        });
+        function myFunction(a,b)
+        {
+            let result=a*b;
+            document.getElementById("demo").innerHTML=result;
+        }
+      </script> -->
+      <!-- <h4>Change the background color of the document:</h4>
+      <p>Click anywhere in the document to chnage the background color.</p>
+      <script>
+        document.addEventListener("click",function()
+        {
+            document.body.style.backgroundColor="red";
+        });
+      </script> -->
+      <h1>Using the removeEventListener() Method:</h1>
+      <p>A mousemove event handler displays a random number every time you move your mouse in this document.</p>
+      <p>Click "Remove" to remove the event handler.</p>
+      <button onclick="removeHandler()">Remove</button>
+      <p id="demo"></p>
+      <script>
+        document.addEventListener("mousemove",myFunction);
+        function myFunction(){
+            document.getElementById("demo").innerHTML=Math.random();
+        }
+        function removeHandler()
+        {
+            document.removeEventListener("mousemove",myFunction);
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Style Object</title>
+</head>
+<body>
+    <h1>Create a Style Object</h1>
+    <p>You can Create a style element by using the document.createElement method </p>
+     <p>Click the button to create a Style element, and place it in the head section.</p>
+     <button onclick="myFunction()">Try it</button>
+     <p>The created style element conatins css declaration that will chnage the font properties of this document.</p>
+     <script>
+        function myFunction()
+        {
+            var x=document.createElement("STYLE");
+            var t=document.createTextNode("body{font:20px verdana;}");
+            x.appendChild(t);
+            document.head.appendChild(x);
+        }
+     </script>
+</body>
+</html>

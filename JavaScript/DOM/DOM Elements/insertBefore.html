@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Element insertBefore()</title>
+</head>
+<body>
+    <h1>HTML DOM Element insertBefore()</h1>
+    <!-- <h3>1. create an li element <br>
+        2.create a text node <br>
+        3. Append the text to the li element <br>
+        4. Insert the li elemeny before the first child in a ul:
+    </h3>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <script>
+      //create a li element
+      const newNode=document.createElement("li");
+      //Create a text node:
+      const textNode=document.createTextNode("Water");
+      //Append text node to "li" element:
+      newNode.appendChild(textNode);
+      //Insert before existing child:
+      const list=document.getElementById("myList");
+      list.insertBefore(newNode,list.children[0]);
+    </script> -->
+    <!-- <h3>Move the last element from one list to the beginning of another:</h3>
+    <ul id="myList1">
+        <li>coffee</li>
+        <li>Tea</li>
+    </ul>
+    <ul id="mylist2">
+        <li>Water</li>
+        <li>Milk</li>
+        <li>Juice</li>
+    </ul>
+    <p>Click the button to move items from  one list to another:</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {  const node = document.getElementById("mylist2").lastElementChild;
+            const list=document.getElementById("myList1");
+            list.insertBefore(node,list.children[0]);
+        }
+    </script> -->
+    <h3>Move the last element from one list to the end of another:</h3>
+    <ul id="myList1">
+        <li>coffee</li>
+        <li>Tea</li>
+    </ul>
+    <ul id="myList2">
+        <li>Water</li>
+        <li>Milk</li>
+        <li>Juice</li>
+    </ul>
+    <p>Click the button to move items from one list to another:</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            const node=document.getElementById("myList2").lastElementChild;
+            const list=document.getElementById("myList1");
+            list.insertBefore(node,null);
+        }
+    </script>
+</body>
+</html>
